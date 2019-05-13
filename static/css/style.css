@@ -1,0 +1,179 @@
+/* Author:  Mauricio Esguerra                     */
+/* Email:   mauricio.esguerra@gmail.com           */
+/* Website: http://www.eden.rutgers.edu/~esguerra */
+
+/* Defaults */
+* {
+        border:0;
+        margin:0;
+        padding:0;
+} 
+
+/* body */
+body {
+    margin: 0;
+	background:#fff;
+	color:#666;
+	font:0.75em/100% 'Helvetica', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	line-height:1.4em;
+}
+
+/* general */
+a {
+    color:#f90;
+	text-decoration:none;
+}
+a:hover {
+	color:#555;
+	text-decoration:none;
+}
+
+/* bars */
+hr {
+/*    width:   100%; */
+    border:  thin black solid;
+    clear:   both;
+}
+
+/* table */
+table {
+    width:  100%;
+    margin:  0 auto; 
+}
+td, th {
+    padding:  5pt;
+}
+
+/* code boxes */
+pre{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	display:block;
+	border:1px solid #000;
+	padding:1em;
+	background-color:#ddd;
+}
+
+/* definition lists */
+dt {
+    font-weight: bold;
+    color: black;
+}
+
+/* images */
+img {
+    border:  0pt;
+}
+
+/* header */
+#header {
+    position: absolute;
+    top: 0;
+	background:#323232 center repeat-y;
+	width:100%;
+}
+#header_inside {
+    height:50px; 
+	margin:0 auto;
+	width:800px;
+}
+#header_inside h1 {
+	color:#fff;
+	float:left;
+	font:2.6em 'Helvetica', 'Trebuchet MS', Verdana, sans-serif;
+	height:50px;
+	line-height:50px;
+	margin:0 0 0 10px;
+	width:256px;
+}
+#header_inside ul {
+	float:right;
+	height:50px;
+	list-style:none;
+	width:520px;
+}
+#header_inside ul li {
+	border-right:1px solid #555;
+	float:right;
+	height:50px;
+	list-style:none;
+	width:70px;
+}
+#header_inside ul li a {
+	color:#fff;
+	display:block;
+	height:30px;
+	line-height:30px;
+	padding:20px 0 0 0;
+	text-align:center;
+	width:70px;
+}
+#header_inside ul li a:hover {
+	background:#fff;
+	color:#111;
+}
+#header_inside ul li a.active {
+	background:#fff;
+	color:#111;
+}
+
+
+/* footer */
+#footer {
+    position:absolute;
+    bottom:0;
+	background:#323232;
+	height:30px;
+	width:100%;
+    font:8pt 'Helvetica', sans-serif;
+}
+#footer_inside {
+	height:30px;
+	margin:0 auto;
+	width:100%;
+}
+#footer_inside p {
+	color:#fff;
+	line-height:30px;
+	text-align:center;
+}
+
+
+/* content */
+#content {
+    position: fixed;
+    top: 50px;
+    bottom: 30px;
+/* iexplorer */
+/*    padding:80px 0 100px 0; */    
+    overflow: auto;
+    background:#fff;
+    width:100%;
+    font:10pt 'Helvetica', sans-serif;
+}
+#content_main {
+    margin: 0 auto;
+    width:98%;
+}
+#content_main span {
+    color:#f90;
+}
+#content_main h1, h2, h3, h4 {
+    font-style: bold;
+    margin-bottom: 4pt; 
+    margin-top: 4pt;
+}
+#content_main h1.title {
+    font-weight:  normal;
+    margin-bottom: 8pt; 
+    margin-top: 4pt;
+}
+#content_main p {
+    padding:0 0 0 0px;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    font:10pt 'Helvetica', sans-serif;
+}
+
+
+

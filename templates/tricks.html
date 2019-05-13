@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<br/>
+<aside>
+<ul>
+<li><a href="/tricks/pymol/pymol.htm">- pymol</a></li>
+<li><a href="/tricks/vmd/vmd.htm">- vmd</a></li>
+<li><a href="/tricks/chimera/chimera.htm">- chimera</a></li>
+<li><a href="/tricks/r/r.htm">- R</a></li>
+<li><a href="/tricks/git/git.htm">- git</a></li>
+<li><a href="/tricks/svn/svn.htm">- svn</a></li>
+<li><a href="/tricks/mysql/mysql.htm">- mysql</a></li>
+<li><a href="/tricks/django/django.htm">- django</a></li>
+<li><a href="/tricks/python/python.htm">- python</a></li>
+<li><a href="/tricks/linux/linux.htm">- linux</a></li>
+<li><a href="/tricks/docker/docker.htm">- docker</a></li>
+<li><a href="/tricks/ssh/ssh.htm">- ssh</a></li>
+<li><a href="/tricks/opengpg/opengpg.htm">- gpg</a></li>
+<li><a href="/tricks/emacs/emacs.htm">- emacs</a></li>
+<li><a href="/tricks/google/google.htm">- google</a></li>
+<li><a href="/tricks/regexp/regexp.pdf">- regexp</a></li>      
+</ul>
+</aside>
+
+<article>
+<h1>Computer Tricks & Recipes</h1>
+<hr/>
+
+<p>The pages linked  on the menu  to  your left  are mainly "cheatsheets"
+useful to computational chemists.</p>
+
+<p>These notes serve as an ever changing reminder of tips and tricks for myself
+and will hopefully be useful as direct reference to technical tricks I wish to share
+with students, or computational chemists in training.</p>
+</article>
+<br/>
+<br/>
+
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("footer");
+});
+</script>
+
+{% endblock content %}

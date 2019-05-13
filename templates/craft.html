@@ -1,0 +1,213 @@
+{% extends "layout.html" %}
+{% block content %}
+<br/>
+<aside>
+  <ul>
+    <li><a href="#tuto">- Tutorials</a></li>
+    <li><a href="#data">- Databases</a></li>
+    <li><a href="#proj">- Projects</a></li>
+    <li><a href="#script">- Scripts</a></li>
+  </ul>
+</aside>
+
+
+<article>
+  <hr/>
+  <h1><span id="tuto">Tutorials</span></h1>
+  <hr/>
+  <br/>
+  <!-- Use table format to organize tutorial contents. -->
+  <table style="border: 0px solid white">
+
+    <!-- ----- Tutorial I ---- --> 
+    <tr> 
+
+      <td style="border: 0px solid white">  
+        <a href="image1.png"><img src="image1.png" width="200"> </a>
+      </td> 
+      
+      <!-- ----- Spacing between fig & paper ---- --> 
+      <td width="30"></td> 
+
+
+      <td style="border: 0px solid white; vertical-align:top">
+        <h2>Setup Linux Box for Computational Chemistry.</h2> 
+        <font size="2"> 
+          <a href="linux.pdf">[PDF]</a> 
+        </font> 
+        <br/> 
+        <font size="2"> 
+          This tutorial is mainly a collection of common tasks when setting up a
+          Linux system for computational chemistry use.
+          It's mainly based on <b>Fedora</b>, so it is also RedHat compatible. I try to
+          keep it up to date, so right now it should work with <b>Fedora 21</b>.
+        </font>
+      </td>
+    </tr> 
+
+    <!-- ----- Space between tutorials ---- --> 
+    <tr> 
+      <td> 
+        <br/> 
+        <br/> 
+      </td> 
+    </tr> 
+
+    
+    <!-- ----- Tutorial II ---- --> 
+    <tr> 
+
+      <td style="border: 0px solid white">  
+        <a href="gnra21.png"><img src="gnra21.png" width="200"> </a>
+      </td> 
+      
+      <!-- ----- Spacing between fig & paper ---- --> 
+      <td width="30"></td> 
+
+
+      <td style="border: 0px solid white; vertical-align:top">
+        <h2>Taller de Metodos Basados en el Modelo de Bloques Rigidos para el Modelamiento de Acidos Nucleicos</h2>
+        <font size="2"> 
+          <a href="../workshop/">Enlace a la pagina principal del taller.</a>
+        </font> 
+        <br/> 
+        <font size="2"> 
+          <p>Taller de modelamiento de acidos nucleicos usando el metodo de bloques rigidos dictado 
+          en la Universidad Nacional de Colombia.</p>
+          <p>Workshop on rigid-block based methods for modeling nucleic acids at the National University
+          of Colombia.</p>
+        </font>
+
+      </td>
+    </tr> 
+
+    <!-- ----- Space between tutorials ---- --> 
+    <tr> 
+      <td> 
+        <br/> 
+        <br/> 
+      </td> 
+    </tr> 
+
+    
+    <!-- ----- Tutorial III ---- --> 
+    <tr> 
+      <td> 
+        <a href="ism.png"><img src="ism.png" width="200"> </a>
+      </td> 
+      
+      <!-- ----- Spacing between fig & paper ---- --> 
+      <td width=30></td> 
+      
+      <td style="border: 0px solid white; vertical-align:top">
+        <h2>Glycine Formation in the Interstellar Medium.</h2> 
+        <font size="2"> 
+          <a href="glicina.pdf">[PDF]</a> 
+        </font> 
+        <br/> 
+        <font size="2"> 
+          This is an old reserch proposal when I was interested in prebiotic chemistry in the 
+          interstellar medium. It's in Spanish, but I think it has a nice introduction to astrochemistry based mainly on the work of Eric Herbst and Mayo Greenberg.
+        </font>
+      </td> 
+    </tr> 
+
+    <!-- ----- Space between tutorials ---- --> 
+    <tr> 
+      <td> 
+        <br/> 
+        <br/> 
+      </td> 
+    </tr> 
+
+    
+    <!-- ----- Tutorial IV ---- --> 
+    <tr> 
+      <td> 
+        <a href="chemthermo.png"><img src="chemthermo.png" width="200"> </a>
+      </td> 
+      
+      <!-- ----- Spacing between fig & paper ---- --> 
+      <td width=30></td> 
+      
+      <td style="border: 0px solid white; vertical-align:top">
+        <h2>Chemical Thermodynamics Constants and Relations</h2> 
+        <font size="2"> 
+          <a href="formulas.pdf">[PDF]</a> 
+        </font> 
+        <br/> 
+        <font size="2"> 
+          This is  just a broad cheat-sheet  with a collection of  commonly used
+          formulas   in  chemical   thermodynamics.  There   is,  aditionally   a
+          compilation of relevant constants and molecular scales.
+        </font>
+      </td> 
+    </tr> 
+    
+
+    <!-- ----- Space between tutorials ---- --> 
+    <tr> 
+      <td> 
+        <br/> 
+        <br/> 
+      </td> 
+    </tr> 
+  </table>
+
+
+
+  <hr/>
+  <h1><span id="data">Databases</span></h1>
+  <hr/>
+  Currently I'm actively developing a database
+  on RNA base-pair steps.
+  <br/>
+  A final goal of the database is for it
+  to work pretty much independently from its developers by
+  connecting periodically and automatically to the PDB to fish for
+  the data which makes it up.
+  <br/>
+
+  The database is located at:
+  <br/><br/>
+  <a href="http://rnasteps.rutgers.edu">http://rnasteps.rutgers.edu</a>
+  <br/><br/>
+
+
+
+  <br/><br/>
+  <hr/>
+  <h1><span id="proj">Projects</span></h1>
+  <hr/>
+  <h3>querypdb</h3>
+  <p>Our database is dependent in the growing number of X-Ray RNA
+    structures in the Protein Data Bank. To automate the update process of
+    our data scripts are needed to  talk to the pdb. For example one can
+  query the pdb via a python script using the PDB's RESTful database.</p>
+  <pre>
+    <a href="https://github.com/esguerra/querypdb">git clone https://github.com/esguerra/querypdb.git</a>
+  </pre>
+  <br/>
+  <br/>
+  <br/><br/>
+  <hr/>
+  <h1><span id="script">Scripts</span></h1>
+  <hr/>
+  <p>You can  follow the link below  to access my  collection of scripts
+  and personal linux setup files, e.g. .bashrc</p>
+  <br/>
+  <h2><a href="/scripts">http://mesguerra.org/scripts</a></h2>
+
+</article>
+
+
+
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("footer");
+});
+</script>
+
+
+{% endblock content %}

@@ -1,0 +1,236 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<br /> 
+<h1>Molecular Renderings</h1> 
+<hr /> 
+
+<section id="imagegallery">
+
+    <nav>
+      <ul>
+        <li><a href="#gallery1">RNA</a></li>
+        <li><a href="#gallery2">DNA</a></li>
+        <li><a href="#gallery3">DNA Triplex</a></li>
+        <li><a href="#gallery4">Movies</a></li>
+        <li><a href="#gallery5">Others</a></li>
+      </ul>
+    </nav>
+    <hr/>
+
+    <section id="gallery1">
+      <h2>RNA Gallery</h2>
+      <p>Hover over the images for description.</p>
+
+      <figure>
+	<a  href="{{ url_for('static', filename='images/tRNA.png') }}">
+	<img height=200   src="{{ url_for('static', filename='images/tRNA.png') }}" class="center" />	</a>
+        <figcaption>
+          <h3>RNA 1</h3>
+          <p>tRNA secondary structure using Leontis-Westhof annotation styles.</p>     
+        </figcaption>
+      </figure>
+
+      <figure>
+	<a href="../images/tRNA2.png">
+        <img height=200 src="../images/tRNA2.png" class="center" />	</a>
+        <figcaption>
+          <h3>RNA 2</h3>
+          <p>tRNA 3D structure displayed using the Calladine-Drew block representation.</p>     
+        </figcaption>
+      </figure>
+
+      <figure>
+	<a href="../images/1qu3.png">
+        <img height=200 src="../images/1qu3.png" class="center" />	</a>
+        <figcaption>
+          <h3>RNA 3</h3>
+          <p>Electrostatic potential surface of tRNA computed using APBS.</p>     
+        </figcaption>
+      </figure>
+    </section>
+
+
+
+    <section id="gallery2">
+      <h2>DNA Gallery</h2>
+      <p>Hover over the images for description.</p>
+
+      <figure>
+	<a href="../images/ADNA6.png">
+	<img height=200   src="../images/ADNA6.png" class="center" />	</a>
+        <figcaption>
+          <h3>DNA 1</h3>
+          <p>A-DNA  looked from the  top. Notice  the large  "hole" in
+          the middle.</p> 
+        </figcaption>
+      </figure>
+
+      <figure>
+	<a href="../images/ADNA8.png">
+        <img height=200 src="../images/ADNA8.png" class="center" />	</a>
+        <figcaption>
+          <h3>DNA 2</h3>
+          <p>A-DNA with it major groove facing the viewer.</p> 
+        </figcaption>
+      </figure>
+
+      <figure>
+	<a href="../images/ADNA9.png">
+        <img height=200 src="../images/ADNA9.png" class="center" />	</a>
+        <figcaption>
+          <h3>DNA 3</h3>
+          <p>A-DNA with its minor groove facing the viewer.</p> 
+        </figcaption>
+      </figure>
+    </section>
+
+
+    <section id="gallery3">
+      <h2>DNA Triple Helix</h2>
+      <p>Hover over the images for description.</p>
+
+      <figure>
+	<a href="../triplexes.htm">
+        <img height=200 src="../images/wcpart.png" class="center" />	</a>
+        <figcaption>
+          <h3>DNA Triple Helix</h3>
+          <p>The DNA Triple Helix</p>     
+        </figcaption>
+      </figure>
+    </section>
+
+    
+    <section id="gallery4">
+      <h2>Movies</h2>
+      <p>Hover over the images for description.</p>
+      <figure>
+	<a href="../movies/quadruplex.mp4">
+	<video height=200 controls autobuffer
+        style="display:block;
+	       margin:0px 0px 0px -30px;
+	       text-align:center;
+	       cursor:crosshair;
+	       width: 360;" 
+	  src="../movies/quadruplex.mp4" />
+        
+	</a>
+
+        <figcaption>
+          <h3>RNA Quadruplex</h3>
+          <p>Crystal Structure of Telomeric RNA Quadruplex (PDB_ID:3IBK)</p> 
+        </figcaption>
+      </figure>
+
+      
+      <figure>
+	<a href="/triplexdna/triplexalone..ogv">
+	<video height=200 controls autobuffer
+        style="display:block;
+	       margin:0px auto 10px;
+	       text-align:center;
+               cursor:crosshair;
+	       width: 360;"
+	  src="/triplexdna/triplexalone.ogv" />
+         
+	</a>
+
+        <figcaption>
+          <h3>DNA Triplex</h3>
+          <p>Triplex DNA AAGAAGAAAA Major Groove View</p> 
+        </figcaption>
+      </figure>
+
+
+      
+      <figure>
+	<a href="/triplexdna/triplexalone_above.ogv">
+	<video height=200 controls autobuffer
+        style="display:block;
+	       margin:0px auto 10px;
+	       text-align:center;
+               cursor:crosshair;
+	       width: 360;"
+	  src="/triplexdna/triplexalone_above.ogv" />        
+	</a>
+        <figcaption>
+          <h3>DNA Triplex</h3>
+          <p>Triplex DNA AAGAAGAAAA From Above</p> 
+        </figcaption>
+      </figure>
+
+<!--
+      <figure>
+	<a href="/videos/ssrna/polya.ogv">
+	<video height=200 controls autobuffer
+        style="display:block;
+	       margin:0px auto 10px;
+	       text-align:center;
+               cursor:crosshair;
+	       width: 360;"
+	  src="/videos/ssrna/polya.ogv" />        
+	</a>
+        <figcaption>
+          <h3>RNA polyA</h3>
+          <p>Single-strand of Adenine</p> 
+        </figcaption>
+      </figure>
+-->
+      
+
+    </section>
+
+
+
+
+
+
+
+
+
+    
+    <section id="gallery5">
+      <h2>Misc Gallery</h2>
+      <p>Hover over the images for description.</p>
+
+      <figure>
+	<a href="../images/mosaic.png">
+        <img height=200 src="../images/mosaic.png" class="center" />	</a>
+        <figcaption>
+          <h3>Misc 1</h3>
+          <p>Canonical Watson-Crick DNA and RNA base-pairs in Calladine-Drew Representation.</p>     
+        </figcaption>
+      </figure>
+
+      <figure>
+	<a href="../images/gnra24.png">
+        <img height=120 src="../images/gnra24.png" class="center" />	</a>
+        <figcaption>
+          <h3>Misc 2</h3>
+          <p>GNRA tetraloop from 23S rRNA, PDB_ID:1ffk.</p>     
+        </figcaption>
+      </figure>
+
+      <figure>
+	<a href="../images/3bwpH2_H5.png">
+        <img height=200 src="../images/3bwpH2_H5.png" class="center" />	</a>
+        <figcaption>
+          <h3>Misc 3</h3>
+          <p>Interacting helical regions of Group II Intron PDB_ID:3bwp.</p>     
+        </figcaption>
+      </figure>
+    </section>
+	
+</section>
+
+<!--
+<hr /> 
+<h1>Movies</h1> 
+<hr/>
+
+<video width="360" controls autobuffer> 
+<source src="rotateloop.mp4" > 
+</video> 
+-->
+
+{% endblock content %}

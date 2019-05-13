@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" language="JavaScript">
+<!--
+// Type the number of images you are rotating.
+NumberOfImagesToRotate = 13;
+// Specify the first and last part of the image tag. 
+First = '<br /><div><img src="static/images/random_';
+Last = '.png" height="480" class="center"></div> ';
+
+function printImage() {
+var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
+document.write(First + r + Last);
+}
+//-->
+</script>
+
+<script type="text/javascript" language="JavaScript">
+printImage();
+</script>
+
+
+<br />
+<div style="text-align:center">
+<!-- <a href="~esguerra">  -old homepage-</a> -->
+</div>
+<br />
+<br />
+
+Post Doctoral Researcher
+<br />
+Department of Cell &amp; Molecular Biology
+<br />
+Uppsala University
+<br />
+(+46)-018-471-4872 (lab)
+<br />
+(+46)-073-678-5334 (cell)
+<br/>
+e-mail:
+
+<script type="text/javascript">
+//<![CDATA[
+<!--
+var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
+"harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
+"\\\\,l=x.length;for(i=0;i<l;i++){if(i==66)y+=i;y%=127;o+=String.fromCharCod" +
+"e(x.charCodeAt(i)^(y++));}return o;}f(\\\"\\\\&,'0+\\\\\\\\\\\"\\\\&=d<>$:*" +
+"<?zqh4v?*<<f\\\\\\\\000\\\\\\\\1773>\\\\\\\\t\\\\\\\\r\\\\\\\\026\\\\\\\\01" +
+"4^\\\\\\\\010\\\\\\\\007\\\\\\\\022\\\\\\\\032\\\\\\\\000\\\\\\\\t\\\\\\\\0" +
+"02\\\\\\\\003C\\\\\\\\013\\\\\\\\034\\\\\\\\027\\\\\\\\004\\\\\\\\027\\\\\\" +
+"\\001\\\\\\\\006\\\\\\\\0246\\\\\\\\036\\\\\\\\033\\\\\\\\024T\\\\\\\\016\\" +
+"\\\\\\tS\\\\\\\\re] #p.<%/v\\\\\\\\020o\\\\\\\\003.%#;0=:v\\\\\\\\022+>/>./" +
+"?s@1\\\\\\\\nM K:EV\\\\\\\\004\\\\\\\\013\\\\\\\\036\\\\\\\\036\\\\\\\\004\\"+
+"\\\\\\r\\\\\\\\006\\\\\\\\037Q\\\\\\\\026\\\\\\\\034\\\\\\\\000U\\\\\\\\023" +
+"\\\\\\\\004\\\\\\\\037\\\\\\\\014\\\\\\\\037\\\\\\\\t\\\\\\\\016\\\\\\\\034" +
+"^au\\\\\\\\\\\"\\\\jgh&cg}*~y-j`d1av(:w):0!+'\\\"\\\\,66)\\\"(f};)lo,0(rtsb" +
+"us.o nruter};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=+l;x=+x{yrt{)" +
+"711=!)31/l(tAedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav{)x(f noitcn" +
+"uf\")"                                                                       ;
+while(x=eval(x));
+//-->
+//]]>
+</script>
+
+
+<br/>
+<br/>
+<a href="{{ url_for('static', filename='resume.pdf') }}">[RESUME]</a>
+ - 
+<!--<a href="http://rnafacts.blogspot.com">[BLOG]</a>-->
+<a href="http://blog.mesguerra.org">[BLOG]</a>
+<br/>
+
+
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("footer");
+});
+</script>
+
+
+{% endblock content %}

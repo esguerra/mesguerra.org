@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Mauricio Esguerra | Chemist </title>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" media="all" href="{{ url_for('static', filename='css/reset.css') }}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <meta name="keywords" content="mauricio, esguerra, neira, mauricio esguerra, mauricio esguerra neira">
+    <meta name="description" content="mauricio, esguerra, neira, mauricio esguerra, mauricio esguerra neira">
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/"><img src="static/images/logo.png" width="226" height="41" alt="Mauricio Esguerra"/></a>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('tricks') }}">Tricks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('render') }}">Render</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('courses') }}">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('craft') }}">Craft</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</header>
+
+
+{% block content %}
+{% endblock %}
+
+
+
+
+<!-- Comply with European Cookies Law -->
+<script src="http://ico-cookie-warning.googlecode.com/svn/trunk/ico_cookies.js"></script>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6262742; 
+var sc_invisible=1; 
+var sc_security="c7a3d459"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr tracker"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6262742/0/c7a3d459/1/"
+alt="tumblr tracker" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+      Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-2306840-9', 'no-ip.org');
+      ga('send', 'pageview');
+</script>
+
+
+<script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+</body>
+</html>
