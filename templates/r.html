@@ -1,0 +1,166 @@
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<h1>R-stat Cheatsheet</h1>
+<hr/>
+<p>To make an R script you simply put all commands into a file and give it an .r or .R extension.</p>
+<p>Then you can execute the script from the command line, or you can
+execute it once R is called.</p>
+<p>In the command line case you use the additional --no-save and --no-restore
+parameters to avoid creation of a "bulky" backup R file:</p>
+<pre>
+bash# R CMD BATCH --no-save --no-restore scriptname.r
+</pre>
+In the second case, once you're inside R you type:
+<pre>
+R> source("scriptname.r")
+</pre>
+In scripts where you don't want graphic output to be
+sent to screen but rather to produce an image file, you can do:
+<pre>
+R> postscript("somefilename.ps")
+R> png(filename="somefilename.png", width=800, height=600)
+</pre>
+To install packages in local folder when you are not in sudoers:
+<br/>
+<pre>
+R> install.packages("packagename",lib="~/R/library")
+R> install.packages("packagename.tar.gz",lib="~/R/library")  #If you dowloaded the source.
+</pre>
+<hr/>
+<h2>Plotting Tricks</h2>
+To overlay a plot on top of another.
+<pre>
+plot(shift, main="Shift Parameter for the Ribosome")
+par(new=T)
+lines(shift)
+</pre>
+To plot dual ordinates in plot.
+<pre>
+upvar<-rnorm(10)+seq(1,1.9,by=0.1)
+downvar<-rnorm(20)*5+19:10
+par(mar=c(5,4,4,4))
+plot(6:15,upvar,pch=1,col=3,xlim=c(1,20),
+xlab="Occasion",ylab="",main="Dual ordinate plot")
+mtext("upvar",side=2,line=2,col=3)
+abline(lm(upvar~I(1:10)),col=3)
+par(new=T)
+plot(downvar,axes=F,xlab="",ylab="",pch=2,col=4)
+axis(side=4)
+abline(lm(downvar~I(1:20)),col=4)
+mtext("downvar",side=4,line=2,col=4)
+</pre>
+To plot a circular density plot using ggplot:
+<br/>
+histogram : 
+<pre>
+library(ggplot2)
+library(circular)
+set.seed(123) 
+X = rbeta(100, shape1 = 2, shape2 = 4) 
+X = 2 * pi * X 
+X = circular(X, type = "angle", units = "radians", rotation = "clock") 
+X = data.frame(x=unclass(X)) # drop unnecessary attributes 
+p <- ggplot(X, aes(x = x)) 
+p <- p + geom_histogram(aes(y = ..count..), binwidth=pi/6) 
+p <- p + coord_polar(theta = "x", start = 2*pi, direction = 1, expand = FALSE) 
+print(p) 
+</pre>
+density estimation: 
+<pre>
+# use vonmises and convert it into data.frame before calling ggplot2 
+vonmises = density.circular(X, kernel = "vonmises", n = 512, bw = 300)
+D <- data.frame(lapply(vonmises[c("x", "y")], as.numeric)) 
+p <- ggplot(D, aes(x, y)) 
+p + geom_line() + coord_polar(theta = "x", start = 2*pi, direction = 
+1, expand = FALSE) + ylim(-1, max(D$y)) 
+</pre>
+The original link to this list recommendation is at:
+<a href="http://groups.google.com/group/ggplot2/browse_thread/thread/e199851f7d015888?pli=1">- ggplot2 list -</a>
+<hr/>
+<h2>Scripting Tricks</h2>
+<p>Yet another very fun an pleasing way to interact with R is by calling it as
+a command line program, this is done using Rscript. Rscript is similar to
+another effort for direct interaction with R through the command line called
+<a href="http://biostat.mc.vanderbilt.edu/wiki/Main/LittleR">little r</a>.</p>
+<p>So, say no more, here are some examples of how to run R as an online
+calculator of the average of some numbers arranged in a column, in a field
+separated text file.</p>
+<pre>
+Rscript -e "(mean(read.table(\"file.tab\")))"
+Rscript -e "(sd(read.table(\"file.tab\")))"
+Rscript -e "(summary(read.table(\"file.tab\")))"
+Rscript -e "(sum(read.table(\"file\")[,3]))"
+</pre>
+<p>And also if you want to plot in a one liner a histogram of your data in text mode, then Rscript can do it like so:</p>
+<pre>
+awk '{print $2}' filewithdataincol2.dat | Rscript -e "fsizes <- as.numeric(readLines('/dev/stdin')); 
+summary(fsizes); stem(fsizes, width=10, scale=2)"
+
+ls  -l /usr/bin  | awk  '!/^total/ {print  $5}' |  Rscript  -e "fsizes <- as.integer(readLines('/dev/stdin/')); summary(fsizes)" 
+</pre>
+<p>You can also put the following one-liner in a script and call it by
+giving as first argument value the name of the file and as second the
+column.</p>
+<pre>
+awk '{print $'''$2'''}' $1 | Rscript -e "fsizes <- as.numeric(readLines('stdin')); 
+summary(fsizes); stem(fsizes, width=10, scale=2)"
+</pre>
+In some systems to direct the standard input you will need /dev/stdin
+and in others just stdin after the readLines command.
+
+Where I'm copying the previous code inside a script which I call given as arguments first the file name and then the column holding the data I want to get a stem-histogram plot for.
+<br/>
+<br/>
+One can  also load data directly  from say, awk  stdout. The following
+one-liner parses the file allenes.ene through awk to read every fourth
+row starting at  row one, then it read  the data as a table  in R, and
+then it plots the second column against the fifth.
+<pre>
+awk 'NR%4==1' allenes.ene | Rscript -e "data <- read.table(pipe('cat /dev/stdin'),
+                                        header=F, sep=""); plot(data[,2],data[,5])"
+awk 'NR%4==1' allenes.ene | Rscript -e 'A <- read.table("stdin"); x11();  plot(A[,2],A[,5], pch=".", type="o")'
+</pre>
+<br/>
+<br/>
+Yet another one-liner which parses data from a MOLARIS run and makes a
+plot to screen waiting for the user to close the x11() window.
+<pre>
+sed -n '/bond atom1 atom2/,/not good/p' checkbonds.out | sed 1,2d | grep -v "WARNING" \
+       | Rscript -e 'A <- read.table("stdin"); x11(); plot(A[,2],A[,5], pch=".", type="o"); locator(1)'
+</pre>								
+
+<hr/>
+<p>
+<a href="http://cran.r-project.org/doc/contrib/R-and-octave.txt"> - R
+  and octave - </a>
+</p>
+<p>
+<a href="http://www.stat.psu.edu/~dhunter/astrostatistics/excerpts/"> - R
+  Astrostats - </a>
+</p>
+<p>
+<a href="http://cran.r-project.org/doc/contrib/Lemon-kickstart/index.html"> -
+    Kickstarting R - </a>
+</p>
+<p>
+<a href="http://dirk.eddelbuettel.com/code/littler.html"> - little r - </a>
+</p>
+<p>
+<a href="http://superuser.com/questions/317001/fast-command-to-calculate-the-mean-of-a-column-in-a-text-file-in-bash/">
+ - command line average - </a>
+</p>
+<p>
+<a   href="http://www.statmethods.net/input/datatypes.html">   -  data
+  types - </a>
+</p>
+</article>
+<!-- FOOTER SECTION -->
+<br/><br/>
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("footer");
+});
+</script>
+{% endblock content %}

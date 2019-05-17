@@ -1,0 +1,130 @@
+{% extends "layout2.html" %}
+{% block content %}
+
+<article>
+<h1>VMD Cheatsheet</h1>
+<hr>
+
+<p>
+For good lookin publication  quality graphs VMD is  not the best  option. The best
+option is, still today, after the sad sudden death of Warren Delano, pymol.
+Nonetheless VMD has some interesting utilities like
+calculating the RMSD between molecules, it does the alignment for you
+based on the atoms you want, and then you can get the RMSD number of
+your atom selections in the atom set of the pair of molecules being analyzed.
+</p>
+<br/>
+- General
+<pre>
+vmd -cor charmmformatfile.crd   #To tell vmd the file has crd charmm style formatting.
+vmd -e somescript.vmd           #The -e option tells vmd it will read a script.
+</pre>
+
+- RMSD
+<pre>
+set sel1 [atomselect 0 "purine"]
+set sel2 [atomselect 1 "purine"]
+measure rmsd $sel1 $sel2
+</pre>
+<br />
+<pre>
+set sel1 [atomselect 0 "all"]
+set sel2 [atomselect 1 "all"]
+measure rmsd $sel1 $sel2
+</pre>
+
+<p>
+To do the RMSD of a group of molecules using as reference the average molecule,
+you can use the RMSD Trajectory Tool Plugin. But before that you have  to be
+able to load a bunch of structures as frames into just one molecule file, this
+can be done with a script called animatepdbs.tcl which one can load with
+</p>
+<pre>
+source animatepdbs.tcl
+animatepdbs 1 3060 "GUm%d.pdb"
+</pre>
+<p>
+Once the molecules have been loaded as frames, then the RMSD plugin
+works like a charm. Remember to click on the atom selection box and
+change the default protein selection to all. Additionaly, to display all structures in a "superimposed" 
+fashion, one can go to Graphics/Representations/Trajectories/ and change where it says draw multiple frames to 0:1:3060.
+</p>
+<p>
+glob has been implemented in VMD and one can also use the
+following command to load structures each in a separate frame:
+</p>
+<pre>
+cd /to/my/pdb/files
+foreach i [glob *.pdb] {
+  mol new $i
+} 
+</pre>
+<p>To load all structures into a single frame, you just change "new" for
+"addfile" in the previous script.
+</p>
+
+<p>
+To load a script which can be given the extension .vmdrc, just use -e.
+For example to load some molecules and a script.
+</p>
+<pre>
+mol new gnra307_new.pdb
+mol new gnra476_new.pdb
+mol new gnra500_new.pdb
+mol new gnra1283_new.pdb
+
+{% raw %}
+# Prints the RMSD of the protein atoms between each \timestep
+# and the first \timestep for the given molecule id (default: top)
+rawproc print_rmsd_through_time {{mol top}} {
+        # use frame 0 for the reference
+        set reference [atomselect $mol "nucleic backbone" frame 0]
+        # the frame being compared
+        set compare [atomselect $mol "nucleic backbone"]
+
+        set num_steps [molinfo $mol get numframes]
+        for {set frame 0} {$frame < $num_steps} {incr frame} {
+                # get the correct frame
+                $compare frame $frame
+
+                # compute the transformation
+                set trans_mat [measure fit $compare $reference]
+                # do the alignment
+                $compare move $trans_mat
+                # compute the RMSD
+                set rmsd [measure rmsd $compare $reference]
+                # print the RMSD
+                puts "RMSD of $frame is $rmsd"
+        }
+}
+{% endraw %}
+</pre>
+
+
+<br />
+<hr />
+<p><a href="http://www.ks.uiuc.edu/Research/vmd/vmd-1.3/ug/node132.html#ugtopicselections"> - Link to
+    VMD selection commands.</a></p>
+<p><a href="http://www.csb.yale.edu/userguides/graphics/vmd/ug/node185.html">
+    - Link to alignment and RMSD specific commands.</a></p>
+<p><a href="http://www.ks.uiuc.edu/Research/vmd/script_library/scripts/animatepdbs/animatepdbs.tcl"> - Link to animatepdbs.tcl </a></p>
+
+<p>
+<a href="http://www.ks.uiuc.edu/Research/vmd/vmd-1.8.3/ug/node81.html"> - VMD Quotes and Regular Expressions - </a>
+</p>
+
+<p>
+<a href="http://www.ks.uiuc.edu/Training/Tutorials/vmd/tutorial-html/node4.html"> - VMD Scripting Intro.- </a>
+</p>
+<br />
+</article>
+
+<!-- FOOTER SECTION -->
+<br/><br/>
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("footer");
+});
+</script>
+{% endblock content %}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>SVN Cheatsheet</title>
+<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="/css/main.css"  />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+<div id="wrapper">
+<header class="group">
+<h1 id="logo">
+<a href="/"><img src="/images/logo.png" width="226" height="51" alt="Mauricio Esguerra"/></a>
+</h1>
+
+
+<nav>
+<ul>
+<li><a href="/tricks/tricks.htm">Tricks</a></li>
+<li><a href="/render/render.htm">Render</a></li>
+<li><a href="/courses/courses.htm">Courses</a></li>
+<li><a href="/craft/craft.htm">Craft</a></li>
+</ul>
+</nav>
+</header>
+</div>
+
+<br/>
+
+<aside>
+<ul>
+<li><a href="/tricks/pymol/pymol.htm">- pymol</a></li>         
+<li><a href="/tricks/vmd/vmd.htm">- vmd</a></li>               
+<li><a href="/tricks/chimera/chimera.htm">- chimera</a></li>   
+<li><a href="/tricks/r/r.htm">- R</a></li>                     
+<li><a href="/tricks/git/git.htm">- git</a></li>               
+<li><a href="/tricks/svn/svn.htm">- svn</a></li>               
+<li><a href="/tricks/mysql/mysql.htm">- mysql</a></li>         
+<li><a href="/tricks/django/django.htm">- django</a></li>      
+<li><a href="/tricks/python/python.htm">- python</a></li>      
+<li><a href="/tricks/linux/linux.htm">- linux</a></li>         
+<li><a href="/tricks/docker/docker.htm">- docker</a></li>      
+<li><a href="/tricks/ssh/ssh.htm">- ssh</a></li>               
+<li><a href="/tricks/opengpg/opengpg.htm">- gpg</a></li>       
+<li><a href="/tricks/emacs/emacs.htm">- emacs</a></li>         
+<li><a href="/tricks/google/google.htm">- google</a></li>      
+<li><a href="/tricks/regexp/regexp.pdf">- regexp</a></li>      
+</ul>
+</aside>
+
+<article>
+<h1>SVN Cheatsheet</h1>
+<hr/>
+<br/>
+To checkout (i.e. copy) a repository.
+<pre>
+svn co https://dnagit.rutgers.edu/scm/Papers/RNAMotifs 
+</pre>
+To check the status of the project.
+<pre>
+svn status
+</pre>
+To add files or folders to the project.
+<pre>
+svn add *
+svn add file
+svn Folder/
+</pre>
+To commit changes to the project.
+<pre>
+svn commit 
+</pre>
+To remove files.
+<pre>
+svn rm file
+svn rm folder
+</pre>
+
+
+</article>
+</body>
+</html>

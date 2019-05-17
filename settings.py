@@ -48,6 +48,32 @@ def make_tree(path):
                 tree['children'].append(dict(name=name))
     return tree
 
+@app.route("/tricks/pymol")
+def pymol():
+    return render_template('pymol.html', title='Pymol')
+
+@app.route("/tricks/vmd")
+def vmd():
+    return render_template('vmd.html', title='Vmd')
+
+@app.route("/tricks/chimera")
+def chimera():
+    return render_template('chimera.html', title='Chimera')
+
+@app.route("/tricks/r")
+def r():
+    return render_template('r.html', title='R')
+
+@app.route("/tricks/git")
+def git():
+    return render_template('git.html', title='git')
+
+@app.route("/tricks/svn")
+def svn():
+    return render_template('svn.html', title='svn')    
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

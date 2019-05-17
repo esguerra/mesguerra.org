@@ -7,7 +7,7 @@
     {% else %}
     <title>Mauricio Esguerra | Chemist </title>
     {% endif %}
-    <link rel="stylesheet" type="text/css" media="all" href="{{ url_for('static', filename='css/reset.css') }}"/>
+ <!--   <link rel="stylesheet" type="text/css" media="all" href="{{ url_for('static', filename='css/reset.css') }}"/>-->
     <link rel="stylesheet" type="text/css" media="all" href="{{ url_for('static', filename='css/main.css') }}"/>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -22,7 +22,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <h1>
-  <a class="navbar-brand" href="/"><img src="static/images/logo.png" alt="Mauricio Esguerra"/></a>
+  <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Mauricio Esguerra"/></a>
   </h1>
   <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
     <ul class="navbar-nav">
@@ -43,7 +43,29 @@
 </nav>
 </header>
 
-
+<br/>
+<nav>
+<aside>
+<ul>
+<li><a href="/tricks/pymol"> pymol</a></li>
+<li><a href="/tricks/vmd"> vmd</a></li>
+<li><a href="/tricks/chimera"> chimera</a></li>
+<li><a href="/tricks/r"> R</a></li>
+<li><a href="/tricks/git"> git</a></li>
+<li><a href="/tricks/svn"> svn</a></li>
+<li><a href="/tricks/mysql"> mysql</a></li>
+<li><a href="/tricks/django"> django</a></li>
+<li><a href="/tricks/python"> python</a></li>
+<li><a href="/tricks/linux"> linux</a></li>
+<li><a href="/tricks/docker"> docker</a></li>
+<li><a href="/tricks/ssh"> ssh</a></li>
+<li><a href="/tricks/opengpg"> gpg</a></li>
+<li><a href="/tricks/emacs"> emacs</a></li>
+<li><a href="/tricks/google"> google</a></li>
+<li><a href="/tricks/regexp"> regexp</a></li>      
+</ul>
+</aside>
+</nav>
 {% block content %}
 {% endblock %}
 

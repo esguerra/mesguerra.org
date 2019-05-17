@@ -1,211 +1,26 @@
 /* 
 Styles for Mauricio Esguerra's Homepage
 Author: Mauricio Esguerra Neira (PhD)
-Date:   April 9, 2013
+Date:   May 17, 2019
 */
 
+/* Defaults */
+* {
+    border:0;
+    margin:0;
+    padding:0;
+} 
+
+/* body */
 body {  
     font:  1.0em Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", arial,
         serif, courier;
-
     background: rgb(255,255,255);
     color:  rgb(30,30,30); /* This is the foreground letters color */
-    margin: 0.8em 4em; /* first means (top bottom) second (left rigth)*/ 
-    min-height: 468px;
-    min-width: 552px;
-    padding-top: 4.5rem;
+    padding-top:  4.5rem;
+    padding-left: 2.0rem;
     float: none; 
 }
-
-
-article {
-/*    float: right; */
-    margin-left: 100px;
-}
-
-aside{
-    float: left;
-    width: 100px;
-/*  margin: 0 0 0px 0px; */
-/*    color: rgb(191,191,191); */
-    color: rgb(000,000,000);
-}
-
-aside li {
-      color: rgba(000,000,000, 0.9);
-/*      list-style: none; */
-      font-size: 0.9em;
-/*      margin:10px 2px 10px 2px; */
-}
-
-aside li a:link, aside li a:visited {
-      color: rgba(000,000,000,0.9);
-      border:none;
-      text-transform: none;
-}
-
-
-#mainContent { 
-    color:rgb(30,30,30); 
-    background:transparent;
-}       
-
-/* text */
-header h1, h2, h3 { 
-    font-family: Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", Verdana, Arial; 
-} 
-
-h1 { 
-    font-family: Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", Verdana, Arial; 
-    font-weight:normal; 
-    font-size:1.8em;
-}
-        
-h2 {
-   font-size:1.2em;
-}
-
-h3 { 
-    font-size:1.0em; 
-}
-        
-p {
-    font-size: 1.0em;
-    line-height: 1.0;
-    margin:0 0 0.5em 0;
-/*    color:rgb(191,191,191); */
-    color:rgba(30,30,30,1);
-}
-
-/*------------
-  LINKS
--------------*/ 
-a:link, 
-a:visited {     
-    color:rgb(10,128,225); 
-    color: rgba(10,128,225,.9); 
-/*    border-bottom: 2px dotted #EAE7E7;  */
-/*    border-bottom: 2px dotted rgba(255,255,255,.4);  */
-    padding: 1px; 
-    text-decoration: none; 
-    -webkit-transition: background-color .3s linear;
-}
-a:focus { 
-    color: orange; 
-}
-a:hover { 
-    background-color: rgb(40,40,40);
-    background-color: rgba(10,128,225,.7); 
-    color: #f6eef4; 
-}
-        
-/*------------
-  LAYOUT
--------------*/ 
-header { 
-    width:100%; 
-    background:rgb(160,160,160); 
-    position:relative; 
-    z-index:0; 
-    margin: 0px 0px 0px 0px;
-    font: 1.0em;
-}
-
-h1#logo {
-    position:absolute; 
-    top:-6px;
-    left:0.5%;
-}
-
-h1#logo img {  
-     width:226px;
-}
-
-h1#logo a { 
-     border:none;
-     background:none;
-     color:gray;
-     color:rgb(105,105,105);
-}
-
-h1#logo a:hover img {
-     opacity:.3; 
-     border:none;
-}
-
-header h1 { 
-     font-size: 1.0em; 
-}
-
-header h1 a:link, header h1 a:visited { 
-}
-
-header nav { 
-      float:right;
-      font: 1.2em Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", arial, serif, courier;
-}
-
-header nav li:first-child {
-      list-style:none;
-}
-
-header nav li { 
-      float:left; 
-      list-style-position: inside;
-      list-style-type: none;
-/*      list-style-type: none; */
-      margin:0 1px 0px 1px; }
-
-header nav li a:link, header nav li a:visited {
-      color: rgba(30,30,30,.8);
-      font-size:1em; 
-      line-height:2; 
-      padding:.2em; 
-      margin:0 0 0 0px; 
-      border:none; 
-      text-transform:}
-
-footer { 
-      clear:both; 
-      width:100%; 
-      margin-top:3em;  
-      padding-left:0px;
-      font: 1em Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", arial, serif, courier;
-}
-
-footer p { 
-      margin:0 0 2em 1em; 
-      color: rgb(200,200,200); 
-}
-
-
-/* Code Boxes */
-pre{
-        display:block;
-        border:2px solid #000;
-        padding:2em;
-        background-color:#ddd;
-        color:black;
-        margin: 4px 20px 4px 20px;
-}
-
-code  {font-family: consolas, courier, monospace;
-       font-size: 1em;
-       line-height: 1.2em;
-       white-space: pre; 
-       background-color: #fff8dc; /* ccf any colour's okay, 
-       so long as it's different to the page-background  
-       (for ease of recognition) and contrast to the text */
-       color: #000; /* likewise the background-color comment */
-       border: 1px solid #666;
-       -moz-border-radius: 1em;
-       -webkit-border-radius: 1em;
-       border-radius: 1em; /* just in case */
-       padding: 1em;
-       margin: 1em 1em;
-       width: 90%; /* or whatever you prefer */
-       float: left;
-       }
 
 /* Images */
 img {
@@ -226,139 +41,41 @@ img.center {
 /*    width:  480px; */
 }
 
-
-/*-------------
-  TABLE FOR AGENDA
----------------*/
-#agenda-a {
-            font: 1em Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", arial, serif, courier;
-        margin-left: auto;
-        margin-right: auto;
-            text-align: center;
-            border-collapse: collapse; 
-            border: 1px solid #000;
-        }
-
-#agenda-a th, td{
-  padding: 4px;
-}
-#agenda-a th{
- color: #fff;
- background-color: #aaa
-}
-#agenda-a tr:nth-of-type(odd) td{
- background-color:#333;
- color: #fff
+aside{
+    float: left;
+    width: 100px;
+/*    margin: 0 0 0px 0px; */
+/*    color: rgb(191,191,191); */
+/*    color: rgb(000,000,000); */
 }
 
+aside li {
+/*      color: rgba(000,000,000, 0.9); */
+/*      list-style: none; */
+/*      font-size: 0.9em; */
+/*      margin:10px 2px 10px 2px; */
+}
 
-/*-------------
-        SELF CLEARING FLOATS
----------------*/
-.group:after{
-        content:".";
+aside li a:link, aside li a:visited {
+      color: rgba(000,000,000,0.9);
+      border:none;
+      text-transform: none;
+}
+
+article {
+/*    float: right; */
+    margin-left: 100px;
+}
+
+/* Code Boxes */
+pre{
         display:block;
-        height:0;
-        clear:both;
-        visibility:hidden;
+        border:2px solid #000;
+        padding:2em;
+        background-color:#ddd;
+        color:black;
+        margin: 4px 20px 4px 20px;
 }
 
 
-
-/*-------------
-        ADDITIONAL STYLES FOR PORTFOLIO
----------------*/
-
-#imagegallery section figure {
-    position:relative;
-    float:left;
-    margin:10px;
-    width:198px;
-    height:198px;
-    border:1px solid #333;
-    overflow:hidden;
-    background: #fff;
-    padding: 1px;
-}
-#imagegallery section figure figcaption {
-    position:absolute;
-    bottom:0;
-    left:0;
-    opacity: .55;
-    margin-bottom:-120px;
-    -webkit-transition: margin-bottom;
-    -webkit-transition-duration: 400ms;
-    -webkit-transition-timing-function: ease-out;
-    -moz-transition-property: margin-bottom;
-    -moz-transition-duration: 400ms;
-    -moz-transition-timing-function: ease-out;
-    -o-transition-property: margin-bottom;
-    -o-transition-duration: 400ms;
-}
-#imagegallery section figure:hover figcaption {
-    margin-bottom:0px;
-}
-#imagegallery section figcaption {
-    width:200px;
-    height:115px;
-    background:#111;
-    color:#fff;
-    font-family: Arial, Helvetica, sans-serif;
-}
- 
-#imagegallery section figcaption h3 {
-    margin: 15px 15px 6px 15px;
-    text-shadow: #000 0px 2px 0px;
-}
-#imagegallery section figcaption p {
-    margin: 0 15px;
-    color: #ddd;
-    line-height: 24px;
-    font-size: 14px;
-    text-shadow: #000 0px 2px 0px;
-}
-/* CSS animated Tabs */
-#imagegallery section {
-    -webkit-transition: opacity;
-    -webkit-transition-duration: 800ms;
-    -webkit-transition-timing-function: ease-in;
-    -moz-transition-property: opacity;
-    -moz-transition-duration: 800ms;
-    -moz-transition-timing-function: ease-in;
-    -o-transition-property: opacity;
-    -o-transition-duration: 800ms;
-    opacity:0;
-    z-index: 9;
-}
-
-#imagegallery :target {
-    opacity:1;
-    z-index: 10;
-}
-#gallery1, #gallery2, #gallery3, #gallery4, #gallery5 {
-    position: absolute;
-}
-
-#imagegallery nav {
-    width: 100%;
-}
-#imagegallery nav ul {
-    padding: 11px 20px;
-}
-#imagegallery nav li {
-    display: inline;
-    margin-right: 7px;
-}
-#imagegallery nav li a {
-    font-size: 16px;
-    border-radius: 0px;
-    padding: 1px 7px;
-}
-#imagegallery  nav li a:hover {
-    border:1px solid #aaa;
-}
-#imagegallery nav li a:active {
-    background:#ccc;
-    border:1px solid #888;
-}
 

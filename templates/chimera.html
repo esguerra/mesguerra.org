@@ -1,0 +1,57 @@
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<h1>Chimera Configuration and Tricks</h1>
+<hr/>
+The  first thing  you  will inevitably  need  to do  in any  molecular
+rendering software is to configure  your background to white (who ever
+wants an unpublishable black background?, ever?), the atom colors to the
+standard CPK colors for atoms  (the curse of the green carbons follows
+chemistry  everywhere!) and  no perspective  so that  a cylinder, for
+example, will become a circle when viewed from the top.
+
+So, in chimera the file where your preferences reside at is:
+
+<pre>
+.chimera/preferences  
+</pre>
+
+But there seems to be no way to store easy commands such as:
+<pre>
+set bg_color white
+</pre>
+
+In there. And one needs to save setups via preferences which result in
+the following hard to read syntax:
+
+<pre>
+'Background': {'Background color': (1.0, 1.0, 1.0, 1.0),
+                'Background gradient': (('Chimera default',
+                                         [(1, 1, 1, 1), (0, 0, 1, 1)],
+                                         1),
+                                        1),
+                'Background image': (None, 1.0, 2, 1)}, 
+
+</pre>
+
+It seems like  the only way around this is to  create a startup script
+for chimera which will include the --preferences command pointing to a 
+file with the easier command line settings.
+<br/>
+<hr/>
+
+<h2>- Links </h2>
+<p>
+<a href="http://www.cgl.ucsf.edu/chimera/docs/UsersGuide/preferences.html">
+  - Setting preferences.</a>
+</p>
+</article>
+<!-- FOOTER SECTION -->
+<br/><br/>
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("footer");
+});
+</script>
+{% endblock content %}
