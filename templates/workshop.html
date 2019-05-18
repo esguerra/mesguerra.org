@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<br/>
+<br/>
+<div align="center">
+<table id="agenda-a" width="600" border="1">
+   <tr>
+     <th class="date" colspan="3">Viernes 29 de Abril</th>
+  </tr> 
+  <tr>
+    <td>1:00 - 2:20 pm</td>
+    <td><a href="/pymolvsvmd">Pymol vs. VMD</a></td>
+    <td>Mauricio</td>
+  </tr>  
+  <tr>
+    <td>2:35 - 3:20 pm</td>
+    <td><a href="{{ url_for('static', filename='workshop/Prin_Nucl_Acid_Str.pdf') }}">Nucleic Acids Review</a></td>
+    <td>Mauricio</td>
+  </tr>
+  <tr>
+    <td>3:30 - 5:00 pm</td>
+    <td><a href="{{ url_for('static', filename='workshop/3dna_mini_tutorial.pdf') }}">3DNA, Raster3D, Molscript, rnaview</a></td>
+    <td>Mauricio</td>
+  </tr>  
+</table>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table id="agenda-a" width="600" border="1">
+   <tr>
+     <th class="date" colspan="3">Sabado 30 de Abril</th>
+  </tr> 
+  <tr>
+    <td>9:00 - 10:20 am</td>
+    <td><a href="/traj">Analysis of Molecular Trajectories with 3DNA</a></td>
+    <td>Mauricio</td>
+  </tr>  
+  <tr>
+    <td>10:40 - 12:00 am</td>
+    <td><a href="/randg">R and Grace for Publication-Quality Plots</a></td>
+    <td>Mauricio</td>
+  </tr>  
+</table>
+
+
+
+{% endblock content %}

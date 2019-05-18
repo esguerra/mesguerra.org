@@ -4,12 +4,6 @@ Author: Mauricio Esguerra Neira (PhD)
 Date:   May 17, 2019
 */
 
-/* Defaults */
-* {
-    border:0;
-    margin:0;
-    padding:0;
-} 
 
 /* body */
 body {  
@@ -18,7 +12,7 @@ body {
     background: rgb(255,255,255);
     color:  rgb(30,30,30); /* This is the foreground letters color */
     padding-top:  4.5rem;
-    padding-left: 2.0rem;
+    padding-left: 0.1rem;
     float: none; 
 }
 
@@ -64,7 +58,7 @@ aside li a:link, aside li a:visited {
 
 article {
 /*    float: right; */
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 /* Code Boxes */
@@ -96,5 +90,122 @@ code  {font-family: consolas, courier, monospace;
        }
 
 
+/*------------
+  LINKS
+-------------*/ 
+a:link, 
+a:visited {     
+    color:rgb(10,128,225); 
+    color: rgba(10,128,225,.9); 
+/*    border-bottom: 2px dotted #EAE7E7;  */
+/*    border-bottom: 2px dotted rgba(255,255,255,.4);  */
+    padding: 1px; 
+    text-decoration: none; 
+    -webkit-transition: background-color .3s linear;
+}
+a:focus { 
+    color: orange; 
+}
+a:hover { 
+    background-color: rgb(40,40,40);
+    background-color: rgba(10,128,225,.7); 
+    color: #f6eef4; 
+}
 
+/*-------------
+        ADDITIONAL STYLES FOR PORTFOLIO
+---------------*/
+
+#imagegallery section figure {
+    position:relative;
+    float:left;
+    margin:10px;
+    width:198px;
+    height:198px;
+    border:1px solid #333;
+    overflow:hidden;
+    background: #fff;
+    padding: 1px;
+}
+#imagegallery section figure figcaption {
+    position:absolute;
+    bottom:0;
+    left:0;
+    opacity: .55;
+    margin-bottom:-120px;
+    -webkit-transition: margin-bottom;
+    -webkit-transition-duration: 400ms;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-property: margin-bottom;
+    -moz-transition-duration: 400ms;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-property: margin-bottom;
+    -o-transition-duration: 400ms;
+}
+#imagegallery section figure:hover figcaption {
+    margin-bottom:0px;
+}
+#imagegallery section figcaption {
+    width:200px;
+    height:115px;
+    background:#111;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+#imagegallery section figcaption h3 {
+    margin: 15px 15px 6px 15px;
+    text-shadow: #000 0px 2px 0px;
+}
+#imagegallery section figcaption p {
+    margin: 0 15px;
+    color: #ddd;
+    line-height: 24px;
+    font-size: 14px;
+    text-shadow: #000 0px 2px 0px;
+}
+/* CSS animated Tabs */
+#imagegallery section {
+    -webkit-transition: opacity;
+    -webkit-transition-duration: 800ms;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 800ms;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-property: opacity;
+    -o-transition-duration: 800ms;
+    opacity:0;
+    z-index: 9;
+}
+
+#imagegallery :target {
+    opacity:1;
+    z-index: 10;
+}
+#gallery1, #gallery2, #gallery3, #gallery4, #gallery5 {
+    position: absolute;
+}
+
+#imagegallery nav {
+    width: 100%;
+}
+#imagegallery nav ul {
+    padding: 11px 20px;
+}
+#imagegallery nav li {
+    display: inline;
+    margin-right: 7px;
+}
+#imagegallery nav li a {
+    font-size: 16px;
+    border-radius: 0px;
+    padding: 1px 7px;
+}
+#imagegallery  nav li a:hover {
+    border:1px solid #aaa;
+}
+#imagegallery nav li a:active {
+    background:#ccc;
+    border:1px solid #888;
+}
 

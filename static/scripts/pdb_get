@@ -1,0 +1,90 @@
+#! /usr/bin/python
+
+import urllib, re, os, sys, time, getopt
+
+def usage(): 
+	print "\nusage: pdb_get [options] <code> "
+	print "    where [options] could be:"
+	print "       -p to retrieve PDB format (default)"
+	print "       -c to retrieve mmCIF format"
+	print "       -x to retrieve xml-noatom format"
+	print "       -s to retrieve structure factors along with the PDB format coordinates"
+	print "       and <code> is the 4-character PDB entry code"
+  
+def get_options():
+	pdb = 1
+	mmCIF = 0
+	xml = 0
+	struct_fact = 0
+	try:
+		opts,args = getopt.getopt(sys.argv[1:],'pcxs')
+	except:
+		print 'Unrecognized Option: ', sys.argv[1:]
+		usage()
+		return pdb, mmCIF, xml, struct_fact
+
+	for i in range(len(opts)):
+		if opts[i][0] == '-p':
+			pdb = 1
+		elif opts[i][0] == '-c':
+			pdb = 0
+			mmCIF = 1
+		elif opts[i][0] == '-x':
+			pdb = 0
+			xml = 1
+		elif opts[i][0] == '-s':
+			struct_fact = 1
+
+	return pdb, mmCIF, xml, struct_fact, args
+
+
+(pdb, mmCIF, xml, struct_fact, args) = get_options()
+
+for code in args:
+
+	if ( pdb == 1):
+		print "\nDownloading %s.pdb.gz .........." % (code)
+		url = 'ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/pdb%s.ent.gz' %code
+#		url = 'ftp://ftp.rcsb.org/pub/pdb/data/structures/all/pdb/pdb%s.ent.Z' % code
+		filename = code + '.pdb.gz'
+		try:
+			urllib.urlretrieve(url, filename)
+			print "Uncompressing %s.pdb" % code
+			os.system("gunzip %s.pdb" % code)
+		except:
+			print "Error retrieving %s" % url
+#		wget -O ${code}.pdb.Z ftp://ftp.rcsb.org/pub/pdb/data/structures/all/pdb/pdb${code}.ent.Z
+	elif (mmCIF == 1):
+		print "\nDownloading %s.cif.gz .........." % (code)
+		url = 'ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/mmCIF/%s.cif.gz' % code
+#		url = 'ftp://ftp.rcsb.org/pub/pdb/data/structures/all/mmCIF/%s.cif.Z' % code
+		filename = code + '.cif.gz'
+		try:
+			urllib.urlretrieve(url, filename)
+			print "Uncompressing %s.cif" % code
+			os.system("gunzip %s.cif" % code)
+		except:
+			print "Error retrieving %s" % url
+
+	if (xml == 1):
+		print "\nDownloading %s-noatom.xml.gz .........." % (code)
+		url = 'ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/%s-noatom.xml.gz' % code
+		filename = code + '-noatom.xml.gz'
+		try:
+			urllib.urlretrieve(url, filename)
+			print "Uncompressing %s-noatom.xml" % code
+			os.system("gunzip %s-noatom.xml" % code)
+		except:
+			print "Error retrieving %s" % url
+
+	if ( struct_fact == 1 ):
+		print "\nDownloading r%ssf.ent.gz .........." % (code)
+		url = 'ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/structure_factors/r%ssf.ent.gz' % code
+		filename = 'r' + code + 'sf.ent.gz'
+		try:
+			urllib.urlretrieve(url, filename)
+			print "Uncompressing r%ssf.ent" % code
+			os.system("gunzip r%ssf.ent" % code)
+		except:
+			print "Error retrieving %s" % url
+

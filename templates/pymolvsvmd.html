@@ -1,0 +1,108 @@
+
+
+<hr/>
+<h1>Pymol</h1>
+<br/>
+<p>Pymol en gran parte es de acceso gratuito  aunque algunas opciones
+especiales solo son asequibles si se compra la versión de Schrödinger
+INC. Es preferible instalar pymol en linux  o en Mac OSX, aunque tal vez es
+posible  instalarlo también en  windows usando  cygwin. En fedora  y en
+ubuntu pymol es  uno de los programas predetermindos  en las listas de
+software, así que se puede instalar usando:</p>
+<pre>
+sudo yum install pymol
+sudo apt-get install pymol
+</pre>
+<p>Sinembargo para obtener la versión  mas reciente y para poder hacer
+una pequeña modificacion que permite leer archivos de trayectorias de
+dinámica molecular (AMBER y CHARMM)  en pymol, es conveniente bajar el
+código fuente usando subversion:</p>
+<pre>
+svn co https://pymol.svn.sourceforge.net/svnroot/pymol/trunk pymol
+</pre>
+<p>Es recomendable  empezar el  proceso de instalación  automático con
+yum o  apt-get para  enterarse de los  paquetes de los  cuales depende
+pymol  para  poder instalarlos antes  de  realizar  la compilación  del
+código fuente bajado via subversion.</p>
+<p>Una vez  se han  instalado las dependencias  se puede  modificar el
+archivo  setup.py  de acuerdo  con  las  siguientes instrucciones  que
+proceden de la lista de usuariosde pymol en internet:</p>
+<pre>
+Open setup.py  and uncomment lines  126, 127, 146 and  change the
+zero on  line 293 with  a 1.  Basically  all the lines that  deal with
+"VMD plugin support".  Then recompile.
+</pre>
+<p>Con  estos  pasos  tan  solo  queda  seguir  las  instrucciones  de
+instalacion de pymol en INSTALL.</p>
+<p>Empezando con la versión 1.5 el truco anterior para habilitar la 
+lectura de archivos de trayectorias de dinámica molecular no funciona, 
+por lo cual hay que usar las nuevas instrucciones que se encuentran en 
+la página wiki de pymol (ver segundo mensaje de la lista de correos):</p>
+<a href="http://www.pymolwiki.org/index.php/Load_Traj">http://www.pymolwiki.org/index.php/Load_Traj</a>
+<br />
+<br />
+<p>En Mac OSX la instalacion puede tener un conflicto con los archivos
+de procesamiento gráfico  y es entonces necesario inciar  pymol con la
+opcion -M.</p>
+<pre>
+pymol -M 
+</pre>
+<p>Ahora tan solo  nos resta empezar a usar  pymol para ver
+modelos  moleculares.  Mi  forma  favorita  es aquella  de  bajar  una
+molécula del  protein data bank (PDB)  con un script  escrito en pymol
+que se usa en línea de comandos:</p>
+<pre>
+<a href="http://mesguerra.net/scripts/pdb_get">pdb_get</a> 1ehz
+</pre>
+<p>Una vez hemos bajado una estructura del PDB podemos visualizarla en
+  pymol. </p>
+<pre>
+pymol 1ehz.pdb
+</pre>
+<p>Sinembargo  obtenemos   una  estructura  que   tiene  unos  colores
+predeterminados que no corresponden a los colores usualmente usados en
+quimica,  esto   es,  los  carbonosson  de  color   verde,  color  que
+generalmente se reserva para los  cloros.  Para remediar esto se puede
+generar                                                              un
+archivo  <a  href="http://mesguerra.net/scripts/.pymolrc">.pymolrc</a>
+para configurar  el inicio de pymol  para que tenga un  fondo blanco y
+los  colores   de  los  atomos   correspondan  a  la   convencion  CPK
+(Corey-Pauling-Koltun)</p>
+<p>Una gran ventaja de pymol es que esta programado en pymol y por lo tanto
+escribir "scripts" para interactuar con pymol es muy natural.</p>
+<p>Practicamente  cualquier  tarea que  sea  necesario automatizar  en
+pymol se puede lograr creando un archivo .pml</p>
+<br/>
+
+<p>En el directorio:</p>
+<pre>
+~/Taller/Pymol/JamesPLewis
+</pre>
+<p>Se encuentra un ejemplo de como interactuar con pymol para generar una
+animacion de una doble helice de RNA que ha sido estirada levemente de
+uno de sus lados.</p>
+<br/>
+<br/>
+<br/>
+<hr/>
+<h1>VMD</h1>
+<br/>
+<p>VMD            1.9.1             se            puede            bajar
+de <a href="http://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD">http://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD</a>.
+Una   vez  compilado  VMD   no  requiere   configuraciones  especiales
+mayores.                                                             Un
+  archivo   <a   href="http://mesguerra.net/scripts/.vmdrc">.vmrdc</a>
+  puede usarse para guardar preferencias de visualizacion.</p>
+
+<p>VMD  es especialmente  poderoso para  interactuar con  el  programa de
+Mecanica y Dinamica Molecular NAMD,  pero tambien puede ser usado para
+manipulacion de trayectorias obtenidas con CHARMM.</p>
+
+<p>Los script  de VMD  tienen extension  vmd y se  pueden ejecutar  de la
+siguiente manera:</p>
+<pre>
+vmd -e cartoons.vmd
+</pre>
+
+
+

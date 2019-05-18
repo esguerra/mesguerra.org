@@ -1,0 +1,68 @@
+###############################################
+# Script for running xmgrace non-interactively
+#
+# Taken from:
+# http://ringo.ams.sunysb.edu/index.php/xmgrace
+# Robert rizzo lab. @ stony brook u.
+#
+# For running call:
+# xmgrace -batch patomrmsd.agr  -nosafe -hardcopy
+#
+# Author: mauricio esguerra
+# Date:   wednesday, march 16, 2011
+#
+###############################################
+arrange (1,1,.1,.6,.6,on,on,on)
+default font 4
+title font 4
+subtitle font 4
+xaxis  label font 4
+xaxis  ticklabel font 4
+yaxis  label font 4
+yaxis  ticklabel font 4
+legend font 4
+
+focus g0
+read nxy "output/rmsd_patom_a.dat"
+read nxy "output/rmsd_patom_b.dat"
+read nxy "output/rmsd_patom_c.dat"
+histogram (s0, mesh(0, 6.0, 100), off, off)
+histogram (s1, mesh(0, 6.0, 100), off, off)
+histogram (s2, mesh(0, 6.0, 100), off, off)
+g0.s0 hidden true
+g0.s1 hidden true
+g0.s2 hidden true
+s3  line color 1
+s3  legend "Chain A"
+s4  line color 2
+s4  legend "Chain B"
+s5  line color 4
+s5  legend "Chain C"
+title "RMSD of P atoms to fiber-model triplex"
+subtitle "Triplex-loop-LNA"
+#xaxis label "time (ps)"
+xaxis label "RMSD (\cE\C)"
+yaxis label "Frequency"
+
+#autoscale
+world 0, 0, 6, 900
+xaxis  tick major 1
+#xaxis  tick minor ticks 9
+yaxis  tick major 100
+#yaxis  tick minor ticks 4
+
+#CHANGE FONTS
+#CHANGE SCALES
+#LABEL Y-AXIS (No. Bins)
+
+
+
+print to "patom_hist.png"
+hardcopy device "PNG"
+page size 2560, 2048
+device "PNG" font antialiasing on
+#device "png" op "transparent:on"
+device "PNG" op "compression:9"
+print
+
+

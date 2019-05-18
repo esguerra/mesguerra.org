@@ -1,0 +1,137 @@
+###############################################
+# Script for running xmgrace non-interactively
+#
+# Inspired from:
+# http://ringo.ams.sunysb.edu/index.php/xmgrace
+# Robert rizzo lab. @ stony brook u.
+#
+# For running call:
+# xmgrace -batch lines.agr -nosafe -hardcopy
+#
+# Author: mauricio esguerra
+# Date:   tuesday, november 17, 2015
+#
+###############################################
+read bardy "output/original.dat"
+read bardy "output/best.dat"
+read bardy "output/experimental.dat"
+
+arrange (1,1,.1,.6,.6,on,on,on)
+
+g0 on
+g0 type Chart
+g0 bar hgap 0.001
+
+s0 type bardy
+s0 symbol 0
+s0 symbol size 1.490000
+s0 symbol color "black"
+s0 symbol pattern 1
+s0 symbol fill color "black"
+s0 symbol fill pattern 4
+s0 symbol linewidth 1.0
+s0 symbol linestyle 1
+s0 symbol char 65
+s0 symbol char font 0
+s0 symbol skip 0
+s0 line type 0
+s0 line color "black"
+s0 legend "Original"
+
+s1 type bardy
+s1 symbol 0
+s1 symbol size 1.490000
+s1 symbol color "red"
+s1 symbol pattern 1
+s1 symbol fill color "red"
+s1 symbol fill pattern 4
+s1 symbol linewidth 1.0
+s1 symbol linestyle 1
+s1 symbol char 65
+s1 symbol char font 0
+s1 symbol skip 0
+s1 line type 0
+s1 line color "red"
+s1 legend "Best"
+
+s2 type bardy
+s2 symbol 0
+s2 symbol size 1.490000
+s2 symbol color "blue"
+s2 symbol pattern 1
+s2 symbol fill color "blue"
+s2 symbol fill pattern 4
+s2 symbol linewidth 1.0
+s2 symbol linestyle 1
+s2 symbol char 65
+s2 symbol char font 0
+s2 symbol skip 0
+s2 line type 0
+s2 line color "blue"
+s2 legend "Experimental"
+s2 errorbar on
+s2 errorbar place both
+s2 errorbar color "blue"
+
+
+altxaxis  on
+altxaxis  type zero true
+altxaxis  bar on
+altxaxis  bar linewidth 2
+altxaxis  label ""
+altxaxis  label place auto
+altxaxis  ticklabel off
+altxaxis  tick off
+
+with string
+  string on
+  string loctype view
+  string 0.17, 0.07
+  string color "black"
+  string rot 0
+  string font 4
+  string just 0
+  string char size 1.000000
+  string def "  I66A      L167A       L85A       M177A      N181A    N253A    S277A    Y271A"
+
+default font 4
+
+
+autoscale
+world 0, -4.0, 9, 4.0
+
+title "\xD\f{}\xD\f{}G of Mutated Residues"
+title font 4
+subtitle "The name of your protein here"
+subtitle font 4
+xaxis label ""
+xaxis label place normal
+xaxis label font 4
+xaxis ticklabel font 4
+xaxis ticklabel off
+xaxis tick major 1
+xaxis tick minor ticks 0
+
+yaxis label font 4
+yaxis label "\xD\f{}\xD\f{}G"
+yaxis tick major grid on
+yaxis tick major linewidth 0.5
+yaxis tick major linestyle 3
+yaxis tick major 1
+yaxis ticklabel font 4
+#yaxis tick minor ticks 4
+
+legend 0.12, 0.88
+legend font 4
+
+
+print to "lines.png"
+hardcopy device "PNG"
+page size 2560, 2048
+device "PNG" font antialiasing on
+#device "png" op "transparent:on"
+device "PNG" op "compression:9"
+#print
+
+
+

@@ -1,15 +1,16 @@
 {% extends "layout.html" %}
 {% block content %}
 <br/>
+<nav>
 <aside>
-  <ul>
-    <li><a href="#tuto">- Tutorials</a></li>
-    <li><a href="#data">- Databases</a></li>
-    <li><a href="#proj">- Projects</a></li>
-    <li><a href="#script">- Scripts</a></li>
-  </ul>
+<ul>
+<li><a href="#tuto">- Tutorials</a></li>
+<li><a href="#data">- Databases</a></li>
+<li><a href="#proj">- Projects</a></li>
+<li><a href="#script">- Scripts</a></li>
+</ul>
 </aside>
-
+</nav>
 
 <article>
   <hr/>
@@ -17,31 +18,29 @@
   <hr/>
   <br/>
   <!-- Use table format to organize tutorial contents. -->
-  <table style="border: 0px solid white">
+  <table >
 
     <!-- ----- Tutorial I ---- --> 
     <tr> 
 
-      <td style="border: 0px solid white">  
-        <a href="image1.png"><img src="image1.png" width="200"> </a>
+      <td>  
+        <a href="{{ url_for('static', filename='images/image1.png') }}"><img src="{{ url_for('static', filename='images/image1.png') }}" width="400"> </a>
       </td> 
       
       <!-- ----- Spacing between fig & paper ---- --> 
       <td width="30"></td> 
 
 
-      <td style="border: 0px solid white; vertical-align:top">
+      <td>
         <h2>Setup Linux Box for Computational Chemistry.</h2> 
         <font size="2"> 
-          <a href="linux.pdf">[PDF]</a> 
+          <a href="{{ url_for('static', filename='craft/linux.pdf') }}">[PDF]</a> 
         </font> 
         <br/> 
-        <font size="2"> 
           This tutorial is mainly a collection of common tasks when setting up a
           Linux system for computational chemistry use.
           It's mainly based on <b>Fedora</b>, so it is also RedHat compatible. I try to
           keep it up to date, so right now it should work with <b>Fedora 21</b>.
-        </font>
       </td>
     </tr> 
 
@@ -57,27 +56,24 @@
     <!-- ----- Tutorial II ---- --> 
     <tr> 
 
-      <td style="border: 0px solid white">  
-        <a href="gnra21.png"><img src="gnra21.png" width="200"> </a>
+      <td>  
+        <a href="{{ url_for('static', filename='images/gnra21.png') }}"><img src="{{ url_for('static', filename='images/gnra21.png') }}" width="400"> </a>
       </td> 
       
       <!-- ----- Spacing between fig & paper ---- --> 
       <td width="30"></td> 
 
 
-      <td style="border: 0px solid white; vertical-align:top">
-        <h2>Taller de Metodos Basados en el Modelo de Bloques Rigidos para el Modelamiento de Acidos Nucleicos</h2>
+      <td>
+        <h2>Taller de Métodos Basados en el Modelo de Bloques Rígidos para el Modelamiento de Ácidos Nucléicos</h2>
         <font size="2"> 
-          <a href="../workshop/">Enlace a la pagina principal del taller.</a>
+          <a href="/workshop">Enlace a la pagina principal del taller.</a>
         </font> 
         <br/> 
-        <font size="2"> 
           <p>Taller de modelamiento de acidos nucleicos usando el metodo de bloques rigidos dictado 
           en la Universidad Nacional de Colombia.</p>
           <p>Workshop on rigid-block based methods for modeling nucleic acids at the National University
           of Colombia.</p>
-        </font>
-
       </td>
     </tr> 
 
@@ -93,22 +89,20 @@
     <!-- ----- Tutorial III ---- --> 
     <tr> 
       <td> 
-        <a href="ism.png"><img src="ism.png" width="200"> </a>
+        <a href="{{ url_for('static', filename='images/ism.png') }}"><img src="{{ url_for('static', filename='images/ism.png') }}" width="400"> </a>
       </td> 
       
       <!-- ----- Spacing between fig & paper ---- --> 
       <td width=30></td> 
       
-      <td style="border: 0px solid white; vertical-align:top">
+      <td>
         <h2>Glycine Formation in the Interstellar Medium.</h2> 
         <font size="2"> 
-          <a href="glicina.pdf">[PDF]</a> 
+          <a href="{{ url_for('static', filename='craft/glicina.pdf') }}">[PDF]</a> 
         </font> 
         <br/> 
-        <font size="2"> 
           This is an old reserch proposal when I was interested in prebiotic chemistry in the 
           interstellar medium. It's in Spanish, but I think it has a nice introduction to astrochemistry based mainly on the work of Eric Herbst and Mayo Greenberg.
-        </font>
       </td> 
     </tr> 
 
@@ -124,23 +118,21 @@
     <!-- ----- Tutorial IV ---- --> 
     <tr> 
       <td> 
-        <a href="chemthermo.png"><img src="chemthermo.png" width="200"> </a>
+        <a href="{{ url_for('static', filename='images/chemthermo.png') }}"><img src="{{ url_for('static', filename='images/chemthermo.png') }}" width="400"> </a>
       </td> 
       
       <!-- ----- Spacing between fig & paper ---- --> 
       <td width=30></td> 
       
-      <td style="border: 0px solid white; vertical-align:top">
+      <td>
         <h2>Chemical Thermodynamics Constants and Relations</h2> 
         <font size="2"> 
-          <a href="formulas.pdf">[PDF]</a> 
+          <a href="{{ url_for('static', filename='craft/formulas.pdf') }}">[PDF]</a> 
         </font> 
         <br/> 
-        <font size="2"> 
           This is  just a broad cheat-sheet  with a collection of  commonly used
           formulas   in  chemical   thermodynamics.  There   is,  aditionally   a
           compilation of relevant constants and molecular scales.
-        </font>
       </td> 
     </tr> 
     

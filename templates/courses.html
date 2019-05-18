@@ -1,20 +1,44 @@
 {% extends "layout.html" %}
 {% block content %}
 
+<article>
 <br /> 
 <h1>Courses</h1> 
 <hr /> 
 
-<h2>Spring 2012</h2>
+<ul>
+<li><h2>Spring 2012</h2></li>
+</ul>
 <br/>
-<h3><a  href="ki2430.htm"> - Principles of  Nucleic  Acid Structure  (KI
-    2430) (Lecture 6)</a></h3>
+
+<h3>Principles of Nucleic Acid Structure</h3>
+<h3>(Karolinska Institute Doctoral Course 2430)</h3>
+</br>
+<h4>Lecture 6</h4>
+<br/>
+<p>Lecture materials can be dowloaded via github:</p>
+<pre>
+<a href="https://github.com/esguerra/ki2430">
+git clone https://github.com/esguerra/ki2430.git
+</a>  
+</pre>  
+
 
 <br/>
-<h2>Spring 2014</h2>
+<ul>
+<li><h2>Spring 2014</h2></li>
+</ul>
 <br/>
-<h3><a href="https://bitbucket.org/esguerra/ki2014na/src"> - Geometrical Description of Nucleic Acids, tutorial on 3DNA and pymol. 
-</a></h3>
+
+<h3>Geometrical Description of Nucleic Acids, tutorial on 3DNA and pymol.</h3>
+<h3>(Karolinska Institute Doctoral Course 2430)</h3>
+</br>
+<p>Lecture materials can be dowloaded from bitbucket:</p>
+<pre>
+<a href="https://bitbucket.org/esguerra/ki2014na/src">
+git clone https://bitbucket.org/esguerra/ki2014na.git
+</a>  
+</pre>  
 
 <ol id="footer"></ol>
 <script>
@@ -22,5 +46,6 @@ jQuery(function($){
 $("#footer").load("footer");
 });
 </script>
-
+</article>
 {% endblock content %}
+

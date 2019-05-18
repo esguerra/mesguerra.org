@@ -1,0 +1,50 @@
+_ feedback push
+_ feedback disable,all,everything
+# Pymolrc file to get what I want on startup
+
+# use white background
+set bg_rgb, 1 1 1
+
+# set orthoscopic, rather than perspective as the default
+set orthoscopic, 1
+
+# set prefered ray trace options
+#set ray_trace_mode, 3
+#set ray_trace_fog,0
+#set ray_shadows,0
+#set ray_trace_gain, 0
+#set antialias, 2
+
+# set size of graphics window
+#viewport 800, 600
+#viewport 1100, 900
+#viewport 1280,1024
+
+set hash_max, 1000
+
+# turn off auto zoom
+#set auto_zoom, 0
+
+
+## Uncomment if you wanna set
+## spheres by default
+# unset auto_show_lines
+# unset auto_show_nonbonded
+# set auto_show_spheres
+# if your machine supports openGL shaders
+# uncomment the following
+#
+# set sphere_mode, 5
+
+
+
+# color according to CPK
+set_color carbon= [0.0 , 0.0 , 0.0]
+set_color nitrogen= [0.0 , 0.0 , 1.0]
+set_color oxygen= [1.0 , 0.0 , 0.0]
+set_color phosphorus= [1.0 , 1.0 , 0.0]
+
+# END COMMANDS
+_ feedback pop
+
+

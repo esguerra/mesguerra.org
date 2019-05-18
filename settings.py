@@ -2,7 +2,23 @@
 # Settings to flaskify my homepage.
 import os
 from flask import Flask, render_template, url_for, send_file, render_template_string
+
 app = Flask(__name__)
+
+def make_tree(path):
+    tree = dict(name=os.path.basename(path), children=[])
+    try: lst = os.listdir(path)
+    except OSError:
+        pass #ignore errors
+    else:
+        for name in lst:
+            fn = os.path.join(path, name)
+            if os.path.isdir(fn):
+                tree['children'].append(make_tree(fn))
+            else:
+                tree['children'].append(dict(name=name))
+    return tree
+
 
 @app.route("/")
 @app.route("/home")
@@ -30,27 +46,22 @@ def craft():
     return render_template('craft.html', title='Craft')        
 
 @app.route("/documents")
-def dirtree():
+def dirtree1():
     path = os.path.abspath(u'static/documents')
     return render_template('documents.html', tree=make_tree(path), title='Documents')
 
-def make_tree(path):
-    tree = dict(name=os.path.basename(path), children=[])
-    try: lst = os.listdir(path)
-    except OSError:
-        pass #ignore errors
-    else:
-        for name in lst:
-            fn = os.path.join(path, name)
-            if os.path.isdir(fn):
-                tree['children'].append(make_tree(fn))
-            else:
-                tree['children'].append(dict(name=name))
-    return tree
+@app.route("/scripts")
+def dirtree2():
+    path = os.path.abspath(u'static/scripts')
+    return render_template('scripts.html', tree=make_tree(path), title='Scripts')
 
 @app.route("/tricks/pymol")
 def pymol():
     return render_template('pymol.html', title='Pymol')
+
+@app.route("/tricks/pymol/example1")
+def example1():
+    return render_template('example1.html', title='Pymol Example 1')
 
 @app.route("/tricks/vmd")
 def vmd():
@@ -115,6 +126,22 @@ def regexp():
     except Exception as exmsg:
         exmsg = render_template_string('The file regexp.pdf could not be found.')
         return exmsg
+
+@app.route("/workshop")
+def workshop():
+    return render_template('workshop.html', title='Workshop in Colombia')     
+
+@app.route("/pymolvsvmd")
+def pymolvsvmd():
+    return render_template('pymolvsvmd.html', title='Pymol vs. Vmd')
+
+@app.route("/traj")
+def traj():
+    return render_template('traj.html', title='Trajectories')
+
+@app.route("/randg")
+def randg():
+    return render_template('randg.html', title='R and Grace')
 
 if __name__ == '__main__':
     app.run(debug=True)

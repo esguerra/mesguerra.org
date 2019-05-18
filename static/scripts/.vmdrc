@@ -1,0 +1,18 @@
+
+# make sure, that the main menu is active
+menu main on
+
+# modify display settings
+display projection orthographic
+axes location off
+color Display Background white
+
+# redefine some colors
+color Name C black    
+#color Name F pink
+color Name P yellow
+#color Type C black    
+#color Type F pink     
+#color Type P yellow
+
+

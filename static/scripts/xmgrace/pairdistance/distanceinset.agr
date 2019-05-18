@@ -1,0 +1,120 @@
+################################################################################
+# Script for running xmgrace non-interactively
+#
+# For running call:
+# xmgrace -batch distanceinset.agr  -nosafe -hardcopy
+#
+# Author: mauricio esguerra
+# Date:   friday, january 13, 2017
+#
+################################################################################
+# Arrange existing graphs to form nrows by ncols matrix, leaving offset at
+# each page edge with hgap and vgap relative horizontal and vertical spacings
+# arrange(nrows, ncols, offset, hgap, vgap, hvinv, hinv, vinv)
+arrange (1, 1,.1,.6,.6,on,on,on)
+default font 4
+title font 4
+subtitle font 4
+xaxis  label font 4
+xaxis  ticklabel font 4
+yaxis  label font 4
+yaxis  ticklabel font 4
+legend font 4
+
+# THIS CREATES A HISTOGRAM
+g0 on
+target g0.s0
+read nxy "pairdistance.dat"
+histogram (s0, mesh(0, 4.4, 100), off, off)
+s1 line color 2
+g0.s0 hidden true
+world 0, 0, 6.0, 150
+xaxis  tick major 1.0
+#xaxis  tick minor ticks 9
+xaxis  tick place normal
+yaxis  tick major 50
+#yaxis  tick minor ticks 4
+yaxis  tick place normal
+view 0.52, 0.14, 0.88, 0.42
+
+# THIS CREATES A SCATTERPLOT WITH FITTED LINES
+g1 on
+target g1.s0
+read nxy "pairdistance.dat"
+#imin(s0.x)  min value index in array.
+#imax(s0.x)  max value index in array.
+#runavg(s0, 12)
+#regress(s0, 1)
+#interpolate(s0, mesh(min(s0.x), max(s0.x), rint(imax(s0.x)/100.0)), spline, off)
+interpolate(s0, mesh(min(s0.x), max(s0.x), 100.0), spline, true)
+#fft(s0, 0)
+# Uncoment to scale in y by 50
+# s0.y = s0.y * 50
+s0 line color 4
+target g2.s1
+#g2.s0 hidden true
+world 0, 0, 2300, 4.5
+xaxis  tick major 1000
+xaxis  tick minor ticks 10
+xaxis  tick place normal
+yaxis  tick major 1.0
+#yaxis  tick minor ticks 4
+yaxis  tick place normal
+#view 0.10, 0.10, 0.90, 0.90
+view xmin 0.10
+view xmax 0.90
+view ymin 0.80
+view ymax 0.90
+
+
+# THIS CREATES THE SCATTERPLOT
+g2 on
+target g2.s0
+read nxy "pairdistance.dat"
+#interpolate(s0, mesh(min(s0.x), max(s0.x), rint(imax(s0.x)/100.0)), spline, off)
+runavg(g2.s0, 200)
+#interpolate(s0, mesh(min(s0.x), max(s0.x), 100.0), spline, true)
+g2.s0 line color 4
+g2.s0 linestyle 1
+world 0, 0, 2300, 4.5
+xaxis  tick major 1000
+xaxis  tick minor ticks 10
+xaxis  tick place normal
+yaxis  tick major 1.0
+#yaxis  tick minor ticks 4
+yaxis  tick place normal
+#view 0.10, 0.10, 0.90, 0.90
+view xmin 0.10
+view xmax 0.90
+view ymin 0.80
+view ymax 0.90
+
+
+
+# THIS CREATES AN EMPTY PLOT
+g3 on
+title "Pair distance in \cE\C "
+subtitle "tRNA-Lys  "
+xaxis label "Time (ps)"
+yaxis label "Distance (\cE\C)"
+target g3.s0
+read nxy "pairdistance.dat"
+view 0.0, 0.0, 1.0, 1.0
+g3 hidden true
+g3.s0 hidden true
+
+
+
+
+print to "pairdistance.png"
+hardcopy device "PNG"
+# page size width, length
+#page size 2560, 2660
+#page size 2560, 2048
+#page size 950,900
+page size 650,600
+device "PNG" font antialiasing on
+#device "png" op "transparent:on"
+device "PNG" op "compression:9"
+print
+

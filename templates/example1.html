@@ -1,0 +1,44 @@
+
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<h1>Pymol Example I</h1>
+<hr/>
+
+<p>After making a canonical A-RNA base-pair step with 3DNA and
+centering it on the middle reference frame, one can follow-up with
+this pymol exercise.</p>
+
+<pre>
+load arna_m.pdb
+load arna_mm.r3d 
+as surface 
+set solvent_radius, 0.6 
+set surface_quality, 1 
+pseudoatom xx, pos=(0,0,0), label=origin 
+ramp_new proximityRamp, xx, selection=all, range=[0,15], color=rainbow 
+set surface_color, proximityRamp, all 
+recolor; rebuild 
+set sphere_scale, 0.3, xx 
+as sphere, xx 
+set transparency, 0.4 
+show cgo 
+</pre>
+<br/>
+You can also dowload a bash script to carry out the exercise:
+<br/>
+<a href="{{ url_for('static', filename='pymol/example1.sh') }}">example1.sh</a>
+
+
+</article>
+
+<!-- FOOTER SECTION -->
+<br/>
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("../../footer");
+});
+</script>
+
+{% endblock content %}
