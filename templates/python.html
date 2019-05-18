@@ -1,0 +1,106 @@
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<h1>Python Tricks</h1>
+<hr/>
+
+<br/>
+<h2> - Python Types</h2>
+<br/>
+For types in Python see: <a href="http://docs.python.org/library/stdtypes.html">-Python Types-</a>
+<br/>
+<br/>
+<h3> * Strings</h3>
+<pre>
+dir(str)          # show all attributes and methods of str
+str.lower()       # Change string to lowercase
+str.rstr()        # Get rid of problematic carriage returns \r and linefeeds \n
+</pre>
+<br/>
+<br/>
+<h3> * Lists</h3>
+<pre>
+dir(list)         # show all attributes and methods of list
+list.append(x)    # Add item to end of list
+list.insert(i,x)  # Insert item at give position i
+</pre>
+<br/>
+<a href="https://docs.python.org/2/tutorial/datastructures.html">-All methods for the list object-</a>
+<br/>
+<a href="https://developers.google.com/edu/python/lists?hl=en">-Google for devs-</a>
+<br/>
+<br/>
+<br/>
+<h2> - Python Built-in Functions - </h2>
+<br/>
+For builtins go to : <a href="https://docs.python.org/2/library/functions.html">-Python Builtins-</a>
+<br/>
+<br/>
+<h3> * zip</h3>
+It's a function that returns a list of tuples from two single lists, for example:
+<pre>
+x = [1, 2, 3]
+y = [A, B, C]
+zipped = zip(x,y)
+print zipped
+[(1,A),(2,B),(3,C)]
+</pre>
+<br/>
+<h2> - General Tricks - </h2>
+<br/>
+<pre>
+python -m pdb example1.py                 # To invoke the debugger to debug scripts  
+python -c "c = 3.6323 + 3.8423; print c"  # One liners
+</pre>
+
+
+<br/>
+<h2> - Setting up Python</h2>
+<br/>
+To be able to manipulate data files easily in python, as it would be
+done in octave or R, one first has to "install" Numpy, and Matplotlib.
+In ubuntu it's easy and one can do it with apt-get install.
+<br/>
+Another program which is useful is:
+<pre>
+sudo apt-get install python-setuptools
+</pre>
+<br/>
+With this installed it's easy to integrate python libraries, for example pymc:
+<pre>
+easy_install pymc
+</pre>
+<br/>
+<!--
+<h2>X3DNA Parser Cheat Sheet</h2>
+<hr/>
+First start python
+<pre>
+# python
+</pre>
+Once in python invoke packages
+<pre>
+import X3DNA
+from X3DNA import PDBParser
+</pre>
+Then just follow up the example in guide.pdf
+-->
+<br/>
+<br/>
+<h2> - Python Links</h2>
+<br/>
+<a href="http://floppsie.comp.glam.ac.uk/Glamorgan/gaius/scripting/19.html"> * Scripting </a>
+<br/>
+<a href="http://www.siafoo.net/article/52"> * Tricks with lists, dictionaries, functions. </a>
+<br/>
+
+<!-- FOOTER SECTION -->
+<br/>
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("../footer");
+});
+</script>
+</article>
+{% endblock content %}

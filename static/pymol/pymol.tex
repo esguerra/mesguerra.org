@@ -1,0 +1,251 @@
+%===============================================================================
+%  Preamble
+%===============================================================================
+\documentclass[10pt, oneside, pdftex]{article}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[latin1]{inputenc}			% Input encoding
+\usepackage{amsmath, amstext, amsfonts}		% Math
+\usepackage{xcolor}
+\definecolor{bl}{rgb}{0.0,0.2,0.6} 
+\usepackage{sectsty}
+\usepackage{url}
+\usepackage{fancyvrb}
+\usepackage{listings}
+\usepackage{setspace}
+\singlespacing
+\usepackage[left=2.54cm,bottom=2.00cm,top=2.00cm,right=2.54cm]{geometry}
+\usepackage[compact]{titlesec} 
+\allsectionsfont{\color{bl}\scshape\selectfont}
+
+%===============================================================================
+%  Definitions
+%===============================================================================
+% Define a new command that prints the title only
+\makeatletter							% Begin definition
+\def\printtitle{%						% Define command: \printtitle
+  {\color{bl} \centering \huge \sc \textbf{\@title}\par}}	% Typesetting
+\makeatother							% End definition
+
+\title{Pymol Tricks \\ 
+	\large \vspace*{-10pt}A compilation of recipes\vspace*{10pt}}
+
+% Define a new command that prints the author(s) only
+\makeatletter							% Begin definition
+\def\printauthor{%					% Define command: \printauthor
+    {\centering \small \@author}}				% Typesetting
+\makeatother							% End definition
+
+\author{%
+	Mauricio Esguerra \\
+	mauricio.esguerra@gmail.com \\
+	\vspace{20pt}
+	}
+
+% Custom headers and footers
+\usepackage{fancyhdr}
+	\pagestyle{fancy}					% Enabling the custom headers/footers
+\usepackage{lastpage}	
+	% Header (empty)
+	\lhead{}
+	\chead{}
+	\rhead{}
+	% Footer (you may change this to your own needs)
+	\lfoot{\footnotesize \texttt{mesguerra.org} - Pymol Tricks}
+	\cfoot{}
+	\rfoot{\footnotesize page \thepage\ }%of \pageref{LastPage}}	% "Page 1 of 2"
+	\renewcommand{\headrulewidth}{0.0pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+
+% Change the abstract environment
+\usepackage[runin]{abstract}			% runin option for a run-in title
+\setlength\absleftindent{30pt}		% left margin
+\setlength\absrightindent{30pt}		% right margin
+\abslabeldelim{\quad}						% 
+\setlength{\abstitleskip}{-10pt}
+\renewcommand{\abstractname}{}
+\renewcommand{\abstracttextfont}{\color{bl} \small \slshape}	% slanted text
+
+
+%%% Start of the document
+\begin{document}
+%%% Top of the page: Author, Title and Abstact
+\printtitle 
+
+\printauthor
+
+\begin{abstract}
+\noindent Installing pymol nowadays is very easy in almost any Linux version with a
+package management system like yum or apt-get. For more information on this the
+pymolwiki at \url{http://pymolwiki.org} is the best resource. The following is 
+just a compilation of tricks for pymol power-users.
+\end{abstract}
+
+
+\section*{ - General}
+\definecolor{mygray}{rgb}{0.9,0.9,0.9}
+%\lstset{language=Python,
+%backgroundcolor=\color{mygray},
+%frame=single,
+%basicstyle=\footnotesize\sffamily}
+\fvset{fontfamily=courier,
+fontsize=\small,
+frame=single}
+%backgroundcolor=\color{mygray}}
+%\begin{lstlisting}
+\begin{Verbatim}
+bg white                       # Turn background color to white
+save rna6.pse                  # Save your working session to pse file
+set valence, 1                 # Show double bonds.
+h_add                          # Show hydrogens.  
+pymol -qc bla.pml >& bla.log & # To invoke without X11 display
+pymol -M                       # Invoke mono mode instead of stereo
+                               # to avoid flicker in some screens.
+unbond (id 8), (id 2)          # Remove a bond between atoms
+bond (id 8), (id 2)            # Create a bond between atoms
+select carbons, symbol c       # Select all carbon atoms and call them carbons.
+color black, carbons           # Color the carbons selection black.
+disable selectionname          # Hides/disables a loaded structure(selection).
+enable selectionname           # Shows/enables a loaded structure(selection).
+set internal_gui, 0            # Hide object control panel
+\end{Verbatim}
+%\end{lstlisting}
+
+\section*{ - Labels}
+\begin{Verbatim}
+label (n;C1'), "%s" % (name)
+set label_color, black
+set label_font_id, 4
+set label_size, 3
+set label_position, [2,0,0]
+show labels
+\end{Verbatim}
+
+\section*{ - Spheres}
+\begin{Verbatim}
+set sphere_scale, 0.25
+\end{Verbatim}
+
+\section*{ - Sticks}
+\begin{Verbatim}
+show sticks, selectionname
+set stick_radius, 0.1
+set stick_ball, on #Makes the stick command show ball and stick
+set stick_ball_ratio, 1.5
+\end{Verbatim}
+
+\section*{ - Ribbons}
+\begin{Verbatim}
+set ribbon_color, marine
+set ribbon_width, 2
+set ribbon_sampling, 1
+set ribbon_smooth, 1
+\end{Verbatim}
+
+\section*{ - Cartoon}
+\begin{Verbatim}
+cartoon putty
+set cartoon_ladder_mode, 0
+set cartoon_transparency, 0.5
+set cartoon_ring_finder, 0
+cartoon dumbbell
+set cartoon_dumbbell_width, 0.2
+set cartoon_dumbbell_radius, 0.4
+set cartoon_color, marine, resi 34-67
+set cartoon_color, blue, resi 68,78
+show cartoon
+\end{Verbatim}
+
+\section*{ - Ray tracing}
+\begin{Verbatim}
+set ray_trace_mode, 3
+set ray_trace_fog,0
+set ray_shadows,0
+set depth_cue, 0            #This one with care or it might look funky.
+set antialias,1
+set ray_trace_gain, 0.005
+ray 1600,1200
+png img1.png
+\end{Verbatim}
+
+\section*{ - Rotating}
+"turn" to rotate all loaded objects, "rotate" for individual objects
+\begin{Verbatim}
+turn x, 10
+\end{Verbatim}
+
+
+
+Definition of Objects and Selections found at:
+
+\url{http://pymolwiki.org/index.php/Objects_and_Selections}
+
+\section*{ - Important Settings}
+
+\fvset{frame=single, fontfamily=courier, fontsize=\small}
+\begin{Verbatim}
+orthoscopic (0 or 1) controls whether the OpenGL renderer uses the same
+orthoscopic transformation as the renderer. You'll want to set this to 1
+when preparing figures so that OpenGL and raytracing match pixel-for-pixel.
+
+ambient (0.0-1.0) controls the ambient light intensity for both OpenGL and the
+ray-tracer.
+
+ambient_scale (float) controls the relative ambient intensity between OpenGL
+and the ray-tracer.
+
+antialias (0 or 1) generate a "smooth" image (best quality, but takes
+4X as long).
+
+direct (0.0-1.0) the planer light intesity originating from the camera.
+
+gamma (0.1-2.0) gamma transformation applied after rendering is complete.
+
+light (vector) the position of the light.
+
+reflect (0.0-1.0) the planer light intesity originating from the light source.
+
+spec_reflect (0.0-1.0) intensity of the specular reflection from the light.
+
+spec_power (1-100) how localized is the specular reflection (higher=smaller).
+\end{Verbatim}
+
+
+\section*{Electrostatic Potential Maps}
+Go to:
+\url{http://nbcr-222.ucsd.edu/pdb2pqr_1.8/}
+
+Upload your pdb or use one id you like.
+
+Download the resulting pqr file
+
+open in pymol
+
+
+%\lstset{language=python, frame=single}
+\fvset{frame=single, fontfamily=courier, fontsize=\small}
+\begin{Verbatim}
+color white
+color blue, (pc; > 0.1)
+color red,  (pc; < 0.1)
+show surface
+\end{Verbatim}
+
+\section*{Ray Tracing}
+To ray trace an image with an opaque background.
+\begin{Verbatim}
+# turn on transparent alpha channel
+set ray_opaque_background, off
+\end{Verbatim}
+
+\section*{General Tips}
+Shift-right\_click and slide controls fog intensity and after a point
+it starts clipping.
+
+\noindent Shift-wheel controls fog intensity and after a point it starts
+clipping. 
+
+\end{document}
+
+
+

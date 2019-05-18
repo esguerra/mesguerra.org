@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Settings to flaskify my homepage.
 import os
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, send_file, render_template_string
 app = Flask(__name__)
 
 @app.route("/")
@@ -70,10 +70,51 @@ def git():
 
 @app.route("/tricks/svn")
 def svn():
-    return render_template('svn.html', title='svn')    
+    return render_template('svn.html', title='svn')
 
+@app.route("/tricks/mysql")
+def mysql():
+    return render_template('mysql.html', title='mysql')
 
+@app.route("/tricks/django")
+def django():
+    return render_template('django.html', title='django')
 
+@app.route("/tricks/python")
+def python():
+    return render_template('python.html', title='python')
+
+@app.route("/tricks/linux")
+def linux():
+    return render_template('linux.html', title='linux')
+
+@app.route("/tricks/docker")
+def docker():
+    return render_template('docker.html', title='docker')
+
+@app.route("/tricks/ssh")
+def ssh():
+    return render_template('ssh.html', title='ssh')
+
+@app.route("/tricks/gpg")
+def gpg():
+    return render_template('gpg.html', title='gpg')
+
+@app.route("/tricks/emacs")
+def emacs():
+    return render_template('emacs.html', title='emacs')
+
+@app.route("/tricks/google")
+def google():
+    return render_template('google.html', title='google')
+
+@app.route('/tricks/regexp')
+def regexp():
+    try:
+        return send_file('static/regexp/regexp.pdf', attachment_filename='regexp.pdf')
+    except Exception as exmsg:
+        exmsg = render_template_string('The file regexp.pdf could not be found.')
+        return exmsg
 
 if __name__ == '__main__':
     app.run(debug=True)

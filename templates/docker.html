@@ -1,0 +1,36 @@
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<h1>Docker Cheatsheet</h1>
+<hr>
+
+<pre>
+docker images -a                          # list local images
+docker pull esguerra/q6                   # pull a docker container from docker hub
+docker push esguerra/q6                   # push a docker container to docker hub  
+docker search debian                      # look for containers
+docker system prune -a                    # delete all local containers
+docker run esguerra/q6 bash -c "ls; pwd"  # run commands in container
+</pre>
+
+<br />
+<hr />
+Further Information and Reference:
+<br />
+<a href="https://docs.docker.com/engine/reference/commandline/docker/#child-commands"> -Reference commands- </a>
+<br />
+<a href="https://tuhrig.de/difference-between-save-and-export-in-docker/"> - docker commit - </a>
+<br />
+<a href="https://medium.com/mobileforgood/patterns-for-continuous-integration-with-docker-on-travis-ci-71857fff14c5"> - patterns docker and travis ci - </a>
+<br />
+
+<!-- FOOTER SECTION -->
+<br/>
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("../footer");
+});
+</script>
+</article>
+{% endblock content %}

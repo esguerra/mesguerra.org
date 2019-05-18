@@ -1,0 +1,77 @@
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<code>
+EMACS CHEATSHEET
+--------------------------------------------------------------------------------
+##Author: Mauricio Esguerra  
+##Date: May, 2012  
+##Update: Jan, 2015  
+
+1. Basic Commands
+
+C-x C-f
+Find and open file
+
+C-x C-s
+Save file
+
+C-x C-w
+Write rendered contents to text file
+
+C-x C-c
+Quit emacs
+
+
+2. Miscellaneous
+
+C-x h
+Select all.
+
+M-x indent-region
+Indent whole area.
+
+C-x k
+Kill buffer
+
+M-x tabbar-mode
+
+M-x html-mode
+Changes the syntax highlighting mode to the type you want, in this
+case html. Other common modes are, latex-mode, java-mode, python-mode,
+php-mode, c-mode, sql-mode.
+
+M-x line-number-mode
+Enable or disable the line number mode.
+
+M-x column-number-mode
+Enable or disable the column number mode.
+
+M-x ediff
+Activates the diff command inside emacs. If you want to switch the
+display from "top/bottom" to "left/right" use the pipe command (|)
+
+M-h
+Select a paragraph into region selection
+
+M-x ispell-region
+Use ispell on the selected region.  For example, with M-h you select a
+paragraph and then you can use this Meta to ispell.
+
+
+
+LINKS:
+--------------------------------------------------------------------------------
+
+Emacs Commands List
+<a href="http://lpn.rnbhq.org/tools/xemacs/emacs_ref.html">http://lpn.rnbhq.org/tools/xemacs/emacs_ref.html</a>
+
+Another useful list of emacs keys
+<a href="http://www.math.uh.edu/~bgb/emacs_keys.html">http://www.math.uh.edu/~bgb/emacs_keys.html</a>
+
+This Norwegian kid has a great youtube chanel called emacs Rocks
+<a href="https://github.com/magnars/.emacs.d">https://github.com/magnars/.emacs.d</a>
+
+</code>
+</article>
+{% endblock content %}

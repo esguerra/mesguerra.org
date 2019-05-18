@@ -1,0 +1,61 @@
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<h1>Django tricks</h1>
+<hr/>
+<h2>Installing django</h2>
+Installing django has  become quite easy as it is  now included in the
+software repositories  of two of  the most common linux  flavors, that
+is, <a href="http://www.ubuntu.com">ubuntu</a> and <a href="http://www.fedora.org">fedora</a>.
+
+To install django in ubuntu:
+<pre>
+sudo apt-get install python-django
+</pre>
+and to install in fedora:
+<pre>
+sudo yum install Django
+</pre>
+
+There are additional django packages that you may need.
+In my use I've needed to use django-pagination and django-sorting.
+
+In  Fedora they  are  available in  the repositories  so  they can  be
+installed with yum:
+<pre>
+sudo yum install django-pagination django-sorting
+</pre>
+
+To check if they have been installed correctly one can just run python
+and check:
+<pre>
+python
+>>> import django
+>>>import pagination
+    >>> import django_sorting
+</pre>
+
+To install in mac OS-X Lion it's easy with setuptool.
+Download <a href="http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz#md5=7df2a529a074f613b509fb44feefe74e">Setup
+Tools.</a> 
+
+<pre>
+sudo python setup.py install
+sudo easy_install django
+sudo easy_install django
+
+python
+
+import django
+</pre>
+
+<!-- FOOTER SECTION -->
+<br/>
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("../footer");
+});
+</script>
+</article>
+{% endblock content %}

@@ -1,0 +1,87 @@
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<code>
++++++++++++++++++++++++++++++++++++++++++
+LINUX CHEATSHEET
+Author: Mauricio Esguerra
+Date:   November 18, 2009
+Update: April 20, 2012
++++++++++++++++++++++++++++++++++++++++++
+
+paste: 
+- Concatenates two files side by side instead of one at the end
+  of the other as cat does.
+
+tree:
+- Gives you a tree representation of directories could be
+  thought of as similar to ls
+
+free -m
+- Shows how much RAM your computer has.
+
+cat /proc/cpuinfo | grep processor | wc -l
+- Shows how many processors in a node.
+
+uname -a
+- Tells you what distro and kernel version u have.
+
+wget -r -l1 --no-parent -nd http://www.eden.rutgers.edu/~esguerra/scripts
+- Will get all files in the scripts folder.
+
+acpi -V
+- Will show the cpu temperature and battery charge in laptop.
+
+rsync -av --progress --delete --log-file=/home/esguerra/rsync_$(date +%Y%m%d).log \
+/workstation /media/myexternalharddrive
+- This will make a backup of the data in my workstation to my external hard drive.
+  Note that it will create a log file whose 4th column format should be read as
+  cd+++++++++  del
+  cL+++++++++  link
+  cS+++++++++  send
+  >f+++++++++  recv
+
+find $PWD -type f -print0 | xargs -0 chmod 644
+- This are three commands (find, xargs and chmod) combined to change permissions 
+  recursively to files only.
+
+find $PWD -type d -print0 | xargs -0 chmod 755
+- This are three commands (find, xargs and chmod) combined to change permissions 
+  recursively to folders only.
+
+sshfs shamu: Shamu/
+- This mounts a ssh account in the Folder Shamu. You need to install sshfs first.
+
+fusermount -u Shamu/
+- This unmounts the mounted ssh "partition".
+
+crontab -l
+- Shows you the jobs that are in your crontab.
+
+crontab -e
+- It allows you to create or edit your crontab.
+
+sync; echo 3 > /proc/sys/vm/drop_caches
+- This command will clean the  virtual memory cache by filling it with
+  number 3. You can set-up your machine to cron this command when
+  needed. Specially if you have a server.
+
+sed '/^ATOM /s/./A/22' pdbfilewithempty22.pdb
+- THis will add the chain ID A to column 22 in a pdb file.
+
+
+++++++++++++++++++++++++++++++++++
+LINKS:
+++++++++++++++++++++++++++++++++++
+
+This page as txt: <a href="http://local.mesguerra.org/tricks/linux/linux.txt">linux.txt</a>
+<a href="http://www.linuxguide.it/linux_commands_line_en.htm">http://www.linuxguide.it/linux_commands_line_en.htm</a>
+<a href="http://www.pixelbeat.org/cmdline.html">http://www.pixelbeat.org/cmdline.html</a>
+<a href="http://www.linuxquestions.org/questions/linux-general-1/chmod-all-files-644-and-files-755-542059/">http://www.linuxquestions.org/questions/linux-general-1/chmod-all-files-644-and-files-755-542059/</a>
+<a href="http://hivelogic.com/enkoder">http://hivelogic.com/enkoder</a>
+<a href="http://www.openjs.com/scripts/jslibrary/demos/crontab.php">http://www.openjs.com/scripts/jslibrary/demos/crontab.php</a>
+
+</code>
+</article>
+
+{% endblock content %}

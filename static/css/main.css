@@ -77,5 +77,24 @@ pre{
         margin: 4px 20px 4px 20px;
 }
 
+code  {font-family: consolas, courier, monospace;
+       font-size: 1em;
+       line-height: 1.2em;
+       white-space: pre; 
+       background-color: #fff8dc; /* ccf any colour's okay, 
+       so long as it's different to the page-background  
+       (for ease of recognition) and contrast to the text */
+       color: #000; /* likewise the background-color comment */
+       border: 1px solid #666;
+       -moz-border-radius: 1em;
+       -webkit-border-radius: 1em;
+       border-radius: 1em; /* just in case */
+       padding: 1em;
+       margin: 1em 1em;
+       width: 90%; /* or whatever you prefer */
+       float: left;
+       }
+
+
 
 

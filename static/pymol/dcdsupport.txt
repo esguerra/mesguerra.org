@@ -1,0 +1,37 @@
+Sometimes you need to load trajectory files coming from molecular dynamics simulations
+performed in CHARMM. Such files sometimes have the .dcd or the .trj extension.
+To open such files in pymol you need to modify the setup.py file and compile your 
+pymol version downloaded from the sourceforge subversion repository.
+
+1)
+svn co https://pymol.svn.sourceforge.net/svnroot/pymol/trunk/pymol pymol
+
+2)
+Make sure that all dependencies are in place.
+Most likely there's bound to be many missing and you'll only know from
+the warnings and error given at compilation time. Usually some of the
+header files which are required are in the development packages, so,
+remember to install dependencies with their development packages.
+Sometimes, when it's a python dependencie you can check if
+it working just by trying to import it in python. e.g.
+
+start python IDE
+import Pmw
+
+check for error messages or a clean import.
+
+3)
+uncomment lines 135, 136 
+uncomment line 156 and ass comma at end
+change 0 ot 1 in line 310
+
+4)
+python setup.py build install
+python setup2.py install
+./pymol
+
+
+
+#LINKS
+Original post telling people how to get trajectory support.
+http://www.mail-archive.com/pymol-users@lists.sourceforge.net/msg07295.html

@@ -1,0 +1,36 @@
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<code>
++++++++++++++++++++++++++++++++++++++++++
+GPG TRICKS
+Author: Mauricio Esguerra
+Date:   December 23, 2012
+Update: December 23, 2012
++++++++++++++++++++++++++++++++++++++++++
+
+To import my secret key and public key.
+>>gpg --import secring.gpg
+>>gpg --import pubring.gpg
+>>gpg --list-secret-keys
+To encrypt with my imported key
+>>gpg --encrypt filetoencrypt.txt  # This will create a .gpg encrypted file.
+>>gpg file.gpg # This will ask for your passphrase to decrypt.
+
+
+++++++++++++++++++++++++++++++++++
+LINKS:
+++++++++++++++++++++++++++++++++++
+
+<a href="http://en.wikipedia.org/wiki/GNU_Privacy_Guard">http://en.wikipedia.org/wiki/GNU_Privacy_Guard</a>
+
+</code>
+
+<ol id="footer"></ol>
+<script>
+jQuery(function($){  
+$("#footer").load("footer");
+});
+</script>
+
+{% endblock content %}
