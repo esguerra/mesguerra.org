@@ -5,4 +5,4 @@ lib
 *.pyc
 .Python
 pyvenv.cfg
-
+logs
