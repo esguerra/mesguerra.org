@@ -144,4 +144,5 @@ def randg():
     return render_template('randg.html', title='R and Grace')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
+#    app.run(debug=True)
