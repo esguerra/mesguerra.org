@@ -1,0 +1,58 @@
+{% extends "layout2.html" %}
+{% block content %}
+<article>
+<code>
++++++++++++++++++++++++++++++++++++++++++
+MD Software Benchmarks
+Author: Mauricio Esguerra
+Date:   August 18, 2019
+Update: August 18, 2019
++++++++++++++++++++++++++++++++++++++++++
+
+System type: GPCR
+Size: 63677 atoms; 40128 TIP3P water-atoms; 18760 POPC-lipid-atoms; 4748 GPCR-atoms 
+MD-Machine: OpenMM 7.3
+GPU: Tesla V100-PCIE
+CPU: 2 Intel Xeon CPU E5-2690 v4 @ 2.60GHz
+ns/day: ~82
+source: Mauricio Esguerra
+
+System type: GPCR
+Size: 53991 atoms; 41532 SPC water-atoms; 7280 Berger-POPC-lipid-atoms; 4844 GPCR-atoms 
+MD-Machine: GROMACS 5.1
+GPU: No
+CPU: 300 cores  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
+ns/day: ~224.389
+source: Mauricio Esguerra
+
+System type: 1WDN; Glutamine Binding Protein
+Size: 61153 atoms; 57957 water-atoms; 3555 Protein-atoms 
+MD-Machine: GROMACS 2019.3
+GPU: 1 GPU
+CPU: 5 Cores
+ns/day: 109.660
+source: hecbiosim, UK council
+
+System type: Unknown Channel Protein embeded in membrane
+Size: 81743 atoms;  water-atoms; lipid-atoms; Protein-atoms 
+MD-Machine: GROMACS 2019.3
+GPU: 4 GPU 2080
+CPU: Ryzen 1950X 16 cores
+ns/day: 332.83
+source: kutzner_grubmuller2019 J.Comp.Chem
+
+
+
++++++++++++++++++++++++++++++++++++++++++
+LINKS:
++++++++++++++++++++++++++++++++++++++++++
+
+<a href="http://www.hecbiosim.ac.uk/jade-benchmarks">http://www.hecbiosim.ac.uk/jade-benchmarks</a>
+<a href="https://github.com/hpc-uk/archer-benchmarks/blob/master/reports/single_node/index.md#tab16">https://github.com/hpc-uk/archer-benchmarks/blob/master/reports/single_node/index.md#tab16</a>
+<a href="https://www.mpibpc.mpg.de/16460085/bench.pdf">https://www.mpibpc.mpg.de/16460085/bench.pdf</a>
+
+
+</code>
+</article>
+
+{% endblock content %}

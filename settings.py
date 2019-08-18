@@ -99,6 +99,10 @@ def python():
 def linux():
     return render_template('linux.html', title='linux')
 
+@app.route("/tricks/benchmarks")
+def benchmarks():
+    return render_template('benchmarks.html', title='benchmarks')
+
 @app.route("/tricks/docker")
 def docker():
     return render_template('docker.html', title='docker')
