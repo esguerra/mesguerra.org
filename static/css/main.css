@@ -79,7 +79,8 @@ code  {font-family: consolas, courier, monospace;
        so long as it's different to the page-background  
        (for ease of recognition) and contrast to the text */
        color: #000; /* likewise the background-color comment */
-       border: 1px solid #666;
+/*       border: 1px solid #666; */
+       border: 1px none #666; 
        -moz-border-radius: 1em;
        -webkit-border-radius: 1em;
        border-radius: 1em; /* just in case */
