@@ -3,19 +3,27 @@
 
 <script type="text/javascript" language="JavaScript">
 <!--
+
 // Type the number of images you are rotating.
 NumberOfImagesToRotate = 13;
 // Specify the first and last part of the image tag. 
 First = '<br><div><img src="static/images/random_';
-$(window).resize(function() {
-    if ($(window).width() < 365) {
-        Last = '.png" class="img-fluid"></div> ';
-    }
-    else {
-        Last = '.png" height="480" class="center"></div> ';
-    }
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+      Last = '.png" class="img-fluid"></div> ';
+  }
+  else {
+      Last = '.png" height="480" class="center"></div> ';
+      document.body.style.backgroundColor = "pink";
+  }
 }
-});
+
+
+myFunction(x) // Call listener function at run time
+var x = window.matchMedia("(max-width: 500px)")
+x.addListener(myFunction) // Attach listener function on state changes
+
 
 function printImage() {
 var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
