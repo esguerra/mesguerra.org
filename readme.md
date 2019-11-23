@@ -26,7 +26,6 @@ And there's also a nice intro to CS class with flask as example at:
 
 <https://youtu.be/j5wysXqaIV8>
 
-
 One thing left to do from the flaskification of my website is to use https. In 
 one of the links there was even information as to how to use gunicorn and nginx 
 and getting the https certificates, and perhaps putting it all into a yaml file 
