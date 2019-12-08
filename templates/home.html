@@ -1,13 +1,16 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<script type="text/javascript" language="JavaScript">
-<!--
-
+<script type="text/javascript">
 // Type the number of images you are rotating.
 NumberOfImagesToRotate = 13;
 // Specify the first and last part of the image tag. 
 First = '<br><div><img src="static/images/random_';
+Last = '.png" class="img-fluid" alt="Responsive image"</div> ';
+function printImage() {
+var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
+document.write(First + r + Last);
+}
 
 function myFunction(x) {
   if (x.matches) { // If media query matches
@@ -18,21 +21,12 @@ function myFunction(x) {
       document.body.style.backgroundColor = "pink";
   }
 }
-
-
-myFunction(x) // Call listener function at run time
-var x = window.matchMedia("(max-width: 500px)")
-x.addListener(myFunction) // Attach listener function on state changes
-
-
-function printImage() {
-var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
-document.write(First + r + Last);
-}
-//-->
+//myFunction(x) // Call listener function at run time
+//var x = window.matchMedia("(max-width: 500px)")
+//x.addListener(myFunction) // Attach listener function on state changes
 </script>
 
-<script type="text/javascript" language="JavaScript">
+<script type="text/javascript">
 printImage();
 </script>
 
