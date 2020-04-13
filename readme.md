@@ -8,7 +8,7 @@ In order to make my webpage more responsive and have a little learning fun while
 doing it I decided to use Flask. Yet the other part is to make it responsive, 
 so, for now I'm just gonna go with good old bootstrap.
 
-To run in in developer mode I have to do:
+To run in developer mode I have to do:
 
     FLASK_DEBUG=1 FLASK_APP=settings.py flask run
 
@@ -25,11 +25,6 @@ And Salvador Villalon at:
 And there's also a nice intro to CS class with flask as example at:  
 
 <https://youtu.be/j5wysXqaIV8>
-
-One thing left to do from the flaskification of my website is to use https. In 
-one of the links there was even information as to how to use gunicorn and nginx 
-and getting the https certificates, and perhaps putting it all into a yaml file 
-or so.
 
 Deploying has been even a greater challenge that migrating the website to flask 
 and responsive with bootstrap.
@@ -59,9 +54,8 @@ supervisor died, so, I had to change mesguerra.conf slightly and do:
 This worked, whereas:
 
     sudo supervisorctl restart
-	
-Didn't
-Some website told me to add this to the mesguerra.conf
+
+Didn't. Some website told me to add this to the mesguerra.conf
 
     startsecs = 0
 
@@ -71,5 +65,3 @@ requirements.txt, so, in the end it boiled down to precisely this:
     pip3 install -r requirements.txt --user
 
 Needless to say that this was an unpleasant time sink.
-
-
