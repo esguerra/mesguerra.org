@@ -1,6 +1,6 @@
 /* Author:  Mauricio Esguerra                     */
 /* Email:   mauricio.esguerra@gmail.com           */
-/* Website: http://www.eden.rutgers.edu/~esguerra */
+/* Website: https://mesguerra.org */
 
 /* Defaults */
 * {
@@ -45,14 +45,14 @@ td, th {
 }
 
 /* code boxes */
-pre{
-	margin-top: 1em;
-	margin-bottom: 1em;
-	display:block;
-	border:1px solid #000;
-	padding:1em;
-	background-color:#ddd;
-}
+/*pre{*/
+/*	margin-top: 1em;*/
+/*	margin-bottom: 1em;*/
+/*	display:block;*/
+/*	border:1px solid #000;*/
+/*	padding:1em;*/
+/*	background-color:#ddd;*/
+/*}*/
 
 /* definition lists */
 dt {

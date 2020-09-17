@@ -5,6 +5,9 @@
 GIT Cheatsheet
 </h1>
 <hr/>
+
+
+
 <br/>
 To clone (i.e. copy) a repository.
 <pre>
@@ -87,6 +90,24 @@ git push ssh://myremotehost/~/nameofrepo master #AND THIS WILL PUSH TO REMOTE
 </pre>
 Note: In the last line notice that the push is done to master branch. If you want 
 it to go automatically to your git repo, you gotta config .git/config first.
+<hr/>
+
+{% filter markdown%}
+
+## Tips of the day ##
+
+If you did:  
+
+    git add .
+
+
+And you really didn't mean to, then you can revert with:  
+  
+    git reset
+  
+Then you will get to see again everything as unstaged, phew!  
+
+{% endfilter%}
 <hr/>
 
 <h2> - Links</h2>

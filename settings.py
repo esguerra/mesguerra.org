@@ -2,6 +2,8 @@
 # Settings to flaskify my homepage.
 import os
 from flask import Flask, render_template, url_for, send_file, render_template_string
+from flaskext.markdown import Markdown
+
 
 app = Flask(__name__)
 
@@ -153,3 +155,5 @@ if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0')
 #    app.run(debug=False)
 #    app.run(debug=True)
+
+Markdown(app)

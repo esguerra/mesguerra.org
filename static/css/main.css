@@ -6,14 +6,14 @@ Date:   May 17, 2019
 
 
 /* body */
-body {  
+body {
     font:  1.0em Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", arial,
-        serif, courier;
+    serif, courier;
     background: rgb(255,255,255);
     color:  rgb(30,30,30); /* This is the foreground letters color */
     padding-top:  4.5rem;
     padding-left: 0.1rem;
-    float: none; 
+    float: none;
 }
 
 /* Images */
@@ -29,88 +29,94 @@ img.center {
     margin-left: auto;
     margin-right: auto;
     max-height: 480px;
-/*    height: 480;   */
-/*    width: auto\9; */
-/*    height: 480px; */
-/*    width:  480px; */
+    /*    height: 480;   */
+    /*    width: auto\9; */
+    /*    height: 480px; */
+    /*    width:  480px; */
 }
 
 aside{
     float: left;
     width: 100px;
-/*    margin: 0 0 0px 0px; */
-/*    color: rgb(191,191,191); */
-/*    color: rgb(000,000,000); */
+    /*    margin: 0 0 0px 0px; */
+    /*    color: rgb(191,191,191); */
+    /*    color: rgb(000,000,000); */
 }
 
 aside li {
-/*      color: rgba(000,000,000, 0.9); */
-/*      list-style: none; */
-/*      font-size: 0.9em; */
-/*      margin:10px 2px 10px 2px; */
+    /*      color: rgba(000,000,000, 0.9); */
+    /*      list-style: none; */
+    /*      font-size: 0.9em; */
+    /*      margin:10px 2px 10px 2px; */
 }
 
 aside li a:link, aside li a:visited {
-      color: rgba(000,000,000,0.9);
-      border:none;
-      text-transform: none;
+    color: rgba(000,000,000,0.9);
+    border:none;
+    text-transform: none;
 }
 
 article {
-/*    float: right; */
+    /*    float: right; */
     margin-left: 120px;
 }
 
 /* Code Boxes */
 pre{
-        display:block;
-        border:2px solid #000;
-        padding:2em;
-        background-color:#ddd;
-        color:black;
-        margin: 4px 20px 4px 20px;
+    display:block;
+    border:1px solid #000;
+    border-radius: 5px;
+    padding:2em;
+    /*background-color:#ddd;*/
+    background-color: #f7f8ff; /* ccf any colour's okay,
+        so long as it's different to the page-background
+        (for ease of recognition) and contrast to the text */
+    color: #000; /* likewise the background-color comment */
+    /*color:black;*/
+    margin: 4px 20px 4px 20px;
 }
 
 code  {font-family: consolas, courier, monospace;
-       font-size: 1em;
-       line-height: 1.2em;
-       white-space: pre; 
-       background-color: #fff8dc; /* ccf any colour's okay, 
-       so long as it's different to the page-background  
+    font-size: 1em;
+    line-height: 1.2em;
+    white-space: pre;
+    background-color: #fff8dc; /* ccf any colour's okay,
+       so long as it's different to the page-background
        (for ease of recognition) and contrast to the text */
-       color: #000; /* likewise the background-color comment */
-/*       border: 1px solid #666; */
-       border: 1px none #666; 
-       -moz-border-radius: 1em;
-       -webkit-border-radius: 1em;
-       border-radius: 1em; /* just in case */
-       padding: 1em;
-       margin: 1em 1em;
-       width: 90%; /* or whatever you prefer */
-       float: left;
-       }
+    color: #000; /* likewise the background-color comment */
+    /*       border: 1px solid #666; */
+    border: 1px none #666;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em; /* just in case */
+    padding: 1em;
+    margin: 1em 1em;
+    width: 90%; /* or whatever you prefer */
+    float: left;
+}
+
 
 
 /*------------
   LINKS
--------------*/ 
-a:link, 
-a:visited {     
-    color:rgb(10,128,225); 
-    color: rgba(10,128,225,.9); 
-/*    border-bottom: 2px dotted #EAE7E7;  */
-/*    border-bottom: 2px dotted rgba(255,255,255,.4);  */
-    padding: 1px; 
-    text-decoration: none; 
+-------------*/
+a:link,
+a:visited {
+    color:rgb(10,128,225);
+    color: rgba(10,128,225,.9);
+    /*    border-bottom: 2px dotted #EAE7E7;  */
+    /*    border-bottom: 2px dotted rgba(255,255,255,.4);  */
+    padding: 1px;
+    text-decoration: none;
     -webkit-transition: background-color .3s linear;
 }
-a:focus { 
-    color: orange; 
+a:focus {
+    color: orange;
 }
-a:hover { 
+a:hover {
     background-color: rgb(40,40,40);
-    background-color: rgba(10,128,225,.7); 
-    color: #f6eef4; 
+    background-color: rgba(10,128,225,.7);
+    color: #f6eef4;
 }
 
 /*-------------
@@ -153,7 +159,7 @@ a:hover {
     color:#fff;
     font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 #imagegallery section figcaption h3 {
     margin: 15px 15px 6px 15px;
     text-shadow: #000 0px 2px 0px;
