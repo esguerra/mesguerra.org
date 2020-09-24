@@ -89,6 +89,10 @@ def svn():
 def mysql():
     return render_template('mysql.html', title='mysql')
 
+@app.route("/tricks/psql")
+def psql():
+    return render_template('psql.html', title='psql')
+
 @app.route("/tricks/django")
 def django():
     return render_template('django.html', title='django')

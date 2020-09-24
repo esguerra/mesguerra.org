@@ -1,0 +1,44 @@
+{% extends "layout2.html" %}
+{% block content %}
+
+<article>
+<code>
+
+PSQL
+----
+### Author: Mauricio Esguerra  
+### Date: Thursday, September 24, 2020  
+### Update: Thursday, September 24, 2020  
+
+1. Basic Commands
+
+\l
+list databases
+
+\c dbname
+connect (select) database
+
+\dt
+once connected to db shows tables of db
+
+SELECT * FROM protein LIMIT 10;
+show first ten columns of data in table protein
+
+\du
+list all users
+
+\q
+quit
+
+{# 2. Miscellaneous #}
+
+LINKS:
+------
+
+<a href="https://www.postgresqltutorial.com/postgresql-cheat-sheet/">https://www.postgresqltutorial.com/postgresql-cheat-sheet/</a>
+
+</code>
+</article>
+
+
+{% endblock content %}
