@@ -60,7 +60,8 @@ def dirtree2():
 @app.route("/~esguerra")
 def dirtree3():
     path = os.path.abspath(u'static/~esguerra')
-    return render_template('index.html', tree=make_tree(path), title='~esguerra')
+    return app.send_static_file('index.html')
+#    return render_template('index.html', tree=make_tree(path), title='~esguerra')
 
 @app.route("/tricks/pymol")
 def pymol():
