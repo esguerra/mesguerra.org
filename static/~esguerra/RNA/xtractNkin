@@ -1,0 +1,55 @@
+#!/bin/bash
+# Modified script ex_rna to get input for KiNG
+# It asks for which file is hel_regions.pdb
+# 
+rm rnahelvec.kin
+echo "Type the name of the input pdb file (hel_regions.pdb)"
+read -e INPUT
+
+# Get the number of structures that there are in the multiple pdb file
+grep "Section #" $INPUT | tail -n 1 >& number
+NUMHEL=`awk '{print substr($3,2) }' number`
+echo $NUMHEL 
+
+i=1
+while [ $i -le $NUMHEL ]
+do
+    echo $i
+    mkdir rna$i.dir
+    ex_str -$i $INPUT rna$i.dir/rna$i.pdb
+    cd rna$i.dir
+    find_pair rna$i.pdb stdout | analyze
+    poshel rna$i.out
+    sed '1,4d'  poshel.vec > noheader
+    awk '{print $3, $4, $5}' noheader > P.dat
+    awk '{print $6, $7, $8}' noheader > H.dat
+    octave /home/esguerra/bin/sumthem.m > PplusH.dat
+    octave /home/esguerra/bin/singleavevec.m | awk '{print $1, $2, $3}' | sed -n '14p;18p' > singleavevec.dat
+#   Write prekin line here
+    sed '1,13d' PplusH.dat | awk '{print $1, $2, $3}' > HP.dat
+    wc -l P.dat > variable
+    NU=`awk '{print $1}' variable`
+    cp ~/Windows/RNADBase/header.kin rna$i.kin
+         j=1
+         while [ $j -le $NU ]
+         do
+             awk "NR==$j" P.dat >> rna$i.kin
+             awk "NR==$j" HP.dat >> rna$i.kin
+             awk "NR==$j" P.dat >> rna$i.kin
+             j=`expr $j + 1`
+         done
+    rm  PplusH.dat noheader variable 
+#    rm P.dat H.dat HP.dat
+    cd ..
+    i=`expr $i + 1`
+done
+
+
+NUMRNA=`ls -d rna*.dir | wc -l`
+k=1 
+ while [ $k -le $NUMRNA ]
+ do
+   cat rna$k.dir/rna$k.kin >> rnahelvec.kin
+   k=`expr $k + 1`
+ done
+

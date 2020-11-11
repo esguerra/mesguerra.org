@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+	
+<head>
+<title>APBS use tutorial</title>
+<link rel="stylesheet" href="/~esguerra/esguerra.css" type="text/css"/>
+<meta name="author" content="Modified from Nathan Baker by Mauricio Esguerra"/>
+<meta name="keywords" content="APBS tutorial"/>
+</link>
+</head>
+
+<div align="right"><a href="/~esguerra/index.html">[Home]</a></div>
+
+<h1>
+APBS Tutorial for the Olson Group
+</h1>
+<hr>
+<br>
+The first step to use apbs is to modify your existing pdb files into the format that apbs likes, 
+this format is called pqr. The people at Baker's lab provide a python script to do this job 
+automatically. The script is called pdb2pqr.py. I usually invoke it in the following way:
+<pre>
+bash-3.1$ pdb2pqr.py --ff=amber rna1.pdb rna1.pqr
+</pre>
+<br>
+Then I use pymol and use the apbs gui that they have and do the calculation using the pqr I've 
+created.
+<br>
+The resulting images follow:
+<br>
+<div align="center" class="image">
+<img src="GCandAU.png" alt="Electrostatic potential map and block representation" width="50%">
+</div>
+
+<br>

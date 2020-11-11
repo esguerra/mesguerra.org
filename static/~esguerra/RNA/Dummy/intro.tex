@@ -1,0 +1,63 @@
+\part{3DNA}
+
+\section{Program Output}
+
+With 3-DNA  we can  get parameters evaluated  for the  single stranded
+mode and  the double stranded mode.\\
+The data obtained  from such are:\\
+
+Single Stranded Mode:\\
+\begin{itemize}
+\item auxiliary.par\\
+                - Local Base Reference Frames
+\item bp\_helical.par\\  
+                - Local Helical Parameters
+\item bp\_step.par\\     
+                - Local Step Parameters 
+\item ref\_frames.dat
+
+\item file.outs \\     
+                - RMSD of bases\\
+                - Overlap Area\\
+		- local base step parameters\\
+		- Chain and chi Torsion angles\\
+		- Sugar conformational parameters\\
+		- P--P \& C1\'{}--{}C1\'~ virtual bond distances\\
+		- Helix Radius (P, O4\'~ \& C1\'~)\\
+		- Position (Px, Py, Pz) and local helical axis vector (Hx, Hy, Hz)\\
+\end{itemize}
+
+Double Stranded Mode:\\
+
+\begin{itemize}
+\item auxiliary.par\\   
+                - Same as above but per base-pair
+\item bp\_helical.par\\  
+                - Same as above but per base-pair
+\item bp\_step.par\\     
+                - Same as above but per base-pair
+\item cf\_7methods.par\\ 
+                - Parameters from other softwares
+\item ref\_frames.dat\\
+\item bp\_order.dat\\    
+                - The base-pair information before reordering.
+                 Contains the numbered info of which are the 
+		 bases belonging to the helical regions.
+\item col\_chains.scr\\  
+                - Prepares chain colors.
+\item col\_helices.scr\\ 
+                - Assigns colors to helices.
+\item bestpairs.pdb\\   
+                - All the base-pairs that it finds given constraints.
+\item hel\_regions.pdb\\ 
+                - The regions that are considered as helical
+                  So they must be close to A-DNA, B-DNA or
+		  Z-DNA in one way or another, I would think.
+\item hstacking.pdb\\   
+                - It seems like it puts them in the same reference
+                 frame so that they can be stacked
+\item stacking.pdb\\    
+                - Similar to hstacking. Don't know yet the difference
+\item file.out\\        
+                - All base-pair plus base-step parameters and more
+\end{itemize}

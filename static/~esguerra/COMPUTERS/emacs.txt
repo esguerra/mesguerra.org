@@ -1,0 +1,20 @@
+++++++++++++++++++++++++++++++++++
+LIST OF USEFUL EMACS COMMANDS
+Author: Mauricio Esguerra
+Date: November 2009
+++++++++++++++++++++++++++++++++++
+
+M-x html-mode
+Changes the syntax highlighting mode to the type you want, in this
+case html. Other common modes are, latex-mode, java-mode, python-mode,
+php-mode, c-mode, sql-mode.
+
+M-x line-number-mode
+Enable or disable the line number mode.
+
+M-x column-number-mode
+Enable or disable the column number mode.
+
+M-x ediff
+Activates the diff command inside emacs. If you want to switch the
+display from "top/bottom" to "left/right" use the pipe command (|)

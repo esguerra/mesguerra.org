@@ -1,0 +1,41 @@
+
+To make a tunnel to a computer authorized in a local network
+
+- Windows
+
+Open cmd
+>>cd Program Files\SSH Communications Security\SSH Secure Shell
+>>ssh2  -l myuserid  -L 7777:work:22  gate  cat -
+The previous command opens the tunner to the gate.
+In another cmd terminal write
+>>cd Program Files\SSH Communications Security\SSH Secure Shell
+>>ssh2 -p 7777 localhost
+>>gnome-terminal &
+
+- Linux
+
+ssh  -l myuserid  -L 7777:work:22  gate  cat -
+ssh -p 7777 localhost 
+sftp -oPort=7777 localhost
+
+OR
+
+ssh -f -l username -L 7777:remotehostname:22 gatehostname -N
+ssh -p 7777 localhost
+
+
+An alternative to ssh tunnel is to use vpn.
+For Rutgers you have to login as root to your computer and create a new 
+configuration file at /etc/vpnc.
+
+nano rutgers-vpn.conf
+
+IPSec gateway vpn.rutgers.edu
+IPSec ID rutgers-ipsec
+IPSec secret rutgers
+Xauth username myusernamehere
+
+After this you just have to do:
+
+sudo vpnc rutgers-vpnc      # To start vpnc
+sudo vpnc-disconnect   # To logoff from vpnc

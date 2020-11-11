@@ -1,0 +1,150 @@
+/* 
+Styles for Mauricio Esguerra's Homepage
+*/
+
+
+body{
+font: 62.5% "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+color: rgb(230,230,230);
+background:rgb(40,40,40);
+}
+
+#mainContent{ color:rgb(30,30,30); background:transparent;}	
+
+/* text */
+header h1, h2, h3{ font-family: "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif; } 
+
+h1{ font-family: "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif; font-weight:normal; }
+	
+h1,h2,h3{ font-size:2em; }
+	
+p{
+font-size: 1.4em;
+line-height: 1.4;
+margin:0 0 0.5em 0;
+color:rgb(84,84,84);
+color:rgba(84,84,84,1);
+}
+
+/* Links */
+
+a:link, 
+a:visited{	
+color:rgb(10,128,225); 
+color: rgba(10,128,225,.9); 
+border-bottom: 3px solid #EAE7E7; 
+border-bottom: 3px solid rgba(255,255,255,.4); 
+padding: 1px; 
+text-decoration: none; 
+-webkit-transition: background-color .3s linear;
+}
+
+a:focus{ color: orange; }
+
+a:hover{ background-color: rgb(40,40,40);background-color: rgba(10,128,225,.7); color: #f6eef4; }
+	
+/*------------
+  LAYOUT
+-------------*/	
+
+header{ width:100%; background:rgb(30,30,30); position:relative; z-index:5; margin: 30px 0;}
+
+
+
+h1#logo{position:absolute; top:-5px; left:0.5%;}
+
+h1#logo img{  width:226px;}
+
+h1#logo span{ position:relative; top:-15px;}
+
+h1#logo a{ border:none; background:none; color:gray; color:rgb(105,105,105);}
+
+h1#logo a:hover img{opacity:.3; border:none;}
+
+
+header h1{ font-size: 2em; }
+
+header h1 a:link, header h1 a:visited{ }
+
+header nav{ float:right;}
+
+header nav li:first-child{list-style:none;}
+
+header nav li{ float:left; list-style:inside disc; margin:0 5px; }
+
+header nav li a:link, header nav li a:visited{ color: rgba(255,255,255,.8); font-size:2em; line-height:2; padding:.6em; margin:0 2px; border:none; text-transform:}
+
+footer{ clear:both; width:100%; margin-top:3em;  padding-left:1px;}
+
+footer p{ margin:0 0 .3em; color: rgb(200,200,200); }
+
+
+section.samples{background:rgb(40,40,40); width:100%; } 
+
+
+section.samples ul{width:100%;}
+
+section.samples ul li { float:left; list-style:none;  width:100%; 	}
+
+section.samples ul li a{ display:block;  text-decoration:none;   position:relative; padding:0 5%; float:left; width:90%;  margin:0 0 20px; border:none; -webkit-transition: background-color .3s linear;}
+
+section.samples h1{ color:gray; font-size:2.6em; margin:0.1em 0.1em .3em 0.1%; }
+
+section.samples h1 span{color:rgb(210,210,210); }
+
+div.details h2, div.details h3{ color:white; font-size:2.2em; letter-spacing:.1em;  margin:.3em 0;}
+
+div.details p{font-size:1.6em; line-height:1.4; color: rgba(10,128,225,.7);color:#FDDD4F; }
+
+
+
+section.samples img{width:400px; height:300px; float:left;}
+
+section.samples div.details{   min-height:260px; width:360px;z-index:2; padding:20px;  float:left;   }
+
+section.samples a:hover{  color:orange;  background:rgb(30,30,30); }
+
+section.samples a:hover img{-webkit-box-shadow: 0 0 12px #000; -moz-box-shadow: 0 0 12px #000;}
+
+section.samples a:hover div.details h2, section.samples a:hover div.details h3{ text-shadow: black 1px 2px 5px;}
+
+section.samples a:hover div.details p{text-shadow: black 1px 1px 1px; color:orange;  }
+
+
+
+/* - OTHER - */
+
+.other{
+float:left;
+width:100%;
+margin:60px 0;
+min-height:250px;
+background:rgb(240, 240, 240);
+background:rgba(250, 250, 250, .5);
+}
+
+
+
+
+
+#info p{ width:200px; float:left;  }
+
+.message, #info{ clear:left; float:left; position: relative;}
+
+
+
+p.cancel{float:left; margin-top:8px; font-size:1.3em;}
+
+
+
+
+/*-------------
+	SELF CLEARING FLOATS
+---------------*/
+.group:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}

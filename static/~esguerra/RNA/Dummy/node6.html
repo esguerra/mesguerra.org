@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Global Helical Parameter Calculation</TITLE>
+<META NAME="description" CONTENT="Global Helical Parameter Calculation">
+<META NAME="keywords" CONTENT="maestro">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="maestro.css">
+
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node3.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html101"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html99"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html95"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html102"
+  HREF="node7.html">Scripts</A>
+<B> Up:</B> <A NAME="tex2html100"
+  HREF="node3.html">Parameters</A>
+<B> Previous:</B> <A NAME="tex2html96"
+  HREF="node5.html">Local Helical Parameters Calculation</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION01023000000000000000">
+Global Helical Parameter Calculation</A>
+</H2>
+
+<P>
+3DNA automatically recognizes the helical regions, for example for the
+50S  rRNA of <I>haloarcula marismortui</I>   it recognizes  111 helical
+regions and 38 of those regions are assigned as  regular helix type, that
+is,  A-form, for  example, if  so, 3DNA  outputs a  file with  the axis
+coordinates in raster3D format called poc_haxis.r3d.
+These regions can be rendered as cylinders as is shown in Figure V.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="274"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Regular Helical Regions of RR0033.pdb</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><IMG
+ WIDTH="640" HEIGHT="640" ALIGN="BOTTOM" BORDER="0"
+ SRC="cylinder.png"
+ ALT="Image cylinder.png">
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Other types of cylinder representation can be done for smaller regions
+based on  the local helical region  vectors where we might  be able to
+obtain  a   similar  representation  to  that  used   to  analyze  the
+ribonuclease P ribozyme[]  and also for the non-regular
+helix type regions but since  there is no poc_haxis.r3d file existent
+in this cases I will have to generate a script to do this.
+
+<P>
+Ideally  one  would like  to  have an  automatic  script  to do  these
+cylinder  representations  and also  a  utility  which  will draw  the
+regular helix types as cylinders  only, all the helix regions, or only
+the non-regular ones, etc.  One can attempt to do this with the render
+utility of raster3D or perhaps it  might be better and easier to do it
+using kinemage  but the generation of  cylinders seems not  to be very
+clear using kinemage.
+
+<P>
+Then  one would  like to  start quantifying  the  interactions between
+helical  regions  further  from  visual inspection  or  just  distance
+criteria as  those exposed by Westhof  and Fritsch []
+to get and idea of tertiary interactions as a direct output of 3DNA.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html101"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html99"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html95"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html102"
+  HREF="node7.html">Scripts</A>
+<B> Up:</B> <A NAME="tex2html100"
+  HREF="node3.html">Parameters</A>
+<B> Previous:</B> <A NAME="tex2html96"
+  HREF="node5.html">Local Helical Parameters Calculation</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mauricio Esguerra
+2006-06-23
+</ADDRESS>
+</BODY>
+</HTML>

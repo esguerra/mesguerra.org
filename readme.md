@@ -29,7 +29,7 @@ And there's also a nice intro to CS class with flask as example at:
 Deploying has been even a greater challenge that migrating the website to flask 
 and responsive with bootstrap.
 
-This links sort of helped:
+These links sort of helped:
 
 <https://github.com/defshine/flaskblog/blob/master/wsgi_gunicorn.py>
 <https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04>

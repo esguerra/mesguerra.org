@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "For password write to: esguerra@eden.rutgers.edu"
+AuthUserFile /empyrean/home3/u30/esguerra/.htpasswd 
+<LIMIT GET>
+require user mauricio
+</LIMIT>

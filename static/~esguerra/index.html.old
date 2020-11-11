@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head>
+<title>Mauricio Esguerra</title>  
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="Mauricio Esguerra"/>
+<meta name="description" content="mauricio esguerra, homepage, mauricio, esguerra,  rutgers, 
+eden, chemistry, rna, 
+PhD, links, new jersey,
+colombia, university, bioinformatics, new brunswick, blog, pictures,
+physics, mathematics, linux, Nucleic Acid Database, 3DNA, pymol, esguerra homepage, RNA Motifs, RNA Conformations"/>
+<meta name="keywords" content="mauricio, esguerra, mauricio
+~esguerra, rutgers, eden, chemistry, rna, PhD, links, mauro, new jersey,
+colombia, university, bioinformatics, new brunswick, blog, pictures,
+physics, mathematics, linux, Nucleic Acid Database, 3DNA, RNA Motifs, RNA Conformations"/>
+
+<link rel="stylesheet" href="/~esguerra/esguerra.css" type="text/css"/>
+
+
+</head>
+
+<body>
+
+<div>
+<a href="/~esguerra">[Home]</a>
+<a href="/~esguerra/SCIENCE/science.html">[Science]</a>
+<a href="/~esguerra/CHEMISTRY/Pymol/tricks.html">[Pymol]</a>
+<a href="/~esguerra/TUTORIALS/tutorials.html">[Soft Tricks]</a>
+<a href="/~esguerra/JOURNALS/journals.html">[Journals]</a>
+<a href="/~esguerra/RNA/rna.html">[RNA]</a>
+<a href="http://rnafacts.blogspot.com/">[BLOG]</a>
+</div>
+
+<hr/>
+<h1> Mauricio Esguerra Neira </h1>
+<hr/>
+
+
+<div id="column-one">
+
+<i>
+<font size="+0">
+Post-Doctoral Researcher
+<br />
+Lennart Nilsson Lab.
+<br />
+Karolinska Institutet
+<br />
+Phone number: (+46)-08-524-81079
+<br />
+</font>
+
+<font size="+0">
+e-mail:
+<script type="text/javascript">
+//<![CDATA[
+<!--
+var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+"=73){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+".substr(0,ol);}f(\")17,\\\"iakfls-dv<,\\\"\\\\f1+'b22ZYIII230\\\\MWS620\\\\" +
+"[QWW120\\\\DN610\\\\L^YO\\\\\\\\OTC330\\\\600\\\\771\\\\410\\\\o000\\\\~loy" +
+"n}j]7y|wz`dqB,Q1nf}as&'Xvfd.r\\\\710\\\\130\\\\430\\\\610\\\\410\\\\n\\\\Y0" +
+"30\\\\020\\\\020\\\\620\\\\2020\\\\200\\\\530\\\\310\\\\030\\\\310\\\\030\\" +
+"\\710\\\\S700\\\\320\\\\n\\\\410\\\\500\\\\610\\\\@=]9;/4{;ez771\\\\891';#'" +
+"a:#)&?*'#\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;72" +
+"1=%y{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"        ;
+while(x=eval(x));
+//-->
+//]]>
+</script>
+
+</font>
+</i>
+
+<br />
+<a href="/~esguerra/resume2010.pdf">[RESUME]</a>
+
+<br />
+
+</div>
+
+
+
+<hr />
+
+<h2>About M.E.</h2>
+
+<p>Not so long ago I was  a PhD student working with Dr. Wilma
+  K. <a href="http://dnaserver.rutgers.edu/people.php">Olson</a> at
+  the <a href="http://dnaserver.rutgers.edu">Biopolymer Structure Laboratory</a>.
+<br/>
+I'm still interested in  understanding RNA Conformations, Motifs, and 
+Folds at the nucleotide base step level using a rigid body parameter formalism implemented in the 
+3DNA (<a href="http://3dna.rutgers.edu/">source</a>, <a href="http://w3dna.rutgers.edu">web interface</a>) software
+package. 
+
+<br />
+
+<br />
+Our current work is focused on three main projects:
+<br />
+a) Development of a rigid body formalism for RNA helical regions
+  implemented in C++.
+<br />
+b) Sequence dependent deformability of RNA helical regions (Including non-canonical Watson-Crick
+base-pairing interactions). Such work can be quite useful
+for obtaining accurate models of small helical RNA's, for example microRNA's.
+<br />
+c) Automatic classification of the space of RNA base-pairs, and base-steps
+  parameters using clustering analysis techniques.
+</p>
+
+<!--<p>Our work at Dr. Olson's lab entails at some point or
+  another the development of new software, whether in C++, python, or
+  just in any scripting language like perl, or sed and awk. Therefore
+  we need to have control of our Linux servers.
+</p> -->
+<br />
+
+<hr />
+
+<h3> Links </h3>
+
+<!--- Some old stuff <a href="/~esguerra/oldstuff.html">-click-</a> -->
+- M. Sc. Proposal UNal <a href="http://www.eden.rutgers.edu/~esguerra/proyectomasterunal.pdf">-click-</a>
+<br />
+- <b>Alonso Neira Martinez.</b>
+<br />
+&nbsp; * <i>Biography</i> <a href="http://en.wikipedia.org/wiki/Alonso_Neira_Martinez">-click-</a>
+<br />
+&nbsp; * <i>The Banderas Monument</i> <a href="http://www.ciudadviva.gov.co/septiembre06/periodico/9/index.php">-click-</a>
+<br />
+<br />
+<hr />
+<!--
+<h3>Cook Organic Gardening Club</h3>
+
+ - Homepage Link <a href="http://aesop.rutgers.edu/~organic/">-click-</a>
+<br />
+ - To join cookorganicgardenclub <a href="http://groups.yahoo.com/group/cookorganicgardenclub/join">
+ -click- 
+</a> 
+<br />
+<br />
+<hr /> -->
+
+
+<p>
+<a href="http://validator.w3.org/check?uri=referer">
+<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML"
+height="31" width="88" />
+</a>
+</p>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ?
+"https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost +
+"google-analytics.com/ga.js'
+type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2306840-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+
+</body>
+</html>
+
+
+

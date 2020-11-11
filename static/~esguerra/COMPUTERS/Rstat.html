@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+	
+<head>
+<title>Using R. Mini-tutorial</title>
+<link rel="stylesheet" href="/~esguerra/esguerra.css" type="text/css"/>
+<meta name="author" content="Modified from Nathan Baker by Mauricio Esguerra"/>
+<meta name="keywords" content="R tutorial"/>
+</link>
+</head>
+
+<div align="left"><a href="/~esguerra/TUTORIALS/tutorials.html">[Tricks]</a></div>
+
+<h1>
+R-stat Tricks
+</h1>
+<hr/>
+<p>To make an R script you simply put all commands into a file and give it an .r or .R extension.</p>
+<p>Then you can execute the script from the command line, or you can
+execute it once R is called.</p>
+<p>In the command line case you use the additional --no-save and --no-restore
+parameters to avoid creation of a "bulky" backup R file:</p>
+<pre>
+bash# R CMD BATCH --no-save --no-restore scriptname.r
+</pre>
+In the second case, once you're inside R you type:
+<pre>
+R> source("scriptname.r")
+</pre>
+In scripts where you don't want graphic output to be
+sent to screen but rather to produce an image file, you can do:
+<pre>
+R> postscript("somefilename.ps")
+R> png(filename="somefilename.png", width=800, height=600)
+</pre>
+To install packages in local folder when you are not in sudoers:
+<br/>
+<pre>
+R> install.packages("packagename",lib="~/R/library")
+R> install.packages("packagename.tar.gz",lib="~/R/library")  #If you dowloaded the source.
+</pre>
+<hr/>
+<h2>Plotting Tricks</h2>
+To overlay a plot on top of another.
+<pre>
+plot(shift, main="Shift Parameter for the Ribosome")
+par(new=T)
+lines(shift)
+</pre>
+To plot dual ordinates in plot.
+<pre>
+upvar<-rnorm(10)+seq(1,1.9,by=0.1)
+downvar<-rnorm(20)*5+19:10
+par(mar=c(5,4,4,4))
+plot(6:15,upvar,pch=1,col=3,xlim=c(1,20),
+xlab="Occasion",ylab="",main="Dual ordinate plot")
+mtext("upvar",side=2,line=2,col=3)
+abline(lm(upvar~I(1:10)),col=3)
+par(new=T)
+plot(downvar,axes=F,xlab="",ylab="",pch=2,col=4)
+axis(side=4)
+abline(lm(downvar~I(1:20)),col=4)
+mtext("downvar",side=4,line=2,col=4)
+</pre>
+<hr/>
+<a href="http://cran.r-project.org/doc/contrib/R-and-octave.txt">-R
+  and octave-</a>
+<br/>
+<a href="http://www.stat.psu.edu/~dhunter/astrostatistics/excerpts/">-R
+  Astrostats-</a>
+<br/>
+<a href="http://cran.r-project.org/doc/contrib/Lemon-kickstart/index.html">-Kickstarting R-</a>

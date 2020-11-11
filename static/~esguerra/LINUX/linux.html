@@ -1,0 +1,107 @@
+<head>
+<title>Linux</title>
+<link rel="stylesheet" href="/~esguerra/esguerra.css" type="text/css"/>
+<meta name="author" content="Mauricio Esguerra"/>
+<meta name="keywords" content="Linux, linux tutorial, ubuntu, fedora"/>
+</link>
+</head>
+
+<body>
+<div>
+<a href="/~esguerra">[Home]</a>
+<a href="/~esguerra/SCIENCE/science.html">[Science]</a>
+<a href="/~esguerra/CHEMISTRY/Pymol/tricks.html">[Pymol]</a>
+<a href="/~esguerra/TUTORIALS/tutorials.html">[Soft Tricks]</a>
+<a href="/~esguerra/JOURNALS/journals.html">[Journals]</a>
+<a href="/~esguerra/RNA/rna.html">[RNA]</a>
+<a href="http://rnafacts.blogspot.com/">[BLOG]</a>
+</div>
+<hr/>
+<h1>Linux Tutorial</h1>
+<hr/>
+This is a partial update on a manual I wrote in Spanish, way back
+in the day at the G.Q.T. (Grupo de Quimica Teorica).
+<br/>
+- <a href="/~esguerra/LINUX/lintuto.pdf">Linux Tutorial English</a>
+<br/>
+- <a href="/~esguerra/LINUX/cursolin.pdf">Linux Tutorial Spanish</a>
+<br/>
+
+<h1>Linux Installation & Packages.</h1>
+<hr/>
+<br/>
+I learned linux using Slackware and RedHat. Then switched to Fedora
+Linux and now (2010) I'm using Xubuntu/Debian.
+<br/>
+At the beggining of 2006 I changed from my beloved Slackware to Fedora
+since it seemed easier to upgrade kernels with it and also because yum
+can be used for easier package installation. Now (2010) its easier to solve
+dependencies automatically using apt-get from Ubuntu or Debian.
+<br/>
+<br/>
+The following is a list of programs which I need everytime I do a new
+Linux install, or when I upgrade versions. This might at some point
+point towards creating a customized Linux version for computational
+chemists and bioinformaticians.
+<br/>
+List of programs needed in personal installation:
+<pre>
+- PROGRAMMING/DATABASES/WEBFRAMEWORKS
+python (numpy and matplotlib)
+django
+mysql
+R
+ifort
+octave
+
+- MOLECULAR VISUALIZATION 
+pymol
+molden
+vmd
+openrasmol
+sirius
+molekel
+gopenmol
+chimera
+king
+prekin
+molscript
+raster3d
+
+- VARIOUS STRUCTURAL UTILITIES
+3DNA
+apbs
+amber
+gamess
+
+
+- PLOTTING/WORDPROCESSING/SPREADSHEETS
+xmgrace
+emacs
+gnuplot
+acroread
+LaTeX
+Xfig
+OpenOffice
+JabREF
+</pre>
+
+Scripts in ~/bin:
+<br/>
+<pre>
+pdb_get        \\python script to get pdb files directly to terminal.
+plot           \\perl script for using gnuplot from the terminal.
+PPdistance     \\script to find distance matrix.
+helivec        \\script to extract helical axis vectors from 3DNA output.
+xtractNkin     \\script to make a king plot of helical axis vectors, depends on prekin.
+get_bsparam    \\get base-step parameters from file.out and organize them for R input.
+</pre>
+Customization files in user root:
+<pre>
+.emacs
+.bashrc
+.bash_profile 
+</pre>
+<hr/>
+</body>
+</html>

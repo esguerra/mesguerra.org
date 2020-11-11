@@ -1,0 +1,47 @@
+<html xmls="http://www.w3.org/1999/xhtml">
+<head>
+<title>Linux Installation in Presario v2000(Turion 64)</title>
+<link rel="stylesheet"
+href="/~esguerra/esguerra.css" type="text/css"/>
+<meta name="author" content="Modified from Nathan Baker by Mauricio Esguerra"/>
+<meta name="keywords" content="Homepage"/>
+</head>
+
+<h1>Fedora Core 8 Installation Details</h1>
+
+<p>In order to make my laptop compatible with C++ and fortran for class
+and also to be able to use my molecular modeling softwares I've had to
+do the following post-installation customizations. </p>
+<ol>
+<li>Install icewm. I installed icewm because it doesn't take forever on
+opening terminals like kde or gnome do.
+<pre>
+bash$ sudo yum install icewm
+</pre>
+</li>
+<li>Install various software lacking in the standard Fedora Core 6
+installation. I used yum to make the majority of this updates, the
+biggest problem was finding the name of the correct software to be
+able to tell yum to install it. I did this mainly by using:
+<br>
+#yum search pdflatex | less
+<br>
+And then from the results I was sometimes able to tell that tetex does
+not include latex, and therefore no pdflatex.
+This are some of the yum updates that I've done.
+<pre>
+bash$ yum install gcc
+bash$ yum install compat-gcc-34-g77
+bash$ yum install tetex
+bash$ yum install tetex-latex
+bash$ yum install xpdf
+bash$ yum groupinstall XFCE
+bash$ yum install scipy
+</pre>
+</li>
+</ol>
+
+<h2>Links</h2>
+<a href="http://www.mjmwired.net/resources/mjm-fedora-fc6.html">Mauriat Miranda FC6 Intall Guide</a>
+
+</html>

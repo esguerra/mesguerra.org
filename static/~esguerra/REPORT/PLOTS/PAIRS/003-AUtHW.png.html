@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!--
+ index.ghtml
+ Copyright (C) 2005-2006 Free Software Foundation, Inc.
+ $Id: image.gthtml,v 1.2 2006/11/09 10:26:59 mjc Exp $
+ 
+ DHTML photo album template for use with gthumb - photo preview page
+-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="Author" content="Rennie deGraaf" />
+    <meta name="Generator" content="gThumb Image Viewer" />
+    <link rel="stylesheet" href="BestFit.css"></link>
+    <style type="text/css">
+      <!--
+      -->
+    </style>
+    <!-- hack for MSIE, since it doesn't support inline-block properly -->
+    <!--[if IE]>
+      <style type="text/css">
+        div.thumbnail {
+          float: left;
+          display: inline;
+        }
+      </style>
+    <![endif]-->
+    <script type="text/javascript" src="lib.js"></script>
+    <script type="text/javascript" src="BestFit.js"></script>
+    <title>Base-Pair Distributions (1/6)</title>
+    </head>
+  <body onload="start();">
+  
+    <div id="titlePanel">
+      <noscript>
+        <div id="jswarning">
+          This page may not work correctly in your browser, because you have JavaScript disabled.
+        </div>
+      </noscript>
+      <div class="center">
+        <div class="centerContent" style="height: 3em; top: -1.5em;">
+          <h1 id="titleContent">Base-Pair Distributions</h1>
+        </div>
+      </div>
+    </div>
+    
+    <div id="copyrightPanel">
+      <div class="center">
+        <div class="centerContent" style="height: 1.5em; top: -0.75em;">
+          <div id="copyrightContent">
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="indexPanel">
+      <!-- back to menu -->
+      <a href="index.html">
+        <img src="back.png" width="30" height="30" alt="Back to menu"/>
+      </a>
+      <div class="tip" style="top: 100%; left: 0%;">
+        Return to thumbnail index
+      </div>
+    </div>
+    
+    <div id="navigationPanel">
+      <!-- previous/next image -->
+      <span class="index">1 / 6</span>
+      <a href="000-AU_WC.png.html">
+          <img src="next.png" width="40" height="30" alt="Next picture"/>
+        </a>
+        <div class="tip" style="top: 100%; left: 0%;">
+          Next picture
+        </div>
+      </div>
+    
+    <div id="prevThumbPanel">
+      <!-- previous image thumbnail -->
+      </div>
+    
+    <div id="nextThumbPanel">
+      <!-- next image thumbnail -->
+      <a href="000-AU_WC.png.html">
+          <!--<img src="thumb-horizontal.jpeg" alt="Next image thumbnail" width="100" height="75" class="navigation" />-->
+          <img src="000-AU_WC.png.small.jpeg" alt="Next picture thumbnail" width="100" height="69" class="navigation" /></a>
+        <div class="tip" style="top: 100%; left: 0%;">
+          Next picture
+        </div>
+      </div>
+    
+    <div id="captionPanel">
+      <!-- Image comments -->
+      <div class="caption">
+        </div>
+    </div>
+    
+    <div id="propertyPanel">
+      </div>
+    
+    <div id="imagePanel">
+      <a href="003-AUtHW.png">
+      <img src="003-AUtHW.png.medium.jpeg" alt="Picture preview" width="800" height="555" id="image" class="preview" /><!--<img src="000-AU_WC.png" alt="image" id="image" class="preview" />-->
+      </a>
+      <div id="fullsizenote">
+         (click on the image to see it at the original size)</div>
+      </div>
+  </body>
+</html>

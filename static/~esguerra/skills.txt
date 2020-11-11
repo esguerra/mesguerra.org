@@ -1,0 +1,45 @@
+
+
+-Linux
+ System Administration
+  Installation (Fedora, Ubuntu, Slackware)
+  Security (iptables, nmap, tcpdump...)
+  File Server (NFS, NIS, samba)
+ Scripting
+  Awk, Sed, Bash
+ Internet
+  HTML
+  Django (MySQL)
+  Ruby (MySQL)
+
+-Programming
+ octave (matlab)
+ R
+ Python
+ Fortran
+ C++
+
+ 
+-Chemistry
+ Computational Chemistry
+  Ab Initio (Gaussian, Gamess)
+  Semi-empirical (Mopac)
+  M.M. (Amber, Hyperchem bundled)
+  ChemOffice
+  Pymol
+  Raster3D
+  KiNG
+
+
+-Patents
+ Novelty, Obviousness case making. (PLT)
+ Translations Spanish, English.
+
+-Teaching
+ Introductory Physics.
+ General Lab. Techniques.
+ General Chemistry. 
+
+
+
+

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Local Helical Parameters Calculation</TITLE>
+<META NAME="description" CONTENT="Local Helical Parameters Calculation">
+<META NAME="keywords" CONTENT="maestro">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="maestro.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="node3.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html93"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html91"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html85"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html94"
+  HREF="node6.html">Global Helical Parameter Calculation</A>
+<B> Up:</B> <A NAME="tex2html92"
+  HREF="node3.html">Parameters</A>
+<B> Previous:</B> <A NAME="tex2html86"
+  HREF="node4.html">Base-pair and Base-step Parameters</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION01022000000000000000">
+Local Helical Parameters Calculation</A>
+</H2>
+
+<P>
+In the case  of local helical parameters Chasles  theorem which states
+that:
+<BLOCKQUOTE>
+``One  can always transport a  free rigid body  from one position
+and  orientation  to another  position  and  orientation  by a  single
+continuous   motion   along   a    unique   axis   of   rotation''
+
+</BLOCKQUOTE>
+is applied[<A
+ HREF="node17.html#babcock1994">1</A>].<A NAME="tex2html5"
+  HREF="footnode.html#foot258"><SUP>3</SUP></A>
+<P>
+3DNA calculates the helical axis  vector (<IMG
+ WIDTH="22" HEIGHT="23" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="$ \vec{H}$">) for a base or base-pair
+step and  its position (<IMG
+ WIDTH="19" HEIGHT="23" ALIGN="BOTTOM" BORDER="0"
+ SRC="img54.png"
+ ALT="$ \vec{P}$">).   We have made  a simple script  to draw
+this along  with the RNA  backbone in KiNG  as a kinemage,  see Figure
+3. or     you    can    also     download    this     kinemage    from
+http://eden.rutgers.edu/~esguerra/RNA/onlyrna.kin
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="264"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Helical axis vectors over RNA backbone</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><IMG
+ WIDTH="774" HEIGHT="934" ALIGN="BOTTOM" BORDER="0"
+ SRC="both.png"
+ ALT="Image both.png">
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+One can see in Figure  3 the RNA structures 1egk(top) and 1qu3(bottom)
+showing the  local helical axis  vectors in the helical  regions which
+are pointing in the same direction for a particular helical region and
+in relation to the ones in the following region are perpendicular like
+the whole region is, therefore this  kind of maps can give you an idea
+of local  bending in a graphical  way. Another way  of doing basically
+the same thing but in a slightly more numerical instead of graphical way
+is doing  the dot product of the helical axis vectors
+between consecutive base-pairs, so  if they
+are parallel or are very close to being parallel the result will be 1,
+-1 for antiparallel and 0 for perpendicular as can be seen in Figure 4
+also for the 1egk and 1qu3 entries of the pdb which correspond respectively 
+to a four-way junction and tRNA(ILE).
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="282"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+<IMG
+ WIDTH="26" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$ H_i$"> dot <IMG
+ WIDTH="43" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.png"
+ ALT="$ H_{i+1}$"> for 1egk and 1qu3</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><IMG
+ WIDTH="638" HEIGHT="982" ALIGN="BOTTOM" BORDER="0"
+ SRC="normalized.png"
+ ALT="Image normalized.png">
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html93"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html91"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html85"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html94"
+  HREF="node6.html">Global Helical Parameter Calculation</A>
+<B> Up:</B> <A NAME="tex2html92"
+  HREF="node3.html">Parameters</A>
+<B> Previous:</B> <A NAME="tex2html86"
+  HREF="node4.html">Base-pair and Base-step Parameters</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mauricio Esguerra
+2006-06-23
+</ADDRESS>
+</BODY>
+</HTML>

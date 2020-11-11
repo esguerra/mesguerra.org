@@ -1,0 +1,154 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Pymol Tricks</title>
+<link rel="stylesheet" href="/~esguerra/esguerra.css" type="text/css"/>
+<meta name="author" content="Modified from Nathan Baker by Mauricio Esguerra"/>
+<meta name="keywords" content="pymol, pymol tricks, molecular drawing, molecules"/>
+</head>
+<div align="left">
+<a href="/~esguerra">[Home]</a>
+<a href="/~esguerra/SCIENCE/science.html">[Science]</a>
+<a href="/~esguerra/CHEMISTRY/Pymol/tricks.html">[Pymol]</a>
+<a href="/~esguerra/TUTORIALS/tutorials.html">[Soft Tricks]</a>
+<a href="/~esguerra/JOURNALS/journals.html">[Journals]</a>
+<a href="/~esguerra/RNA/rna.html">[RNA]</a>
+<a href="http://rnafacts.blogspot.com/">[BLOG]</a>
+</div>
+<hr/>
+<h1>Pymol tricks</h1>
+<hr/>
+
+
+<br>
+ - General
+<pre>
+bg white                        # Turn background color to white
+save rna6.pse                   # Save your working session in pse file
+set valence, 1                  # Show double bonds.
+h_add                           # Show hydrogens.  
+pymol -qc bla.pml >& bla.log &  # To invoke without X11 display
+unbond (id 8), (id 2)           # To remove a bond between atoms
+bond (id 8), (id 2)             # To create a bond between atoms
+select carbons, symbol c        # Select all carbon atoms and call them carbons.
+color black, carbons            # Color the carbons selection black.
+disable selectionname           # Hides/disables a loaded structure(selection).
+enable selectionname            # Shows/enables a loaded structure(selection).
+</pre>
+ - Labels
+<pre>
+label (n;C1'), "%s" % (name)
+set label_color, black
+set label_font_id, 4	
+set label_size, 3
+set label_position, [2,0,0]
+show labels
+</pre>
+ - Spheres
+<pre>
+set sphere_scale, 0.25
+</pre>
+ - Sticks
+<pre>
+set stick_radius, 0.1
+</pre>
+ - Ribbons
+<pre>
+set ribbon_color, marine
+set ribbon_width, 2
+set ribbon_sampling, 1
+set ribbon_smooth, 1
+</pre>
+ - Cartoon
+<pre>
+cartoon putty
+set cartoon_ladder_mode, 0
+set cartoon_transparency, 0.5
+set cartoon_ring_finder, 0
+cartoon dumbbell
+set cartoon_dumbbell_width, 0.2
+set cartoon_dumbbell_radius, 0.4
+set cartoon_color, marine, resi 34-67
+set cartoon_color, blue, resi 68,78
+show cartoon
+</pre>
+- Ray tracing
+<pre>
+set ray_trace_mode, 3
+set ray_trace_fog,0
+set ray_shadows,0
+set antialias,1
+set ray_trace_gain, 0.005
+ray 1600,1200
+png img1.png
+</pre>
+- Rotating ("turn" to rotate all loaded objects, "rotate" for individual objects)
+<pre>
+turn x, 10
+</pre>
+- Surfaces
+<pre>
+set transparency, 0.65, i. 1-100
+set cgo_transparency, 0.4
+</pre>
+- Aligning Structures (They must have the same number of atoms and be the same molecule)
+<pre>
+pair_fit rna2////C5, rna1////C5, rna2////C4, rna1////C4
+pair_fit (rna2 and id 12+56), (rna1 and id 12+56)
+</pre>
+- Displaying all states in a multi-state pdb, say, an NMR file and
+coloring by B-factor.
+<pre>
+set all_states, on
+spectrum b, yellow_white_red, minimum=48, maximum=100
+spectrum b, rainbow2_rev
+</pre>
+- Loading multiple pdb files into a multistate object (allfiles) using the python glob module
+<pre>
+import glob
+for x in glob.glob("Folder/*.pdb"): cmd.load(x, "allfiles")
+</pre>
+- Draw a trace cartoon (or ribbon) based on atoms different than P or Calpha.
+<pre>
+set cartoon_trace_atoms      #Note that ribbon_trace_atoms also works
+cartoon tube
+show cartoon, selection and name C1'
+</pre>
+
+<br/>
+<hr/>
+<p>
+<a href="http://www.pymolwiki.org/index.php/Settings"> - Link to full set of pymol 
+settings.</a>
+</p>
+<p>
+<a href="http://www.msykes.com/pymol/"> - Someone using pymol in a somewhat similar 
+fashion to mine, perhaphs 
+a bit more organized.</a>
+</p>
+<p>
+<a href="http://davapc1.bioch.dundee.ac.uk/teach/pymol/index.html"> - Movie making in pymol. </a>
+<!--<a href="http://dna.cs.byu.edu/InBio465/Labs/pymoltut.shtml"> - Movie making in pymol </a>-->
+</p>
+<p>
+<a href="/~esguerra/CHEMISTRY/Pymol/colorbybase.pymol"> - Modified
+  coloring by base script.</a>
+</p>
+<p>
+<a href="http://www.pymolwiki.org/index.php/Category:Selector_Quick_Reference"> - Selection keywords.</a>
+</p>
+<p>
+<a href="http://pymolwiki.org/index.php/Command_Line_Options"> -
+  Command line options. </a>
+</p>
+<p>
+<a href="http://www.mail-archive.com/pymol-users@lists.sourceforge.net/msg07295.html"> - Use of dcd files from CHARMM.</a>
+</p>
+
+
+
+<br/>
+
+
+</font>
+</body>
+</html>

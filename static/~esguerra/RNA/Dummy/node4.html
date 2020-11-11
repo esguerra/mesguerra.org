@@ -1,0 +1,570 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Base-pair and Base-step Parameters Calculation</TITLE>
+<META NAME="description" CONTENT="Base-pair and Base-step Parameters Calculation">
+<META NAME="keywords" CONTENT="maestro">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="maestro.css">
+
+<LINK REL="next" HREF="node5.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="node3.html">
+<LINK REL="next" HREF="node5.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html83"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html81"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html75"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html84"
+  HREF="node5.html">Local Helical Parameters Calculation</A>
+<B> Up:</B> <A NAME="tex2html82"
+  HREF="node3.html">Parameters</A>
+<B> Previous:</B> <A NAME="tex2html76"
+  HREF="node3.html">Parameters</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION01021000000000000000">
+Base-pair and Base-step Parameters Calculation</A>
+</H2>
+In 3DNA  <A NAME="tex2html1"
+  HREF="footnode.html#foot278"><SUP>1</SUP></A>  you  start using a
+pdb file  which is  completely experimental<A NAME="tex2html2"
+  HREF="footnode.html#foot56"><SUP>2</SUP></A>, you download  this from the ndb or  pdb, this file contains
+the experimentally obtained cartesian  coordinates of the atoms.  With
+this  experimental data  you  do a  least  squares fit  to a  standard
+reference           frame           as          described           at
+http://rutchem.rutgers.edu/~olson/jmb/ls_fit.html  or at  the 3DNA
+manual technical details  section or at Olson2001[<A
+ HREF="node17.html#olson2001">4</A>], you
+can       also       use        the       octave       script       at
+http://rutchem.rutgers.edu/~esguerra/RNA/scripts.html as a tutorial
+example. 
+It seems that the  coordinate origin which is embedded in the
+standard reference frame definition is kept, and is used for both base
+and base-pairs.  In the case of  single bases, not  base-pairs, it seems
+that you just keep the  origin of coordinates of an ideal Watson-Crick
+pair, the definition  of this frame can be seen  in Figure II.  Before
+Olson2001[<A
+ HREF="node17.html#olson2001">4</A>] there were various options for the selection
+of the coordinates origin, one example is that of lu1997[<A
+ HREF="node17.html#lu1997">3</A>],
+where  the  reference  frames  for  base-pairs and  single  bases  are
+different and were defined as  given by Figure I.  This definition was
+modified  to  a  standard  reference  frame which  is  good  for  both
+base-pairs and single bases and is illustrated in Figure II.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="64"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+SCHNAaP Reference Frame</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><IMG
+ WIDTH="80%" HEIGHT="80%" ALIGN="BOTTOM" BORDER="0"
+ SRC="baseandbasepair.png"
+ ALT="Image baseandbasepair.png">
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="68"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Standard Reference Frame</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><IMG
+ WIDTH="80%" HEIGHT="80%" ALIGN="BOTTOM" BORDER="0"
+ SRC="standard.png"
+ ALT="Image standard.png">
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Once you have  figured out the coordinate origins  for two consecutive
+bases or  base-pairs comprising a step you  proceed to define a middle
+ step  triad (MST) [<A
+ HREF="node17.html#lu1997">3</A>].
+
+<P>
+This can be described by the following procedure:
+
+<P>
+1) Find  the angle between  consecutive z-axis.  Since these  are unit
+vectors, then from dot product definition:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="159" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$\displaystyle \Gamma = \cos^{-1} (\hat{z}_i \cdot \hat{z}_{i+1})$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(1)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+2) Then find the vector which  results from doing the cross product of
+consecutive z-axis (that  is, the normal to the plane  formed by the 2
+vectors), this is called the Roll-Tilt axis and then normalize to make
+it a unit vector <IMG
+ WIDTH="20" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$ \hat{rt}$">,
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="114" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$\displaystyle rt = \hat{z}_i \times \hat{z}_{i+1}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(2)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+3) To  make the  two  consecutive z  vectors  coincide, you use can just
+use a linear homogeneous transformation of the plane so that the  original
+orientation matrices <IMG
+ WIDTH="21" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ T_i$"> and <IMG
+ WIDTH="38" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$ T_{i+1}$"> are rotated <!-- MATH
+ $\pm \Gamma / 2$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$ \pm \Gamma / 2$">
+degrees  by  <!-- MATH
+ $R_{rt}(\theta)$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ R_{rt}(\theta)$"> to  get  the  transformed <IMG
+ WIDTH="23" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$ T_i^{'}$"> and
+<!-- MATH
+ $T_{i+1}^{'}$
+ -->
+<IMG
+ WIDTH="38" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ T_{i+1}^{'}$"> orientation matrices.
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="115" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$\displaystyle T_i^{'} = R_{rt}(\theta) T_{i}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(3)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="147" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$\displaystyle T_{i+1}^{'} = R_{rt}(\theta) T_{i+1}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(4)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+The  origin of  coordinates for  the MST  is just  the average  of the
+position vectors for the <IMG
+ WIDTH="11" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ i$"> and <IMG
+ WIDTH="44" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.png"
+ ALT="$ i+1$"> reference frames,
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="149" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$\displaystyle r_{mst} = \frac{(r_i + r_{i+1})} {2}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(5)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+4) Again  using the dot  product you  can find  the angle  between the
+transformed <!-- MATH
+ $\hat{y}^{'}$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$ \hat{y}^{'}$"> vectors and this is just the Twist (<IMG
+ WIDTH="18" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \Omega$">) and
+also if you just do the dot product of the <!-- MATH
+ $\hat{z}_{mst}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$ \hat{z}_{mst}$"> unit vector with 
+the vector resulting of the cross product of <!-- MATH
+ $\hat{y}_{i}^{'}$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \hat{y}_{i}^{'}$"> and <!-- MATH
+ $\hat{y}_{i+1}^{'}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \hat{y}_{i+1}^{'}$"> you 
+get the sign of <IMG
+ WIDTH="18" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \Omega$">. Since the transformed x-y plane is orthogonal to <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.png"
+ ALT="$ \hat{z}$"> then
+this applies in the same manner for x,
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="162" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$\displaystyle \Omega = cos^{-1}(\hat{y}_{i}^{'} \cdot \hat{y}_{i+1}^{'})$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(6)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="289" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$\displaystyle (\hat{y}_{i}^{'} \times \hat{y}_{i+1}^{'}) \cdot \hat{z}_{mst} &gt; 0, \quad then \ \Omega &gt; 0$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(7)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="289" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.png"
+ ALT="$\displaystyle (\hat{y}_{i}^{'} \times \hat{y}_{i+1}^{'}) \cdot \hat{z}_{mst} &lt; 0, \quad then \ \Omega &lt; 0$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(8)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+if normalized beforehand then the rule should be,
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="289" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$\displaystyle (\hat{y}_{i}^{'} \times \hat{y}_{i+1}^{'}) \cdot \hat{z}_{mst} = 1, \quad then \ \Omega &gt; 1$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(9)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="319" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$\displaystyle (\hat{y}_{i}^{'} \times \hat{y}_{i+1}^{'}) \cdot \hat{z}_{mst} = -1,\quad then \ \Omega &lt; -1$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(10)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+5) With more dot product we can find other angles, like one called <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ \phi$">,
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="162" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$\displaystyle \phi = cos^{-1}(\hat{rt} \cdot \hat{y}_{mst})$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(11)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="342" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$\displaystyle (\hat{rt} \times \hat{y}_{mst}) \cdot \hat{z}_{mst} &gt; 0, \quad then \ 180 \geq \phi \geq 0$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(12)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="366" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$\displaystyle (\hat{rt} \times \hat{y}_{mst}) \cdot \hat{z}_{mst} &lt; 0, \quad then \ -180 \leq \phi \leq 0$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(13)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+and then, 
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="103" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$\displaystyle \rho = \Gamma cos (\phi)$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(14)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="104" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$\displaystyle \tau = \Gamma sin (\phi)$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(15)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+which are the remaining angular degrees of freedom for step parameters.
+
+<P>
+Now to get the remaining 3 translational degrees of freedom for step parameters one just
+needs to do:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="228" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$\displaystyle [D_xD_yD_z]=(r_{i+1} - r_{i})T_{mst}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(16)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+To get the base-pair parameters the procedure is completely analogous so that
+<IMG
+ WIDTH="18" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \Omega$">, <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ \rho$"> and <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.png"
+ ALT="$ \tau$"> are the analogs of <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.png"
+ ALT="$ \omega$">, <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img36.png"
+ ALT="$ \kappa$"> and <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img37.png"
+ ALT="$ \sigma$">
+now the MST is called MBT (Middle Base Triad) and the axis which are made to 
+coincide are the y-axis and not the z-axis as in the base-step case,
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="162" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$\displaystyle \gamma = \cos^{-1} (\hat{y}_{iII} \cdot \hat{y}_{iI})$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(17)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="120" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$\displaystyle bo = \hat{y}_{iII} \times \hat{y}_{iI}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(18)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="114" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$\displaystyle \hat{bo} = \frac {bo}{\sqrt{bo \cdot bo}}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(19)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="161" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$\displaystyle T_{iII}^{'} = R_{bo}(+\frac{\gamma}{2}) T_{iII}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(20)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="148" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$\displaystyle T_{iI}^{'} = R_{bo}(-\frac{\gamma}{2}) T_{iI}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(21)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="151" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$\displaystyle r_{mbt} = \frac{(r_{iII} + r_{iI})} {2}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(22)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="167" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$\displaystyle \omega = cos^{-1}(\hat{x}_{iII}^{'} \cdot \hat{x}_{iI}^{'})$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(23)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="293" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$\displaystyle (\hat{x}_{iII}^{'} \times \hat{x}_{iI}^{'}) \cdot \hat{y}_{mbt} &gt; 0, \quad then \ \omega &gt; 0$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(24)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="293" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$\displaystyle (\hat{x}_{iII}^{'} \times \hat{x}_{iI}^{'}) \cdot \hat{y}_{mbt} &lt; 0, \quad then \ \omega &lt; 0$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(25)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="169" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$\displaystyle \phi^{'} = cos^{-1}(\hat{bo} \cdot \hat{x}_{mbt})$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(26)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="350" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.png"
+ ALT="$\displaystyle (\hat{bo} \times \hat{x}_{mbt}) \cdot \hat{y}_{mbt} &gt; 0, \quad then \ 180 \geq \phi^{'} \geq 0$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(27)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="373" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$\displaystyle (\hat{bo} \times \hat{x}_{mbt}) \cdot \hat{y}_{mbt} &lt; 0, \quad then \ -180 \leq \phi^{'} \leq 0$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(28)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="108" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.png"
+ ALT="$\displaystyle \kappa = \gamma cos (\phi^{'})$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(29)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="109" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="$\displaystyle \sigma = \gamma sin (\phi^{'})$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(30)</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="219" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$\displaystyle [S_xS_yS_z]=(r_{iI} - r_{iII})T_{mbt}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(31)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html83"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html81"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html75"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html84"
+  HREF="node5.html">Local Helical Parameters Calculation</A>
+<B> Up:</B> <A NAME="tex2html82"
+  HREF="node3.html">Parameters</A>
+<B> Previous:</B> <A NAME="tex2html76"
+  HREF="node3.html">Parameters</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mauricio Esguerra
+2006-06-23
+</ADDRESS>
+</BODY>
+</HTML>
