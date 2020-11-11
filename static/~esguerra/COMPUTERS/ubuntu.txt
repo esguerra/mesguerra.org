@@ -1,0 +1,20 @@
+++++++++++++++++++++++++++++++++++
+LIST OF USEFUL UBUNTU COMMANDS
+Author: Mauricio Esguerra
+Date:   September 1, 2010
+email:  mauricio.esguerra@gmail.com
+++++++++++++++++++++++++++++++++++
+
+sudo update-rc.d  sendmail remove
+ - To remove unwanted services from starting at boot. The same
+comman can be used to start services at boot.
+
+
+
+
+
+++++++++++++++++++++++++++++++++++
+LINKS:
+++++++++++++++++++++++++++++++++++
+
+http://www.scribd.com/doc/3002919/Ubuntu-Command-Reference-Cheat-Sheet

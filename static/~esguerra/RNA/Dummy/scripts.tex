@@ -1,0 +1,39 @@
+\section{Scripts}
+
+\subsection{poshel}
+
+Get the helical parameters in one file, taken out from 3DNA result file.out or file.outs
+
+\subsection{helivec}
+
+Add H and P and rearrange to get nice plot for gnuplot showing vectors. Needs poshel 
+to be invoked before
+
+
+\subsection{makepdbvec}
+
+Trying to make a pdb file out of the file produced from helivec but the visualization
+in rasmol is still failing so there most be some problem in the pdb definition. The visualization 
+in pymol works better.Needs previous invocation of poshel and helivec.
+
+\subsection{diag.m}
+
+Octave script to get the (i, i+1) components of (H+P)*(H*P)' which are just the dot products of 
+the helical axis vectors which tell you about orthonormality. (In a way how the helix
+is bent locally)
+
+\subsection{xtract\_hstack}
+
+Script which invokes ex\_str from 3DNA to xtract the structures in the hstacking.pdb file into a
+newly created directory.
+
+\subsection{xtract\_rna}
+
+Same as xtract\_hstack but this time it extracts the helical regions from the hel\_regions file into 
+separate directories.
+
+\subsection{heliplots}
+
+Plots the graphs of Hx vs Hy, Hy vs Hz and Hz vs Hx, also it plots the dot product of 
+Hi dot Hi+1 against the step number including the diagonal to make sure that the vectors
+are in fact unitary.

@@ -1,0 +1,49 @@
+\part{Appendix I}
+
+\section{finpa}
+
+\#!/bin/bash\\
+\# Program to run find\_pair sequentialy without typing a\\
+\# million times.\\
+\# Prepare input file for analyze with -s option in \\
+\# find pair\\
+\\
+echo "How many pdb files r u going to analyze ? "\\
+read -e NUMHEL\\
+\\
+i="1"\\
+while [ \$i -le \$NUMHEL ]\\
+do\\
+    echo "\$i" \\
+    mkdir rna\$i \\
+    mv rna\$i.pdb rna\$i \\
+    cd rna\$i \\
+    find\_pair -s rna\$i.pdb rna\$i.inp \\
+    analyze rna\$i.inp \\
+    cd .. \\
+    i=`expr \$i + 1` \\
+done \\
+
+\section{to graph}
+
+\#!/bin/bash\\
+\# Program to run sort out data for input in R\\
+\\
+\\
+echo "How many pdb files r u going to analyze ? "\\
+read -e NUMHEL\\
+\\
+i="1"\\
+while [ \$i -le \$NUMHEL ]\\
+do\\
+    echo "\$i"\\
+    cd rna\$i\\
+    grep -A 1 "Tilt" rna\$i.outs >> ../rna\_all.out\\
+    echo " " >> ../rna\_all.out\\
+    cd ..\\
+    i=`expr \$i + 1`\\
+done\\
+\\
+    grep "A/U" rna\_all.out > finalRNA.out \\
+    awk  -f all.awk finalRNA.out > rnaparam.out \\
+\#    rm -f finalRNA.out rna\_all.out\\

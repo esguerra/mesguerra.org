@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Bash, Awk, Octave, etc, Scripts</title>
+</head>
+<br>
+
+
+<table width="100%">
+<td bgcolor="#FFFFB4">
+<font size=+2 face="helvetica, sans-serif, geneva">
+<b>
+3DNA Related Scripts
+</b>
+</font>
+</td>
+</table>
+<hr>
+<a 
+href="http://rutchem.rutgers.edu/~esguerra/RNA/Octave/linfit.m"> 
+<b>- Linear Fitting of bases (base-pairs)</b>
+</a>
+<br>
+
+The previous is an adaptation of Dr. Xiang-Jun Lu work at:
+<a href="http://rutchem.rutgers.edu/~olson/jmb/ls_fit.html">
+http://rutchem.rutgers.edu/~olson/jmb/ls_fit.html </a>
+using a simple octave script to do all the linear algebra.
+The A.dat and B.dat files are just the standard and experimental coordinates of the 
+heavy atoms of the base.
+
+<hr>
+
+<a
+href="http://rutchem.rutgers.edu/~esguerra/RNA/xtract">
+<b>- </b>
+</a>
+<br>
+
+The previous is an adaptation of Dr. Xiang-Jun Lu work at:
+<a href="http://rutchem.rutgers.edu/~olson/jmb/ls_fit.html">
+http://rutchem.rutgers.edu/~olson/jmb/ls_fit.html </a>
+using a simple octave script to do all the linear algebra.
+The A.dat and B.dat files are just the standard and experimental coordinates of the
+heavy atoms of the base.
+
+<br>
+<br><br>
+<br>
+
+
+

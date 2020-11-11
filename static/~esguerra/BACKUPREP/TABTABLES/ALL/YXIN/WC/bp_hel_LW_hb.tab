@@ -1,0 +1,374 @@
+      1 1SC:G	+/+ cis	H/H	3
+      1 2MG:C	+/+ cis	H_e/H_e	3
+      1 2MG:C	+/+ cis	H_qe/H	4
+      1 2MG:C	+/+ cis	H_qe/H	5
+     22 2MG:C	+/+ cis	H_qe/H	3
+      1 5BU:A	-/- cis	H_e/H_e	2
+      6 5BU:A	-/- cis	H/H	3
+     29 5BU:A	-/- cis	H/H	2
+      1 5CG:C	+/+ cis	H_i/H	3
+      1 5CG:C	NA	H_i/H	3
+      1 5MC:G	+/+ cis	H_e/H_e	3
+      1 5MC:G	+/+ cis	H_e/H_e	4
+      1 5MC:G	+/+ cis	H_ie/H_ie	2
+      1 5MC:G	+/+ cis	H_qe/H	2
+      2 5MC:G	+/+ cis	H/H	2
+     17 5MC:G	+/+ cis	H/H	3
+     43 5MC:G	+/+ cis	H_qe/H	3
+      1 A2M:OMU	-/- cis	H/H	2
+      8 A44:U36	-/- cis	H/H	2
+      1 A:5BU	-/- cis	H/H	3
+      1 A:5BU	-/- cis	H/H_qe	2
+      1 A:5BU	-/- cis	H_qe/H_qe	2
+     17 A:5BU	-/- cis	H/H	2
+      2 A:5FU	-/- cis	H_e/H_e	2
+      1 A5M:G	+/+ cis	H/H	3
+      1 ADE:U	NA	H_i/H_qe	2
+      2 A:IU	-/- cis	H/H	2
+      1 A:U	-/- cis	H_e/H_e	4
+      1 A:U	-/- cis	H_qe/H_i	3
+      1 A:U	NA	H_e/H_ie	3
+      1 A:U	NA	H_i/H_i	2
+      1 A:U	NA	H_qe/H_i	2
+      2 A:U	-/- cis	H_e/H_ie	3
+      2 A:U	-/- cis	H/H_qe	4
+      2 A:U	-/- cis	H_ie/H_e	3
+      2 A:U	-/- cis	H_i/H_qe	3
+      2 A:U	-/- cis	H_qe/H_qe	4
+      2 A:U	NA	H/H_i	2
+      2 A:U	NA	H_i/H	2
+      3 A:U	-/- cis	H_i/H_qe	4
+      3 A:U	NA	H_ie/H_ie	3
+      4 A:U	-/- cis	H_ie/H_e	2
+      4 A:U	-/- cis	H_i/H_i	3
+      4 A:U	NA	H_e/H_e	3
+      4 A:U	NA	H_i/H_qe	2
+      5 A:U	NA	H/H	3
+      6 A:U	-/- cis	H_qe/H_i	4
+      7 A:U	NA	H/H_qe	3
+      8 A:U	-/- cis	H/H	4
+      8 A:U	NA	H_qe/H_qe	3
+     10 A:U	NA	H_ie/H_ie	2
+     12 A:U	-/- cis	H_qe/H	4
+     16 A:U	NA	H_e/H_ie	2
+     17 A:U	-/- cis	H_e/H_ie	2
+     17 A:U	NA	H_qe/H	2
+     20 A:U	-/- cis	H_qe/H_qe	3
+     22 A:U	-/- cis	H/H_i	2
+     23 A:U	-/- cis	H/H_qe	3
+     27 A:U	-/- cis	H_i/H	2
+     31 A:U	NA	H/H_qe	2
+     38 A:U	NA	H_qe/H_qe	2
+     44 A:U	-/- cis	H_qe/H	3
+     45 A:U	-/- cis	H_e/H_e	3
+     47 A:U	-/- cis	H_i/H_i	2
+     60 A:U	-/- cis	H_ie/H_ie	2
+     90 A:U	-/- cis	H_i/H_qe	2
+    109 A:U	-/- cis	H_qe/H_i	2
+    112 A:U	NA	H_e/H_e	2
+    151 A:U	NA	H/H	2
+    287 A:U	-/- cis	H/H	3
+    480 A:U	-/- cis	H_qe/H_qe	2
+    686 A:U	-/- cis	H_e/H_e	2
+    699 A:U	-/- cis	H_qe/H	2
+   1070 A:U	-/- cis	H/H_qe	2
+   8088 A:U	-/- cis	H/H	2
+      1 C:2MG	+/+ cis	H/H_qe	3
+      2 C:2MG	+/+ cis	H_qe/H_qe	3
+      4 C43:G48	+/+ cis	H_e/H_e	3
+     12 C43:G48	+/+ cis	H/H	3
+      1 C:7MG	+/+ cis	H_e/H_e	3
+      1 CB2:G	+/+ cis	H/H	3
+      1 CBR:G	+/+ cis	H_e/H_e	3
+      2 CBR:G	+/+ cis	H/H	3
+      2 CBR:G	+/+ cis	H/H_qe	3
+      6 CBV:G	+/+ cis	H/H	3
+      1 C:DG	+/+ cis	H_e/H_ie	3
+      1 C:DG	+/+ cis	H/H_i	3
+      1 C:G	+/+ cis	H_e/H_ie	5
+      1 C:G	+/+ cis	H/H_i	2
+      1 C:G	+/+ cis	H_i/H	2
+      1 C:G	+/+ cis	H_i/H_qe	4
+      1 C:G	NA	H_e/H_ie	2
+      1 C:G	NA	H_e/H_ie	5
+      1 C:G	NA	H_ie/H_e	5
+      1 C:G	NA	H_i/H_i	4
+      1 C:G	W/W cis	H_e/H_e	4
+      1 C:G	W/W cis	H_e/H_ie	4
+      1 C:G	W/W cis	H/H_qe	4
+      1 C:G	W/W cis	H_i/H_qe	3
+      2 C:G	+/+ cis	H_ie/H_ie	5
+      2 C:G	+/+ cis	H_i/H_i	4
+      2 C:G	+/+ cis	H_i/H_qe	2
+      2 C:G	+/+ cis	H_qe/H_i	2
+      2 C:G	NA	H_i/H_i	2
+      2 C:G	NA	H_qe/H	4
+      3 C:G	+/+ cis	H/H_i	5
+      3 C:G	+/+ cis	H_ie/H_e	2
+      3 C:G	+/+ cis	H_i/H_i	2
+      3 C:G	+/+ cis	H_qe/H	5
+      3 C:G	NA	H_e/H_ie	4
+      3 C:G	NA	H_ie/H_e	2
+      4 C:G	+/+ cis	H_qe/H_i	5
+      4 C:G	NA	H/H_i	2
+      4 C:G	NA	H/H_qe	4
+      4 C:G	NA	H/H_qe	5
+      4 C:G	NA	H_ie/H_ie	4
+      4 C:G	NA	H_i/H_qe	3
+      4 C:G	NA	H_qe/H_qe	4
+      6 C:G	NA	H/H_i	3
+      6 C:G	NA	H_ie/H_ie	2
+      7 C:G	+/+ cis	H_ie/H_ie	4
+      7 C:G	+/+ cis	H_i/H	3
+      7 C:G	NA	H_e/H_e	5
+      7 C:G	NA	H/H	5
+      8 C:G	+/+ cis	H_ie/H_ie	2
+      9 C:G	W/W cis	H/H	4
+     10 C:G	+/+ cis	H_e/H_ie	2
+     11 C:G	+/+ cis	H_e/H_ie	4
+     12 C:G	NA	H_ie/H_e	3
+     12 C:G	NA	H_qe/H_qe	2
+     13 C:G	NA	H_qe/H_i	3
+     17 C:G	+/+ cis	H/H_qe	5
+     17 C:G	NA	H_e/H_e	4
+     23 C:G	NA	H/H_qe	2
+     23 C:G	NA	H_i/H_i	3
+     26 C:G	+/+ cis	H_i/H_qe	3
+     28 C:G	NA	H_qe/H	2
+     31 C:G	+/+ cis	H_qe/H_qe	5
+     33 C:G	+/+ cis	H_qe/H	4
+     36 C:G	+/+ cis	H_qe/H_qe	4
+     45 C:G	NA	H_e/H_ie	3
+     45 C:G	NA	H/H	4
+     46 C:G	NA	H_ie/H_ie	3
+     50 C:G	NA	H_e/H_e	2
+     51 C:G	+/+ cis	H_e/H_e	5
+     63 C:G	+/+ cis	H_qe/H_qe	2
+     64 C:G	NA	H/H	2
+     73 C:G	+/+ cis	H/H_qe	4
+     81 C:G	+/+ cis	H_qe/H	2
+     96 C:G	+/+ cis	H_e/H_e	4
+    101 C:G	+/+ cis	H_i/H_i	3
+    116 C:G	+/+ cis	H_ie/H_e	3
+    124 C:G	+/+ cis	H/H	5
+    124 C:G	+/+ cis	H_ie/H_ie	3
+    125 C:G	+/+ cis	H/H_qe	2
+    125 C:G	+/+ cis	H_qe/H_i	3
+    131 C:G	NA	H_qe/H	3
+    145 C:G	NA	H_qe/H_qe	3
+    148 C:G	+/+ cis	H/H_i	3
+    165 C:G	NA	H/H_qe	3
+    238 C:G	+/+ cis	H_e/H_e	2
+    353 C:G	+/+ cis	H/H	4
+    375 C:G	NA	H_e/H_e	3
+    536 C:G	+/+ cis	H_e/H_ie	3
+    556 C:G	NA	H/H	3
+    732 C:G	+/+ cis	H/H	2
+   1522 C:G	+/+ cis	H_qe/H_qe	3
+   2050 C:G	+/+ cis	H_qe/H	3
+   3390 C:G	+/+ cis	H_e/H_e	3
+   4021 C:G	+/+ cis	H/H_qe	3
+  20961 C:G	+/+ cis	H/H	3
+      2 C:GTP	+/+ cis	H_e/H_e	3
+      4 CSL:G	+/+ cis	H/H	3
+      1 CTP:G	NA	H_ie/H_e	3
+      1 C:XUG	+/+ cis	H/H	3
+      1 DA:U	-/- cis	H_e/H_e	2
+      1 DA:U	-/- cis	H/H	2
+      1 DC:G	+/+ cis	H_e/H_e	2
+      1 DC:G	+/+ cis	H/H_qe	3
+      2 DC:G	+/+ cis	H_e/H_e	3
+      7 DC:G	+/+ cis	H/H	3
+      1 DG:C	+/+ cis	H_e/H_e	2
+      1 DG:C	+/+ cis	H_e/H_e	3
+      1 G48:C43	+/+ cis	H/H	4
+      4 G48:C43	+/+ cis	H_e/H_e	3
+     11 G48:C43	+/+ cis	H/H	3
+      2 G:5IC	+/+ cis	H/H	3
+      1 G:5MC	+/+ cis	H_qe/H	3
+      5 G:5MC	+/+ cis	H/H	3
+      1 G:A5M	+/+ cis	H/H	3
+      1 G:C	+/+ cis	H_ie/H_e	4
+      1 G:C	+/+ cis	H_ie/H_ie	5
+      1 G:C	+/+ cis	H_i/H_i	4
+      1 G:C	+/+ cis	H_i/H_qe	2
+      1 G:C	+/+ cis	H_qe/H_i	2
+      1 G:C	NA	H/H_i	3
+      1 G:C	NA	H_i/H	5
+      1 G:C	NA	H_i/H_qe	5
+      1 G:C	NA	H_qe/H_i	4
+      1 G:C	NA	H_qe/H_qe	5
+      1 G:C	W/S cis	H_i/H	4
+      1 G:C	W/W cis	H/H	4
+      2 G:C	+/+ cis	H_ie/H_e	5
+      2 G:C	NA	H_e/H_ie	4
+      2 G:C	NA	H/H_qe	5
+      2 G:C	NA	H_ie/H_e	2
+      2 G:C	NA	H_i/H	2
+      2 G:C	NA	H_i/H	4
+      2 G:C	NA	H_i/H_i	5
+      3 G:C	+/+ cis	H_e/H_ie	2
+      3 G:C	+/+ cis	H/H_i	4
+      3 G:C	+/+ cis	H_i/H_qe	4
+      3 G:C	+/+ cis	H_qe/H_i	4
+      3 G:C	NA	H_ie/H_e	4
+      3 G:C	NA	H_ie/H_ie	2
+      3 G:C	NA	H_ie/H_ie	4
+      3 G:C	NA	H_i/H_qe	4
+      3 G:C	W/W cis	H_e/H_e	4
+      4 G:C	+/+ cis	H/H_i	5
+      4 G:C	+/+ cis	H_i/H	4
+      4 G:C	NA	H_e/H_e	5
+      4 G:C	NA	H_e/H_ie	2
+      5 G:C	+/+ cis	H_e/H_ie	4
+      6 G:C	+/+ cis	H_e/H_ie	5
+      6 G:C	+/+ cis	H_i/H_i	2
+      6 G:C	NA	H/H_qe	4
+      6 G:C	NA	H_i/H_i	2
+      6 G:C	NA	H_qe/H	4
+      6 G:C	NA	H_qe/H	5
+      7 G:C	+/+ cis	H_ie/H_e	2
+      7 G:C	+/+ cis	H_i/H	2
+      8 G:C	+/+ cis	H_qe/H_qe	5
+     10 G:C	+/+ cis	H_ie/H_ie	2
+     11 G:C	NA	H_e/H_ie	3
+     11 G:C	NA	H_ie/H_e	3
+     11 G:C	NA	H_qe/H_qe	4
+     12 G:C	+/+ cis	H_ie/H_ie	4
+     13 G:C	NA	H/H	5
+     14 G:C	NA	H/H_qe	2
+     16 G:C	NA	H_qe/H_i	3
+     18 G:C	+/+ cis	H_qe/H	5
+     19 G:C	NA	H_qe/H_qe	2
+     21 G:C	NA	H_i/H	3
+     22 G:C	NA	H_qe/H	2
+     23 G:C	+/+ cis	H/H_qe	5
+     23 G:C	NA	H_i/H_qe	3
+     29 G:C	NA	H_ie/H_ie	3
+     31 G:C	NA	H_e/H_e	4
+     33 G:C	NA	H/H	4
+     38 G:C	NA	H_e/H_e	2
+     39 G:C	+/+ cis	H_qe/H_qe	4
+     44 G:C	+/+ cis	H_qe/H	4
+     48 G:C	+/+ cis	H_e/H_e	5
+     49 G:C	+/+ cis	H/H_qe	4
+     56 G:C	NA	H/H	2
+     56 G:C	NA	H_i/H_i	3
+     58 G:C	+/+ cis	H_qe/H_qe	2
+     66 G:C	+/+ cis	H_i/H_qe	3
+     90 G:C	+/+ cis	H_ie/H_e	3
+     94 G:C	+/+ cis	H/H_qe	2
+    105 G:C	+/+ cis	H_e/H_ie	3
+    105 G:C	+/+ cis	H/H_i	3
+    106 G:C	+/+ cis	H_qe/H	2
+    113 G:C	NA	H_qe/H	3
+    122 G:C	+/+ cis	H_i/H	3
+    122 G:C	+/+ cis	H_i/H_i	3
+    149 G:C	NA	H_qe/H_qe	3
+    155 G:C	+/+ cis	H/H	5
+    160 G:C	+/+ cis	H_e/H_e	4
+    196 G:C	NA	H/H_qe	3
+    207 G:C	+/+ cis	H_qe/H_i	3
+    210 G:C	+/+ cis	H_e/H_e	2
+    263 G:C	+/+ cis	H_ie/H_ie	3
+    298 G:C	NA	H_e/H_e	3
+    385 G:C	+/+ cis	H/H	4
+    531 G:C	NA	H/H	3
+    676 G:C	+/+ cis	H/H	2
+   1242 G:C	+/+ cis	H_qe/H_qe	3
+   3003 G:C	+/+ cis	H/H_qe	3
+   3072 G:C	+/+ cis	H_qe/H	3
+   4425 G:C	+/+ cis	H_e/H_e	3
+  19739 G:C	+/+ cis	H/H	3
+      1 G:CB2	+/+ cis	H/H	3
+      1 G:CBR	+/+ cis	H_e/H_e	3
+      2 G:CBR	+/+ cis	H/H	3
+      2 G:CBR	+/+ cis	H_qe/H	3
+      7 G:CBV	+/+ cis	H/H	3
+      1 G:CCC	+/+ cis	H_e/H_e	4
+      2 G:CCC	+/+ cis	H_e/H_e	3
+      1 G:CSL	+/+ cis	H/H	2
+      1 G:CSL	+/+ cis	H/H	3
+      1 GDP:C	+/+ cis	H_e/H_e	3
+      1 GDP:DC	+/+ cis	H_e/H_e	3
+      1 G:N5M	+/+ cis	H_e/H_e	3
+      1 G:S4C	+/+ cis	H/H	3
+      2 GTP:C	+/+ cis	H_ie/H_e	3
+      4 GTP:C	+/+ cis	H/H	3
+      2 GTP:CCC	+/+ cis	H_e/H_e	3
+      1 GTP:DC	+/+ cis	H_e/H_e	3
+      3 IU:A	-/- cis	H/H	2
+      1 LC:LG	+/+ cis	H_e/H_e	3
+      1 LC:LG	+/+ cis	H/H	5
+      1 LC:LG	+/+ cis	H_qe/H_qe	3
+      5 LC:LG	+/+ cis	H/H	3
+      1 LG:LC	+/+ cis	H_e/H_e	3
+      1 LG:LC	+/+ cis	H_qe/H_qe	3
+      2 LG:LC	+/+ cis	H/H	3
+      1 N5C:G	NA	H_ie/H_e	3
+      1 OMC:OMG	+/+ cis	H_e/H_e	5
+      1 OMC:OMG	+/+ cis	H_e/H_e	6
+      1 OMC:OMG	+/+ cis	H_qe/H_qe	3
+      4 OMC:OMG	+/+ cis	H/H	3
+      4 OMC:OMG	+/+ cis	H/H	5
+      1 OMG:OMC	+/+ cis	H_e/H_e	6
+      1 OMG:OMC	+/+ cis	H_e/H_e	7
+      1 OMG:OMC	+/+ cis	H_qe/H_qe	3
+      4 OMG:OMC	+/+ cis	H/H	3
+      4 OMG:OMC	+/+ cis	H/H	5
+      1 OMU:A2M	-/- cis	H/H	2
+      1 S4C:G	+/+ cis	H/H	3
+      1 SSU:A	-/- cis	H/H	2
+      8 U36:A44	-/- cis	H/H	2
+      1 U:A	-/- cis	H_e/H_ie	3
+      1 U:A	-/- cis	H_i/H	2
+      1 U:A	-/- cis	H_i/H	3
+      1 U:A	-/- cis	H_i/H_qe	3
+      1 U:A	NA	H/H	4
+      1 U:A	NA	H/H_qe	3
+      1 U:A	NA	H_ie/H_e	2
+      1 U:A	NA	H_ie/H_e	4
+      1 U:A	NA	H_i/H_i	2
+      1 U:A	NA	H_i/H_qe	2
+      2 U:A	-/- cis	H/H_i	2
+      2 U:A	-/- cis	H_i/H_i	3
+      2 U:A	NA	H_ie/H_e	3
+      2 U:A	NA	H_qe/H_i	3
+      2 U:A	NA	H_qe/H_qe	3
+      2 U:A	NA	H_qe/H_qe	4
+      3 U:A	-/- cis	H/H_i	4
+      3 U:A	-/- cis	H_qe/H_qe	4
+      4 U:A	NA	H_qe/H	3
+      6 U:A	-/- cis	H_qe/H_i	2
+      7 U:A	-/- cis	H_ie/H_ie	3
+      7 U:A	NA	H_qe/H_i	2
+      9 U:A	-/- cis	H/H_qe	4
+      9 U:A	-/- cis	H_ie/H_e	3
+     10 U:A	-/- cis	H_e/H_e	4
+     12 U:A	NA	H_e/H_e	3
+     13 U:A	-/- cis	H_ie/H_ie	2
+     13 U:A	NA	H_e/H_ie	2
+     14 U:A	NA	H/H	3
+     20 U:A	-/- cis	H_i/H_qe	2
+     22 U:A	-/- cis	H/H	4
+     23 U:A	NA	H_qe/H_qe	2
+     24 U:A	-/- cis	H_qe/H	3
+     24 U:A	-/- cis	H_qe/H_qe	3
+     26 U:A	-/- cis	H_i/H_i	2
+     35 U:A	NA	H_qe/H	2
+     36 U:A	-/- cis	H/H_qe	3
+     39 U:A	NA	H/H_qe	2
+     52 U:A	-/- cis	H_ie/H_e	2
+     64 U:A	-/- cis	H_e/H_ie	2
+     72 U:A	-/- cis	H_e/H_e	3
+     85 U:A	NA	H_e/H_e	2
+    155 U:A	NA	H/H	2
+    316 U:A	-/- cis	H/H	3
+    579 U:A	-/- cis	H_qe/H_qe	2
+    669 U:A	-/- cis	H_qe/H	2
+    744 U:A	-/- cis	H_e/H_e	2
+    991 U:A	-/- cis	H/H_qe	2
+   7877 U:A	-/- cis	H/H	2
+      4 UMS:A	-/- cis	H/H	2
+      1 U:RIA	-/- cis	H/H	2
+      1 XUG:C	+/+ cis	H/H	2

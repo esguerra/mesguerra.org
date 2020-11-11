@@ -1,0 +1,11 @@
+#!/bin/bash
+# Little script which depends on the results of helivec which
+# produce H.dat and P.dat
+
+
+octave /home/esguerra/bin/avevec.m | awk '{print $1, $2, $3}' > avevec.dat
+
+
+
+
+

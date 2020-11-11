@@ -1,0 +1,9 @@
+
+To import my secret key and public key.
+>>gpg --import secring.gpg
+>>gpg --import pubring.gpg
+>>gpg --list-secret-keys
+To encrypt with my imported key
+>>gpg --encrypt filetoencrypt.txt  # This will create a .gpg encrypted file.
+>>gpg file.gpg                     # This will ask for your passphrase to decrypt.
+

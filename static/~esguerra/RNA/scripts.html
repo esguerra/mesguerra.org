@@ -1,0 +1,128 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Scripts and Unix Tricks</title>
+<link rel="stylesheet" href="/~esguerra/esguerra.css" type="text/css"/>
+<meta name="author" content="Modified from Nathan Baker by Mauricio Esguerra"/>
+<meta name="keywords" content="rna scripts, RNA torsion angles, 3DNA tricks, 3DNA tips"/>
+</link>
+</head>
+<div align="left">
+<a href="/~esguerra/RNA/rna.html">[RNA Home]</a>
+<a href="/~esguerra/RNA/ontology.html">[Ontology]</a>
+<a href="/~esguerra/RNA/rnafacts.html">[Facts & News]</a>
+<a href="/~esguerra/RNA/rnamotifs.html">[Motifs]</a> 
+<a href="/~esguerra/RNA/rnafolding.html">[Folding]</a> 
+<a href="/~esguerra/RNA/scripts.html">[Scripts]</a>
+<a href="/~esguerra/RNA/factotum.html">[Factotum]</a>
+<a href="/~esguerra/RNA/Diary/diary.html">[Diary]</a>
+<a href="/~esguerra/RNA/biblio.html">[AllBiblio]</a>
+</div>
+
+<hr/>
+<table width="80%">
+<td bgcolor="#FFFFB4">
+<h1>Scripts & Unix Tricks</h1>
+</td>
+</table>
+<hr \>
+What you'll find in this page:
+<br />
+ - Bash scripts which interact with sed and awk to parse and play with
+data from either 3DNA or just pdb files. I usually keep these in my
+/home/esguerra/bin directory, so that I can use them as if they were
+linux commands (i.e. ls, pwd, man).
+<br />
+ - Octave and R scripts which help understand the use of Xian-Yun Lu's
+3DNA, and also for analysis of 3DNA output.
+<br />
+ - Some tips to customize 3DNA to do exactly what you want. For
+example, get a ball and stick representation combined with
+Calladine-Drew's block represention using CPK coloring.
+<hr />
+
+<b>Least Squares Fit to Standard Reference Frame</b>
+<br/>
+<p>
+In the following compressed file you will find the octave script
+"localhelpar.m" which will follow the steps shown in page 21 of
+the <a href="http://3dna.rutgers.edu:8080/3DNA_v1.5/x3dna.pdf">3DNA
+    users guide</a> to make a least squares fit of the
+experimental Cartesian coordinates of a nucleic acid base to its
+corresponding standard reference frame coordinates and then it will
+find the base reference frames and local helical axis vector.
+</p>
+<a href="/~esguerra/RNA/3DNAExample.tgz"> -Click Here to Download- </a>
+<br/>
+<br/>
+Now you just need to type in your prompt:
+<br/>
+<pre>
+bash-3.1$ tar -xvzf 3DNAExample.tgz
+bash-3.1$ cd 3dna_example
+bash-3.1$ octave localhelpar.m
+</pre>
+<hr/>
+
+<h2>- /home/esguerra/bin</h2>
+<pre>
+<a href="/~esguerra/RNA/get_torsions">get_torsions</a>
+seq_num
+get_bsparam
+get_steps
+get_helireg
+xtractNkin
+avevecall
+</pre>
+<a href="/~esguerra/RNA/gethelireg"> <b>- get_helireg</b> </a> ==> Script
+to draw cilinders around DNA/RNA helical regions in r3d format. It's
+particularly useful for pymol users.
+<br />
+<a href="/~esguerra/RNA/xtractNkin"> <b>- xtractNkin</b>
+</a> ==> Make kinemage of local helical vectors in helical regions
+With this script you can make a kinemage of the helical vectors which are computed
+for the helical regions by 3DNA. The script separates the helical regions into new folders, analizes them through 3DNA and adds the position vector to the normalized helical vectors to get the vector representation. The script now also includes the average local helical axis. This script needs the
+additional file <a href="/~esguerra/RNA/header.kin">header.kin</a>.
+<br />
+<a href="/~esguerra/RNA/avevecall"> <b>- avevecall</b>
+</a> ==> Compute average helical vector from individual local helical axes
+vectors. This script just calculates the average helical axes vector for a given helical
+region and then makes a dat file that can be glued to a kinemage for visualization.
+<a href="/~esguerra/RNA/avevecall.m">avevecall.m</a>
+<br/>
+<br/>
+<hr/>
+<a href="/~esguerra/RNA/stepavesg1.m">
+<b>- Find RMSD between step-parameter average vector for Group I and all the step-parameter vectors of the large subunit of the ribosome.</b>
+</a>
+<br/>
+This little octave script has as its input two files which contain the
+step parameters resulting from a 3DNA analysis (<a href="/~esguerra/RNA/GroupI">Group I</a>
+and <a href="/~esguerra/RNA/1jj2_23S.steps">1jj2_23S.steps</a>). Using
+these files as input it calculates the RMSD between them. It then makes some
+histogram graphs which require a modified version of the
+<a href="/~esguerra/RNA/histo.m">histo.m</a> script which you'll need 
+to have in your working folder or have it in your octave path
+somewhere. The reason for the histo.m modification
+was to be able to change the color of the histogram, so, now you can
+easily change the color of the histogram lines.
+To run this script you just need to download the linked files and type
+in your prompt:
+<pre>
+bash-3.1$ octave stepavesg1.m
+</pre>
+You can then view the output histograms in any software of your
+preference. I recommend ghostview.
+<br />
+<hr />
+<h2>Pymol control in blocview</h2>
+If you use blocview, you will see that when using the -t option, it
+will use pymol to produce ray traced images.
+If you want to customize blocview to do the ray_tracing you want pymol
+to do, then you can modify the files:
+<br />
+/X3DNA/config/pymol_ray.par
+<br />
+/X3DNA/bin/x3dna_r3d2png
+<br />
+
+<hr />

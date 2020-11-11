@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+
+<head>
+    <title>GIT at the Olson Lab</title>  
+<link rel="stylesheet" href="/~esguerra/esguerra.css" type="text/css"/>
+<meta name="author" content="Mauricio Esguerra, Mauricio, Esguerra, Neira"/>
+<meta name="keywords" content="Olson Lab, git"/>
+</link>
+</head>
+
+
+<div align="left"><a href="/~esguerra/TUTORIALS/tutorials.html">[Home]</a></div>
+<h1>
+GIT COMMANDS
+</h1>
+<hr/>
+<br/>
+To clone (i.e. copy) a repository.
+<pre>
+git clone ssh://esguerra@dnagit.rutgers.edu:1789/~/Documents/Thesis
+</pre>
+To check the status of the project.
+<pre>
+git status
+</pre>
+To add files to the project.
+<pre>
+git add .
+</pre>
+To commit changes to the project.
+<pre>
+git commit -m "Commit message here" 
+</pre>
+To go back to an old version of the project.
+Note that the commit-ref is the SHA value in your git log
+<pre>
+git checkout [commit-ref] [filename]
+</pre>
+
+To add keys to gitosis repository
+<pre>
+git clone gitosis@homegit:repositories/gitosis-admin.git
+cd gitosis-admin
+cp ~/.ssh/napoli_rsa.pub keydir/
+git add keydir/napoli_rsa.pub
+gedit gitosis.conf                 #Add user/key to authorized projects.
+git commit -a -m "Grant Rights to Napoli to Thesis"
+git push
+cd localrepository/thesis
+git remote add origin3 gitosis@homegit:repositories/thesis.git
+git push
+firefox http://homegit:8000/viewgit
+</pre>
+
+<hr/>
+<h2> - Links</h2>
+How to set-up a git repository un ubuntu with gitosis for web
+browsing.
+<br/>
+<a href="https://help.ubuntu.com/community/Git">https://help.ubuntu.com/community/Git</a> 
+<br/>
+How to get .gitignore to work
+<br/>
+<a href="http://stackoverflow.com/questions/1139762/gitignore-file-not-ignoring">get
+  .gitignore to ignore files I.</a>
+<br/>
+<a href="http://jpablobr.com/gitignore-file-not-ignoring-files/">get
+  .gitignore to ignore files II.</a>
+
+<hr/>
+<h2> - Notes</h2>
+One can now create an account in a free git repository with private
+and public projects. The site is called indefero.
+<br/>
+<a href="http://www.indefero.net">http://www.indefero.net</a>
+<br/>
+You can just upload your ssh keys and you're ready to go.
+<br/>
+For example:
+<pre>
+git init
+git add .
+git commit -m "initial import"
+git remote add origin_1 git@rnagit.indefero.net:rnagit/end2end.git
+git push origin_1 master
+</pre>
+
+One can also create an empty git repository like so:
+<pre>
+mkdir nameofrepo
+cd nameofrepo
+git --bare init
+</pre>
+Once you've created the empty bare repo in a remote host, then you have to 
+make your local project indexed by git and then you can push it to the bare git
+repository in your remote host.
+<pre>
+cd project   #AT LOCAL MACHINE
+git init
+git add
+git commit -a
+git push ssh://myremotehost/~/nameofrepo master #AND THIS WILL PUSH TO REMOTE  
+</pre>
+Note: In the last line notice that the push is done to master branch. If you want 
+it to go automatically to your git repo, you gotta config .git/config first.
+
+</html>

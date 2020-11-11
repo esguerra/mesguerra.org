@@ -1,0 +1,32 @@
+Visualization:
+pymol
+vmd
+molekel
+molden
+pmv(part of mgltools)
+rasmol
+chimera
+
+
+
+Modeling:
+
+Molecular Mechanics:
+mmtk
+amber
+charmm
+namd
+gromacs
+tinker
+
+
+SemiEmpirical
+mopac
+
+
+Ab Initio
+gamess
+gaussian
+turbomole
+darwin
+

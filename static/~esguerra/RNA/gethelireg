@@ -1,0 +1,37 @@
+#!/bin/bash
+# Script to get the helical region files poc_haxis.r3d
+# rename them and get them into one single file to be merged with
+# the whole skeleton.
+echo "Type the name of your pdb file"
+read -e INPUT
+#find_pair -t  $INPUT stdout | analyze
+find_pair  $INPUT stdout | analyze
+NUMHEL=`grep "Section #" hel_regions.pdb | tail -n 1 | awk '{print substr($3,2)}'` 
+
+mkdir helical
+cp $INPUT helical/
+cd helical
+
+i="1"
+while [ $i -le $NUMHEL ]
+do
+    echo "$i"
+    mkdir rna$i.dir
+    ex_str -$i ../hel_regions.pdb rna$i.dir/rna$i.pdb
+    cd rna$i.dir
+#    find_pair -t rna$i.pdb rna$i.inp
+    find_pair rna$i.pdb rna$i.inp
+    analyze rna$i.inp
+    mv poc_haxis.r3d rna$i.r3d
+    cp rna$i.r3d ../
+    cd ..
+    i=`expr $i + 1`
+done
+rm -rf rna*.dir
+blocview -o $INPUT 
+echo -e "8 \n  17.  0.6       -1.0 -1.0 -1.0     0.4   0 0 0 0" > translucent.r3d 
+cat t.r3d translucent.r3d rna*.r3d > $INPUT.r3d
+
+
+
+

@@ -1,0 +1,4514 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<div align="right"><a href="/~esguerra/RNA/rna.html">[RNA Home]</a></div>
+<header>
+	<title>JabRef Output</title>
+	<style type="text/css">
+body {
+    font-family:Georgia, Garamond, Serif;
+    background-color:#ddd;
+}
+
+.bibtex_entry {
+    border:2px solid black;
+    margin:1em;
+}
+
+.bibtex_header {
+    border-bottom:solid gray 2px;
+}
+.bibtex_key {
+    font-size:small;
+    color:#555;
+    display:inline;
+	font-weight:bold;
+}
+
+.bibtex_content {
+    padding-bottom:1em;
+}
+
+.bibtex_author {
+    font-weight:bold;
+    padding-bottom:1em;
+}
+
+.bibtex_title {
+    font-weight:bold;
+    padding-bottom:1em;
+}
+
+.bibtex_url, .bibtex_pdf, .bibtex_doi, .bibtex_citeseer {
+    display:inline;
+	font-size:small;
+	float:right;
+	padding-left:1em;
+	padding-right:1em;
+}
+
+.bibtex_url a, .bibtex_pdf a, .bibtex_doi a, .bibtex_citeseer a , .bibtex_url a:visited, .bibtex_pdf a:visited, .bibtex_doi a:visited, .bibtex_citeseer a:visited {
+	text-decoration:none;
+	font-weight:bold;
+	color:darkblue;
+
+}
+
+.bibtex_journal, .bibtex_year, .bibtex_volume, .bibtex_pages, .bibtex_publisher {
+    display:inline;
+}
+	</style>
+</header>
+<body>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Abramovitz1997">Abramovitz1997</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.1996.0810">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\abramovitz1997.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Remarkable morphological variability of a common RNA folding motif: the GNRATetraloop-receptor interaction
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Abramovitz, D.L. & Pyle, A.M.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology 
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 266
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 493-506
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1997
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Steitz.2000">Steitz.2000</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1126/science.289.5481.905">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\ban1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			The Complete Atomic Structure of the Large Ribosomal Subunit at 2.4 Ã Resolution
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Ban, N.; Nissen, P.; Hansen, J.; Moore, P.B. & Steitz, T.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Science
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 289
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 905-920
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2000
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Batey1999">Batey1999</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1002/(SICI)1521-3773(19990816)38:16<2326::AID-ANIE2326>3.0.CO;2-3">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\batey1999.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Tertiary Motifs in RNA Structure and Folding
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Batey, R.T.; Rambo, R.P. & Doudna, J.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Angewandte Chemie International Edition
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 38
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 2326-2343
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1999
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Chen2000">Chen2000</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1073/pnas.">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\chen2000.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA folding energy landscapes
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Chen, S. & Dill, K.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF AMERICA 97 (2)
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 97
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 646-651
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2000
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Dickerson.1989">Dickerson.1989</a>
+		</div>
+
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\dickerson1989.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Definitions and Nomenclature of Nucleic Acid Structure Components
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Dickerson, R.E. & al., e.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acid Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 17
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 1797-1803
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1989
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Dima2005">Dima2005</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/j.jmb.2004.12.012 ">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://dima2005.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Extracting Stacking Interaction Parameters for RNA from the Data Set of Native Structures
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Dima, R.I.; Hyeon, C. & Thirumalai, D.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology 
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 347
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 53-69
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Duarte2003">Duarte2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1093/nar/gkg682">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://duarte2003.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA structure comparison, motif search and discovery using a reduced representation of RNA conformational space
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Duarte, C.M.; Wadley, L.M. & Pyle, A.M.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 31
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 4755-4761
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Eddy2004">Eddy2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1038/nbt1104-1457">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://eddy2004.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			How do RNA folding algorithms work?
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Eddy, S.R.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nature Biotechnology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 22
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 1457-1458
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Eisen.1998">Eisen.1998</a>
+		</div>
+
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\eisen1.pdf">pdf</a>
+		</div>
+		
+
+		
+		<div class="bibtex_url">
+			<a href="http://www.pnas.org/cgi/content/full/95/25/14863">url</a>
+		</div>
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Cluster analysis and display of genome-wide expression patterns
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Eisen, M.B.; Spellman, P.T.; Browndagger, P.O. & Botstein, D.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Proceedings of the National Academy of Science
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 95
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 14863-14868
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1998
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="EndresR.2004">EndresR.2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1103/RevModPhys.76.195">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\endres.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Colloquium: The Quest for High-conductance DNA
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Endres, R.G.; Cox, D.L. & Singh, R.R.P.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Rev. Mod. Phys.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 76
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 195-214
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="FlebigK.2003">FlebigK.2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1063/1.464068">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\flebig.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Protein Core Assembly Process
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Flebig, K.M. & Dill, K.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			J. Chem. Phys.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 98
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 3475-3487
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Gautheret1993">Gautheret1993</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.1993.1104">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file:///home/win/Articles/gautheret1993.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Modeling the Three-dimensional Structure of RNA Using Discrete Nucleotide Conformational Sets
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Gautheret, D.; Major, F. & Cedergren, R.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 229
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 1049-1064
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1993
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="GanH.2004">GanH.2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/doi:10.1093/bioinformatics/bth084">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\gan2.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RAG: RNA-As-Graphs database?concepts, analysis, and features
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Hark, G.H.; Fera, D.; Julie, Z.; Nahum, S.; Michael, T.; Uri, L.; Namhee, K. & Tamar, S.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Bioinformatics
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 20
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 1285-1291
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Hassan1998">Hassan1998</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.1998.1994">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\elhassan1998.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Two Distinct Modes of Protein-induced Bending
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Hassan, M.E. & Calladine, C.R.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 282
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 331-343
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1998
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Hassan1995">Hassan1995</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/doi:10.1006/jmbi.1995.0462">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\elhassan1995.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			The Assessment of the Geometry of Dinucleotide Steps in Double-Helical DNA; a New Local Calculation Scheme
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Hassan, M.E. & Calladine, C.R.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 251
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 648-664
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1995
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Hermann2000">Hermann2000</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0969-2126(00)00110-6">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://hermann2000.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA bulges as architectural and recognition motifs
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Hermann, T. & Patel, D.J.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Structure
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 8
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. R47-R54
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2000
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Hermann1999">Hermann1999</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.1999.3312 ">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://hermann1999.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Stitching Together RNA Tertiary Architectures
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Hermann, T. & Patel, D.J.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 294
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 829-849
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1999
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="GanH.2003">GanH.2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1093/nar/gkg365">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\gan.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Exploring the repertoire of RNA secondary motifs using graph theory; implications for RNA design
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Hin, H.G. & Samuela Pasquali, T.S.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 31
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 2926-2943
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Rproj">Rproj</a>
+		</div>
+
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\R-intro.pdf">pdf</a>
+		</div>
+		
+
+		
+		<div class="bibtex_url">
+			<a href="http://www.r-project.org/">url</a>
+		</div>
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			The R Project for Statistical Computing
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			http://www.r-project.org/
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			R project
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. none
+		</div>,
+		
+
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="HUANG2005">HUANG2005</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1261/rna.7238705">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://huang2005.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			The application of cluster analysis in the intercomparison of loop structures in RNA
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Huang, H.; NAGASWAMY, U. & FOX, G.E.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			RNA
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 11
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 412-423
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Hyeon2005">Hyeon2005</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1073/pnas.0408314102">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\hyeon2005.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Mechanical unfolding of RNA hairpins
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Hyeon, C. & Thirumalai, D.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Proceedings of the National Academy of Science
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 102
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 6789-6794
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="NowakowskiJ.2000">NowakowskiJ.2000</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.2000.3826">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\nowakoski.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Alternative Conformations of a Nucleic Acid Four-way Junction 
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Jacek, N.; J., S.P.; David, S.C. & F., J.G.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			J. Mol. Biol.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 300
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 93-102
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2000
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Klosterman2004">Klosterman2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1093/nar/gkh537">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://klosterman2004.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Three-dimensional motifs from the SCOR, structural classification of RNA database: extruded strands, base triples, tetraloops and U-turns
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Klosterman, P.S.; Hendrix, D.K.; Tamura, M.; Holbrook, S.R. & Brenner., S.E.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 32
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 2342-2352
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Klosterman2002">Klosterman2002</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/http://scor.lbl.gov/">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\klosterman2002.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			SCOR: a Structural Classification of RNA database
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Klosterman, P.S.; Tamura, M.; Holbrook, S.R. & Brenner, S.E.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 30
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 392-394
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2002
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Kopeikin2005">Kopeikin2005</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1063/1.1857831 ">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\kopeikin2005.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Statistical thermodynamics for chain molecules with simple RNA tertiary contacts
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Kopeikin, Z. & Chen, S.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			The Journal of Chemical Physics
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 122
+		</div>,
+		
+
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Pinaki.2004">Pinaki.2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/j.theochem.2003.10.006">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\gupta1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			How a repulsive charge distribution becomes attractive and stabilized by a polarizable protein dielectric
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Kundu, S. & Gupta-Bhaya, P.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			TheoChem
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 668
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 65-73
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Lankas2004">Lankas2004</a>
+		</div>
+
+		
+
+		
+
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			DNA Deformability at the Base Pair Level
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Lankas, F.; Sponer, J.; Langowski, J. & III, T.E.C.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of the American Chemical Society
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 126
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 4124-4125
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Leontis2003">Leontis2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0959-440X(03)00076-9">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\leontis.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Analysis of RNA motifs
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Leontis, N.B. & Westhof, E.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Current Opinion in Structural Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 13
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 300-308
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Lescoute2005">Lescoute2005</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1093/nar/gki535">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\lescoute2005.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Recurrent structural RNA motifs, Isostericity Matrices and sequence alignments
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Lescoute, A.; Leontis, N.B.; Massire, C. & Westhof, E.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Res.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 33
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 2395-2409
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Liphardt2001">Liphardt2001</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1126/science.1058498">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\liphardt2001.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Reversible unfolding of single RNA molecules by mechanical force.
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Liphardt, J.; Onoa, B.; Smith, S.; Tinoco Jr., I. & Bustamante, C.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Science
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 292
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 733-737
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2001
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Lu1997">Lu1997</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.1997.1346">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\xiang1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Structure and Conformation of Helical Nucleic Acids: Analysis Program (SCHNAaP)
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Lu, X.; Hassan, M.A.E. & Hunter, C.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 273
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 668-680
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1997
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Lu1997a">Lu1997a</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.1997.1345">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\xiang2.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Structure and Conformation of Helical Nucleic Acids: Rebuilding Program (SCHNArP)
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Lu, X.; Hassan, M.A.E. & Hunter, C.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 273
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 681-691
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1997
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Lu2003">Lu2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1093/nar/gkg680">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\lu1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			3DNA: A Software Package for the Analysis, Rebuilding and Visualization of the Three-Dimensional Nucleic Acid Structures
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Lu, X. & Olson, W.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 31
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 5108-5121
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Mathews2004">Mathews2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1073/pnas.0401799101">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\mathews2004.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Incorporating chemical modification constraints into a dynamic programming algorithm for prediction of RNA secondary structure
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Mathews, D.H.; Disney, M.D.; Childs, J.L.; Schroeder, S.J.; Zuker, M. & Turner, D.H.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Proceedings of the National Academy of Sciences
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 101
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 7287-7292
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="McCloskey.2005">McCloskey.2005</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1093/nar/gki015">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\mccloskey1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			The Small Subunit rRNA Modification Database
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			McCloskey, J.A. & Rozenski, J.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 33
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. D135-D138
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Moore1999">Moore1999</a>
+		</div>
+
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://moore1999.pdf">pdf</a>
+		</div>
+		
+
+		
+		<div class="bibtex_url">
+			<a href="http://search.epnet.com/login.aspx?direct=true&db=aph&an=5366477">url</a>
+		</div>
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Structural Motifs in RNA.
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Moore, P.B.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Annual Review of Biochemistry
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 68
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 287-300
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1999
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Moore2005">Moore2005</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/j.tibs.2005.04.006 ">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://moore2005.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			The ribosome revealed
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Moore, P.B. & Steitz, T.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Trends in Biochemical Sciences 
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 30
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 281-283
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Steitz.2003">Steitz.2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1146/annurev.biochem.72.110601.135450">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\steitz1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			THE STRUCTURAL BASIS OF LARGE RIBOSOMAL SUBUNIT FUNCTION
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Moore, P.B. & Steitz, T.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Annual Review of Biochemistry
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 72
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 813-850
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Mukhopadhyay2003">Mukhopadhyay2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1103/PhysRevE.68.041904">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://mukhopadhyay2003.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Statistical mechanics of RNA folding: Importance of alphabet size
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Mukhopadhyay, R.; Emberly, E.; Tang, C. & Wingreen, N.S.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Physical Review E.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 68
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 041904-1 041904-5
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Murray2003">Murray2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1073/pnas.1835769100">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file:///home/win/Articles/murray2003.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA backbone is rotameric
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Murray, L.J.W.; III, W.B.A.; Richardson, D.C. & Richardson, J.S.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Proceedings of the National Academy of Sciences of the United States of America
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 100
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 13904-13909
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Murthya1999">Murthya1999</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.1999.2958">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\Murthy1999.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			A Complete Conformational Map for RNA
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Murthya, V.L.; Srinivasana, R.; Draperb, D.E. & Rose, G.D.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 291
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 313-327
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1999
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Steitz2.2002">Steitz2.2002</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1126/science.289.5481.920">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\nissen1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			The Structural Basis of Ribosome Activity in Peptide Bond Synthesis
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Nissen, P.; Nissen, J.; Ban, N.; Moore, P.B. & Steitz, T.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Science
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 289
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 920-930
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2000
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="NiÃ±oV.2001">NiÃ±oV.2001</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1021/ci000072+">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\nino1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			A Criteria to Classify Biological Activity of Benzimidazoles from a Model of Structural Similarity
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			NiÃ±o, M.; Daza, E.E. & Tello, M.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			J. Chem. Inf. Comput. Sci.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 41
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 495-504
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2001
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Olson.2001">Olson.2001</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.2001.4987">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\olson1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			A Standard Reference Frame for the Description of Nucleic Acid Base-pair Geometry
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Olson, W.K.; Bansal, M.; Burley, K.; Dickerson, R. & Gerstein, M.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 313
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 229-237
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2001
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Onoa2004">Onoa2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/j.sbi.2004.04.001">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://onoa2004.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA folding and unfolding
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Onoa, B. & Tinoco Jr., I.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Current Opinion in Structural Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 14
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 374-379
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Packer1998">Packer1998</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.1998.1865">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\packer1998.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Sequence-dependent DNA structure: the role of the sugar-phosphate backbone
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Packer, M.J. & Hunter, C.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 280
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 407-420
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1998
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Pyle1995">Pyle1995</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/0959-440X(95)80091-3">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://pyle1995.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA folding
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Pyle, A.M. & Green, J.B.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Current Opinion in Structural Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 5
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 303-310
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1995
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="RandicM.2004">RandicM.2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/j.cplett.2004.01.088">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\randic2004.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Graphical representation of DNA as 2-D map
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Randic, M.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Chem. Phys Lett.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 386
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 468-471
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="RandicM.1997">RandicM.1997</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0009-2614(97)00447-8">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\randic1997.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Characterization of 3-D sequences of proteins
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Randic, M. & Krilov, G.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Chem. Phys. Lett.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 272
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 115-119
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1997
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Reenan2005">Reenan2005</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1038/nature03364">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\reenan2005.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Molecular determinants and guided evolution of species-specific RNA editing
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Reenan, R.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nature
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 434
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 409-413
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Saenger.1984">Saenger.1984</a>
+		</div>
+
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Principles of Nucleic Acid Structure
+		</div>
+ 		
+
+		
+		<div class="bibtex_author">
+			Saenger, W.
+		</div>
+		
+
+		
+		<div class="bibtex_publisher">
+			Springer-Verlag
+		</div>,
+		
+
+		
+
+		<div class="bibtex_year">
+			1984
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="SchneiderB.2004">SchneiderB.2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1093/nar/gkh333">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\schneider1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA Conformational Classes
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Schneider, B.; Moravek, Z. & Berman, H.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 32
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 1666-1677
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Schroeder2002">Schroeder2002</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0959-440X(02)00325-1">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://schroeder2002.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA folding in vivo
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Schroeder, R.; Grossberger, R.; Pichler, A. & Waldsich, C.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Current Opinion in Structural Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 12
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 296-300
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2002
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Sosnick2003">Sosnick2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0959-440X(03)00066-6">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://sosnick2003.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA folding: models and perspectives
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Sosnick, T.R. & Pan, T.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Current Opinion in Structural Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 13
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 309-316
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Spahn2001">Spahn2001</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0092-8674(01)00539-6 ">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\spahn1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Structure of the 80S Ribosome from Saccharomyces cerevisiae?tRNA-Ribosome and Subunit-Subunit Interactions
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Spahn, C.M.T.; Beckmann, R.; Eswar, N.; Penczek, P.; Sali, A.; Blobel, G. & Frank, J.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Cell
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 107
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 373-386
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2001
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Spirin.2002">Spirin.2002</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0014-5793(02)03434-8">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\spirin1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Omnipotent RNA
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Spirin, A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			FEBS
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 530
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 4-8
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2002
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Stagg2003">Stagg2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0022-2836(03)00174-8 ">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file:///home/win/Articles/stagg2003.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			A Structural Model for the Assembly of the 30 S Subunit of the Ribosome
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Stagg, S.M.; Mears, J.A. & Harvey, S.C.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 328
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 49-61
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Su2003">Su2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/j.jmb.2003.09.071">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://su2003.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			An Alternative Route for the Folding of Large RNAs: Apparent Two-state Folding by a Group II Intron Ribozyme
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Su, L.J.; Brenowitz, M. & Pyle, A.M.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 334
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 639-652
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Thirumalai2005">Thirumalai2005</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1021/bi047314+ S0006-2960(04)07314-3">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://thirumalai2005.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA and Protein Folding: Common Themes and Variations
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Thirumalai, D. & Hyeon, C.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Biochemistry
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 44
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 4957-4970
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Thirumalai2001">Thirumalai2001</a>
+		</div>
+
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://thirumalai2001.pdf">pdf</a>
+		</div>
+		
+
+		
+		<div class="bibtex_url">
+			<a href="http://search.epnet.com/login.aspx?direct=true&db=aph&an=5367085">url</a>
+		</div>
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Early Events in RNA Folding
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Thirumalai, D.; Lee, N.; Woodson, S.A. & Klimov, D.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Annu. Rev. Phys. Chem.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 52
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 751-761
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2001
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Tinoco2004">Tinoco2004</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1146/annurev.biophys.33.110502.140418">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://tinoco2004.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			FORCE AS A USEFUL VARIABLE IN REACTIONS: Unfolding RNA.
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Tinoco, I.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Annual Review of Biophysics &amp; Biomolecular Structure
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 33
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 363-385
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2004
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Tinoco2002">Tinoco2002</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1146/annurev.physchem.53.082001.144341">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\Education\tinoco.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Physical Chemistry of Nucleic Acids
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Tinoco, I.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Annu. Rev. Phys. Chem.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 53
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 1-15
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2002
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Tinoco1999">Tinoco1999</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1006/jmbi.1999.3001">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://tinoco1999.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			How RNA folds
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Tinoco, I. & Bustamante, C.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Journal of Molecular Biology
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 293
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 271-281
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1999
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Tostesen2001">Tostesen2001</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1021/jp002877q">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\tostesen2001.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA Folding Transitions and Cooperativity
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Tostesen, E.; Chen, S. & Dill, K.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			J. Phys. Chem. B
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 105
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 1618-1630
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2001
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Unrau.1998">Unrau.1998</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1038/26193">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\unrau1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA-catalysed Nucleotide Synthesis
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Unrau, P.J. & Bartel, D.P.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nature
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 395
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 260-263
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1998
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Vila-SanjurjoA.2003">Vila-SanjurjoA.2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1073/pnas.1133380100">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\vila-sanjurjo.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			X-ray crystal structures of the WT and o hyper-accurate ribosome from Eschericia coli
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Vila-Sanjurjo, A.; Ridgeway, W.K.; Seymaner, V.; Zhang, W.; Santoso, S.; Yu, K. & Cate, J.H.D.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			PNAS
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 100
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 8682-8687
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="WaldropM.1992">WaldropM.1992</a>
+		</div>
+
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\waldrop1.pdf">pdf</a>
+		</div>
+		
+
+		
+		<div class="bibtex_url">
+			<a href="http://links.jstor.org/sici?sici=0036-8075%2819920605%293%3A256%3A5062%3C1396%3AFRMPG%60%3E2.0.CO%3B2-H">url</a>
+		</div>
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Finding RNA Makes Proteins Gives 'RNA World' a Big Boost
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Waldrop, M.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Science
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 256
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 1396-1397
+		</div>,
+		
+
+		<div class="bibtex_year">
+			1992
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="WeiklT.2003">WeiklT.2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0022-2836(03)00436-4">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\weikl.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Folding Rates and Low-entropy-loss Routes of Two-state Proteins
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Weikl, T.R. & Dill, K.A.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			J. Mol. Biol.
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 329
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 585-598
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Westhof2000">Westhof2000</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1016/S0969-2126(00)00112-X">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://westhof2000.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			RNA folding: beyond Watson-Crick pairs
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Westhof, E. & Fritsch, V.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Structure
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 8
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. R55-R65
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2000
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Widom.2001">Widom.2001</a>
+		</div>
+
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\widom1.pdf">pdf</a>
+		</div>
+		
+
+		
+		<div class="bibtex_url">
+			<a href="http://journals.cambridge.org/bin/bladerunner?REQUNIQ=1106169319&REQSESS=979243&117000REQEVENT=&REQINT1=94950&REQAUTH=0">url</a>
+		</div>
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Role of DNA Sequence in Nucleosome Stability and Dynamics
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Widom, J.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Quarterly Reviews of Biophysics
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 34
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 269-324
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2001
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Yang.2003">Yang.2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1093/nar/gkg529">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\yang1.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Tools for the Automatic Identification and Classification of RNA base pairs
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Yang, H. & Jossinet, F.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 31
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 3450-3460
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="YusupovM.2001">YusupovM.2001</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1126/science.1060089">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\yusupov.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Crystal Structure of the Ribosome at 5.5 A Resolution
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Yusupov, M.M.; Yusupova, G.Z.; Baucom, A.; Lieberman, K.; Earnest, T.N.; J., H.D.C. & Noller, H.F.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Science
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 292
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 883-896
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2001
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="Zhurkin.2005">Zhurkin.2005</a>
+		</div>
+
+		
+
+		
+
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Sequence-Dependent Variability of B-DNA: 
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Zhurkin, V.B.; Tolstorukov, M.Y.; Xu, F.; Colasanti, A.V. & Olson, W.K.
+		</div>
+		
+
+		
+
+		
+
+		
+
+		<div class="bibtex_year">
+			2005
+		</div>
+	</div>
+</div>
+<div class="bibtex_entry">
+
+	<div class="bibtex_header">
+		<div class="bibtex_key">
+			<a name="ZuckerM.2003">ZuckerM.2003</a>
+		</div>
+
+		
+		<div class="bibtex_doi">
+			<a href="http://dx.doi.org/10.1093/nar/gkg595">doi</a>
+		</div>
+		
+
+		
+
+		
+		<div class="bibtex_pdf">
+			<a href="file://D:\Articles\zucker.pdf">pdf</a>
+		</div>
+		
+
+		
+	</div>
+
+	<div class="bibtex_content">
+
+		
+		<div class="bibtex_title">
+			Mfold web server for nucleic acid folding and hybridization prediction
+		</div>
+		
+
+		
+		<div class="bibtex_author">
+			Zucker, M.
+		</div>
+		
+
+		
+		<div class="bibtex_journal">
+			Nucleic Acids Research
+		</div>,
+		
+
+		
+		<div class="bibtex_volume">
+			Vol. 31
+		</div>,
+		
+
+		
+		<div class="bibtex_pages">
+			pp. 3406-3415
+		</div>,
+		
+
+		<div class="bibtex_year">
+			2003
+		</div>
+	</div>
+</div>
+</body>
+</html>

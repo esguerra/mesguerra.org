@@ -1,0 +1,60 @@
+++++++++++++++++++++++++++++++++++
+LIST OF USEFUL LINUX COMMANDS
+Author: Mauricio Esguerra
+Date:   November 18, 2009
+email:  mauricio.esguerra@gmail.com
+++++++++++++++++++++++++++++++++++
+
+paste: 
+- Concatenates two files side by side instead of one at the end
+  of the other as cat does.
+
+tree:
+- Gives you a tree representation of directories could be
+  thought of as similar to ls
+
+free -m
+- Shows how much RAM your computer has.
+
+uname -a
+- Tells you what distro and kernel version u have.
+
+wget -r -l1 --no-parent -nd http://www.eden.rutgers.edu/~esguerra/scripts
+- Will get all files in the scripts folder.
+
+acpi -V
+- Will show the cpu temperature and battery charge in laptop.
+
+rsync -av --progress --delete --log-file=/home/esguerra/rsync_$(date +%Y%m%d).log \
+/workstation /media/myexternalharddrive
+- This will make a backup of the data in my workstation to my external hard drive.
+  Note that it will create a log file whose 4th column format should be read as
+  cd+++++++++  del
+  cL+++++++++  link
+  cS+++++++++  send
+  >f+++++++++  recv
+
+find /home/esguerra/esguerra.myosin/Articles/ -type f -print0 | xargs -0 chmod 644
+- This are three commands (find, xargs and chmod) combined to change permissions 
+  recursively to files only.
+
+find /home/esguerra/esguerra.myosin/Articles/ -type d -print0 | xargs -0 chmod 755
+- This are three commands (find, xargs and chmod) combined to change permissions 
+  recursively to folders only.
+
+sshfs shamu: Shamu/
+- This mounts a ssh account in the Folder Shamu. You need to install sshfs first.
+
+fusermount -u Shamu/
+- This unmounts the mounted ssh "partition".
+
+
+
+++++++++++++++++++++++++++++++++++
+LINKS:
+++++++++++++++++++++++++++++++++++
+
+http://www.linuxguide.it/linux_commands_line_en.htm
+http://www.pixelbeat.org/cmdline.html
+http://www.linuxquestions.org/questions/linux-general-1/chmod-all-files-644-and-files-755-542059/
+http://hivelogic.com/enkoder

@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{babcock1994}
+Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
+Nucleic acid structure analysis; mathematics for local cartesian and helical
+  structure parameters that are truly comparable between structures.
+{\em Journal of Molecular Biology,} {\bf 237}, 125--156.
+
+\bibitem{lu2003}
+Lu, X.-J. and Olson, W. (2003)
+3dna: A software package for the analysis, rebuilding and visualization of the
+  three-dimensional nucleic acid structures.
+{\em Nucleic Acids Research,} {\bf 31}(17), 5108--5121.
+
+\bibitem{lu1997}
+Lu, X.-J., Hassan, M. A.~E., and Hunter, C.~A. (1997)
+Structure and conformation of helical nucleic acids: Analysis program
+  (schnaap).
+{\em Journal of Molecular Biology,} {\bf 273}, 668--680.
+
+\bibitem{olson2001}
+Olson, W.~K., Bansal, M., Burley, K., Dickerson, R., and Gerstein, M. (2001)
+A standard reference frame for the description of nucleic acid base-pair
+  geometry.
+{\em Journal of Molecular Biology,} {\bf 313}, 229--237.
+
+\end{thebibliography}

@@ -1,0 +1,24 @@
+#!/bin/bash
+echo "==============================================="
+echo "This script fishes out backbone torsion angles "
+echo "from a single (-s) stranded nucleic acid       "
+echo "analyzed with 3DNA.                            "
+echo " i.e. find_pair -s bla.pdb stdout | analyze    "
+echo "                                               "
+echo "USAGE:  ./get_torsions outfile.outs            "
+echo "Output will have the .tor extension            "
+echo "==============================================="
+echo "  "
+
+N=`grep "Number of base-pairs:" $1 | awk '{print substr($4,1)}'`
+
+grep -A `expr $N + 2` "RMSD of the bases" $1 | awk '{print $1}' | sed '1,3d' > $1.vec
+transpose $1.vec > $1.seq
+
+grep -A $N "base    alpha" $1 | awk '{print $3, $4, $5, $6, $7, $8, $9}' | sed '1,1d' > t1
+
+paste $1.vec t1 > $1.tor
+
+rm t1
+
+

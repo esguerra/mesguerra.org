@@ -1,0 +1,16 @@
+It's interesting to mention that in the for-profit category of companies there are special cases such as 
+L.L.C. (Limited Liability Companies)
+
+Following are the companies I found:
+
+Company Name                                       Webpage                  Company Type
+
+Computational Chemistry List                http://www.ccl.net                  L.L.C.
+D.S.B. Science                              http://www.dsbscience.com           Consulting
+Chamot Laboratories                         http://www.chamotlabs.com           Consulting
+Cache Research                              http://www.cacheresearch.com        L.L.C.
+Molecular Solutions                         http://www.molsol.com               JobList
+Synexsess Discovery Chemistry               http://www.synexsess.com            Drug Discovery
+CompChem Innovations                        http://www.compchem.com             Consulting
+
+

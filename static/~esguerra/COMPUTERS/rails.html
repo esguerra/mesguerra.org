@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+
+<head>
+    <title>Rails Reference Sheet</title>  
+<link rel="stylesheet" href="/~esguerra/esguerra.css" type="text/css"/>
+<meta name="author" content="Mauricio Esguerra, mauricio, esguerra"/>
+<meta name="keywords" content="rails, ruby, tricks, ruby tricks, esguerra, mauricio esguerra neira"/>
+</link>
+</head>
+
+
+<div align="right"><a href="/~esguerra/index.html">[Home]</a></div>
+
+
+<table width="80%">
+<!--<td bgcolor="#CCCCCC"-->
+<font face="helvetica, sans-serif, geneva">
+<h1>Rails Reference Sheet</h1>
+</font>
+<!--</td>-->
+</table>
+<hr>
+First it's assumed that you've already created your database in mysql.
+Once you have your database you can use ruby on rails to query the
+database.
+The first step that you have to take is to create a
+rails <b>application</b>, here we call it predrna because it's
+intended to show the predominant non-canonical base-pairs in the whole
+nucleic acid database (ndb):
+<pre>
+-bash-3.1$ rails predrna 
+</pre>
+The next step is to configure the database access. You do this by
+modifying the file database.yml, where you basically just tell it
+which database to use and the authorization that it should have.
+<pre>
+-bash-3.1$ cd predrna
+-bash-3.1$ emacs config/database.yml
+</pre>
+After you've created your <b>application</b>, you can create a
+<b>scaffold</b> and then modify it to display your tables.
+<pre>
+-bash-3.1$ cd predrna
+-bash-3.1$ ruby script/generate scaffold Pair Predom
+</pre>
+This command is going to create a folder name Predom which contains
+all the code necesary to run the web application, in Ruby this is
+called the controller and the model. In this case we are using
+the database pairs, created previously in mysql.
+
+
+
+
+<hr />
+Useful Links:
+<br />
+<a href="http://biodegradablegeek.com/2008/01/02/expanding-list-of-ruby-on-rails-sites-editors-tutorials-cheat-sheets-and-more/">
+  -Click- </a>
+<br />
+<a href="http://blog.tonypelaez.com/?p=6"> -Click- </a>
+
+ </html>
+
+
+

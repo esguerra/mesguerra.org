@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99c (Web2C 7.3.1)
+The top-level auxiliary file: maestro.aux
+The style file: nar.bst
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: parameters.aux
+A level-1 auxiliary file: helical.aux
+A level-1 auxiliary file: scripts.aux
+A level-1 auxiliary file: scope.aux
+A level-1 auxiliary file: review.aux
+A level-1 auxiliary file: appendix.aux
+A level-1 auxiliary file: biblio.aux
+Database file #1: biblio.bib
+You've used 4 entries,
+            1881 wiz_defined-function locations,
+            496 strings with 4466 characters,
+and the built_in function-call counts, 1068 in all, are:
+= -- 107
+> -- 47
+< -- 0
++ -- 17
+- -- 13
+* -- 104
+:= -- 172
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 36
+empty$ -- 100
+format.name$ -- 13
+if$ -- 245
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 4
+pop$ -- 4
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 13
+stack$ -- 0
+substring$ -- 90
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 8
+width$ -- 5
+write$ -- 38

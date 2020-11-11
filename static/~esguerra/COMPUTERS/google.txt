@@ -1,0 +1,26 @@
+++++++++++++++++++++++++++++++++++
+LIST OF USEFUL GOOGLE COMMANDS
+Author: Mauricio Esguerra Neira
+Date:   February 11, 2010
+email:  mauricio.esguerra@gmail.com
+++++++++++++++++++++++++++++++++++
+
+The regular user has no idea that google can be actually interfaced
+with in a far richer way than the one of just click and scroll.
+Google help pages avoid telling the user the richer language functions
+which can be used to make better, more specific google searches.
+Perhaps they just want to adopt a Windoze like philosophy of assuming
+a "tabula rasa" user. Here are some google search functions.
+
+filetype:  	# restrict to doc, pdf, jpg, etc. 
+site:		# restrict to a site, e.g. site:google.com
+daterange:	# Unfortunately it depend on julian dates (see links)
+		# Supposedly writing 2000..2010 should do it too.
+
+++++++++++++++++++++++++++++++++++
+LINKS:
+++++++++++++++++++++++++++++++++++
+
+http://www.googleguide.com/advanced_operators.html
+http://www.google.com/help/cheatsheet.html
+http://aa.usno.navy.mil/data/docs/JulianDate.php
