@@ -8,7 +8,7 @@ PSQL
 ----
 ### Author: Mauricio Esguerra  
 ### Date: Thursday, September 24, 2020  
-### Update: Thursday, September 24, 2020  
+### Update: Wednesday, November 9, 2020  
 
 1. Basic Commands
 
@@ -24,13 +24,38 @@ once connected to db shows tables of db
 SELECT * FROM protein LIMIT 10;
 show first ten columns of data in table protein
 
+SELECT pg_size_pretty(pg_database_size('mydbname'));
+show database size
+
+delete from protein;
+delete all values in table protein
+
 \du
 list all users
 
 \q
 quit
 
-{# 2. Miscellaneous #}
+
+2. General
+
+To access postgres as root:
+
+sudo -u postgres -i
+psql
+
+To restore a database dump:
+
+psql -U dbuser -h localhost mydbname < dbdump.sql
+
+Note that to restore a database dump in parallel a couple of special
+requirements are needed.
+
+- Can only be done with pg_restore
+- pg_dump has to be used to create the dump, and it has to be a directory
+  dump using the -f flag.
+- The versions of pg_dump and pg_restore must coincide.
+
 
 LINKS:
 ------
