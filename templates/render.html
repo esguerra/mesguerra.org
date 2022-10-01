@@ -2,250 +2,197 @@
 {% block content %}
 
 <section id="imagegallery">
-  
+
   <nav>
     <div id="myBtnContainer">
       <button class="btn active" onclick="location.href='#gallery1'"> RNA</button>
       <button class="btn" onclick="location.href='#gallery2'"> DNA</button>
       <button class="btn" onclick="location.href='#gallery3'"> DNA Triplex</button>
+      <button class="btn" onclick="location.href='#gallery4'"> Movies</button>
+      <button class="btn" onclick="location.href='#gallery5'"> Others</button>
     </div>
   </nav>
-  <hr/>
 
-      <!-- <ul>
-        <li><a href="#gallery1">RNA</a></li>
-        <li><a href="#gallery2">DNA</a></li>
-        <li><a href="#gallery3">DNA Triplex</a></li>
-        <li><a href="#gallery4">Movies</a></li>
-        <li><a href="#gallery5">Others</a></li>
-      </ul> -->
-    
-    
+  <section id="gallery1">
+    <p>Hover over images for a description.</p>
+    <figure>
+      <a href="{{url_for('static', filename='images/tRNA.png') }}">
+        <img height=200 src="{{url_for('static', filename='images/tRNA.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>L-W</h3>
+        <p>tRNA secondary structure using Leontis-Westhof annotation styles.</p>
+      </figcaption>
+    </figure>
 
-    <section id="gallery1">
-      <h2>RNA Gallery</h2>
-      <p>Hover over the images for description.</p>
+    <figure>
+      <a href="{{url_for('static', filename='images/tRNA2.png') }}">
+        <img height=200 src="{{url_for('static', filename='images/tRNA2.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>tRNA</h3>
+        <p>tRNA 3D structure displayed using the Calladine-Drew block representation.</p>
+      </figcaption>
+    </figure>
 
-      <figure>
-	<a  href="{{ url_for('static', filename='images/tRNA.png') }}">
-	<img height=200   src="{{ url_for('static', filename='images/tRNA.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>RNA 1</h3>
-          <p>tRNA secondary structure using Leontis-Westhof annotation styles.</p>     
-        </figcaption>
-      </figure>
-
-      <figure>
-	<a href="{{ url_for('static', filename='images/tRNA2.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/tRNA2.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>RNA 2</h3>
-          <p>tRNA 3D structure displayed using the Calladine-Drew block representation.</p>     
-        </figcaption>
-      </figure>
-
-      <figure>
-	<a href="{{ url_for('static', filename='images/1qu3.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/1qu3.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>RNA 3</h3>
-          <p>Electrostatic potential surface of tRNA computed using APBS.</p>     
-        </figcaption>
-      </figure>
-    </section>
+    <figure>
+      <a href="{{url_for('static', filename='images/1qu3.png') }}">
+        <img height=200 src="{{url_for('static', filename='images/1qu3.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>APBS</h3>
+        <p>Electrostatic potential surface of tRNA computed using APBS.</p>
+      </figcaption>
+    </figure>
+  </section>
 
 
 
-    <section id="gallery2">
-      <h2>DNA Gallery</h2>
-      <p>Hover over the images for description.</p>
+  <section id="gallery2">
+    <p>Hover over images for a description.</p>
 
-      <figure>
-	<a href="{{ url_for('static', filename='images/ADNA6.png') }}">
-	<img height=200   src="{{ url_for('static', filename='images/ADNA6.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>DNA 1</h3>
-          <p>A-DNA  looked from the  top. Notice  the large  "hole" in
-          the middle.</p> 
-        </figcaption>
-      </figure>
+    <figure>
+      <a href="{{ url_for('static', filename='images/ADNA6.png') }}">
+        <img height=200 src="{{ url_for('static', filename='images/ADNA6.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>DNA 1</h3>
+        <p>A-DNA looked from the top. Notice the large "hole" in
+          the middle.</p>
+      </figcaption>
+    </figure>
 
-      <figure>
-	<a href="{{ url_for('static', filename='images/ADNA8.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/ADNA8.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>DNA 2</h3>
-          <p>A-DNA with it major groove facing the viewer.</p> 
-        </figcaption>
-      </figure>
+    <figure>
+      <a href="{{ url_for('static', filename='images/ADNA8.png') }}">
+        <img height=200 src="{{ url_for('static', filename='images/ADNA8.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>DNA 2</h3>
+        <p>A-DNA with it major groove facing the viewer.</p>
+      </figcaption>
+    </figure>
 
-      <figure>
-	<a href="{{ url_for('static', filename='images/ADNA9.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/ADNA9.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>DNA 3</h3>
-          <p>A-DNA with its minor groove facing the viewer.</p> 
-        </figcaption>
-      </figure>
-    </section>
+    <figure>
+      <a href="{{ url_for('static', filename='images/ADNA9.png') }}">
+        <img height=200 src="{{ url_for('static', filename='images/ADNA9.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>DNA 3</h3>
+        <p>A-DNA with its minor groove facing the viewer.</p>
+      </figcaption>
+    </figure>
+  </section>
 
 
-    <section id="gallery3">
-      <h2>DNA Triple Helix</h2>
-      <p>Hover over the images for description.</p>
+  <section id="gallery3">
+    <p>Hover over images for a description.</p>
 
-      <figure>
-	<a href="{{ url_for('static', filename='images/bislna_nohoog.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/bislna_nohoog.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>DNA Triple Helix</h3>
-          <p>bisLNA construct no Hoogsteen</p>     
-        </figcaption>
-      </figure>
+    <figure>
+      <a href="{{ url_for('static', filename='images/bislna_nohoog.png') }}">
+        <img height=200 src="{{ url_for('static', filename='images/bislna_nohoog.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>DNA Triple Helix</h3>
+        <p>bisLNA construct no Hoogsteen</p>
+      </figcaption>
+    </figure>
 
-      <figure>
-  <a href="{{ url_for('static', filename='images/bislna.png') }}">
+    <figure>
+      <a href="{{ url_for('static', filename='images/bislna.png') }}">
         <img height=200 src="{{ url_for('static', filename='images/bislna.png') }}" class="center" /> </a>
-        <figcaption>
-          <h3>DNA Triple Helix</h3>
-          <p>bisLNA construct</p>     
-        </figcaption>
-      </figure>
+      <figcaption>
+        <h3>DNA Triple Helix</h3>
+        <p>bisLNA construct</p>
+      </figcaption>
+    </figure>
 
-      <figure>
-  <a href="{{ url_for('static', filename='images/bislna_full.png') }}">
+    <figure>
+      <a href="{{ url_for('static', filename='images/bislna_full.png') }}">
         <img height=200 src="{{ url_for('static', filename='images/bislna_full.png') }}" class="center" /> </a>
-        <figcaption>
-          <h3>DNA Triple Helix</h3>
-          <p>bisLNA construct TFO in blue</p>     
-        </figcaption>
-      </figure>
-    </section>
+      <figcaption>
+        <h3>DNA Triple Helix</h3>
+        <p>bisLNA construct TFO in blue</p>
+      </figcaption>
+    </figure>
+  </section>
 
-    
-    <section id="gallery4">
-      <h2>Movies</h2>
-      <p>Hover over the images for description.</p>
-      <figure>
-	<a href="{{ url_for('static', filename='movies/quadruplex.mp4') }}">
-	<video height=200 controls autobuffer
-        style="display:block;
-	       margin:0px 0px 0px -30px;
-	       text-align:center;
-	       cursor:crosshair;
-	       width: 360;" 
-	  src="{{ url_for('static', filename='movies/quadruplex.mp4') }}" />
-        
-	</a>
 
-        <figcaption>
-          <h3>RNA Quadruplex</h3>
-          <p>Crystal Structure of Telomeric RNA Quadruplex (PDB_ID:3IBK)</p> 
-        </figcaption>
-      </figure>
+  <section id="gallery4">
+    <p>Hover over images for a description.</p>
+    <figure>
+      <a href="{{ url_for('static', filename='movies/quadruplex.mp4') }}">
+        <video height=200 controls autobuffer style="display:block;
+         margin:0px 0px 0px -30px;
+         text-align:center;
+         width: 360;" src="{{ url_for('static', filename='movies/quadruplex.ogv') }}" />
+      </a>
 
-      
-      <figure>
-	<a href="{{ url_for('static', filename='movies/triplexalone.ogv') }}">
-	<video height=200 controls autobuffer
-        style="display:block;
-	       margin:0px auto 10px;
-	       text-align:center;
+      <figcaption>
+        <h3>RNA Quadruplex</h3>
+        <p>Crystal Structure of Telomeric RNA Quadruplex (PDB_ID:3IBK)</p>
+      </figcaption>
+    </figure>
+
+
+    <figure>
+      <a href="{{url_for('static', filename='movies/triplexalone.ogv') }}">
+        <video height=200 controls autobuffer style="display:block;
+        margin:0px auto 10px;
+        text-align:center;
+        width: 360;" <source src="{{url_for('static', filename='movies/triplexalone.ogv') }}" type="video/ogv">
+          />
+      </a>
+      <figcaption>
+        <h3>DNA Triplex</h3>
+        <p>Triplex DNA AAGAAGAAAA Major Groove View</p>
+      </figcaption>
+    </figure>
+
+
+
+    <figure>
+      <a href="{{ url_for('static', filename='movies/triplexalone_above.ogv') }}">
+        <video height=200 controls autobuffer style="display:block;
+        margin:0px auto 10px;
+         text-align:center;
                cursor:crosshair;
-	       width: 360;"
-	  src="{{ url_for('static', filename='movies/triplexalone.ogv') }}" />
-         
-	</a>
-
-        <figcaption>
-          <h3>DNA Triplex</h3>
-          <p>Triplex DNA AAGAAGAAAA Major Groove View</p> 
-        </figcaption>
-      </figure>
+         width: 360;" src="{{ url_for('static', filename='movies/triplexalone_above.ogv') }}" />
+      </a>
+      <figcaption>
+        <h3>DNA Triplex</h3>
+        <p>Triplex DNA AAGAAGAAAA From Above</p>
+      </figcaption>
+    </figure>
 
 
-      
-      <figure>
-	<a href="{{ url_for('static', filename='movies/triplexalone_above.ogv') }}">
-	<video height=200 controls autobuffer
-        style="display:block;
-	       margin:0px auto 10px;
-	       text-align:center;
-               cursor:crosshair;
-	       width: 360;"
-	  src="{{ url_for('static', filename='movies/triplexalone_above.ogv') }}" />        
-	</a>
-        <figcaption>
-          <h3>DNA Triplex</h3>
-          <p>Triplex DNA AAGAAGAAAA From Above</p> 
-        </figcaption>
-      </figure>
-
-<!--
-      <figure>
-	<a href="/videos/ssrna/polya.ogv">
-	<video height=200 controls autobuffer
-        style="display:block;
-	       margin:0px auto 10px;
-	       text-align:center;
-               cursor:crosshair;
-	       width: 360;"
-	  src="/videos/ssrna/polya.ogv" />        
-	</a>
-        <figcaption>
-          <h3>RNA polyA</h3>
-          <p>Single-strand of Adenine</p> 
-        </figcaption>
-      </figure>
--->
-      
-
-    </section>
+  </section>
 
 
-    
-    <section id="gallery5">
-      <h2>Misc Gallery</h2>
-      <p>Hover over the images for description.</p>
 
-      <figure>
-	<a href="{{ url_for('static', filename='images/mosaic.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/mosaic.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>Misc 1</h3>
-          <p>Canonical Watson-Crick DNA and RNA base-pairs in Calladine-Drew Representation.</p>     
-        </figcaption>
-      </figure>
+  <section id="gallery5">
+    <p>Hover over images for a description.</p>
 
-      <figure>
-	<a href="{{ url_for('static', filename='images/gnra24.png') }}">
-        <img height=120 src="{{ url_for('static', filename='images/gnra24.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>Misc 2</h3>
-          <p>GNRA tetraloop from 23S rRNA, PDB_ID:1ffk.</p>     
-        </figcaption>
-      </figure>
+    <figure>
+      <a href="{{ url_for('static', filename='images/mosaic.png') }}">
+        <img height=200 src="{{ url_for('static', filename='images/mosaic.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>Misc 1</h3>
+        <p>Canonical Watson-Crick DNA and RNA base-pairs in Calladine-Drew Representation.</p>
+      </figcaption>
+    </figure>
 
-      <figure>
-	<a href="{{ url_for('static', filename='images/3bwpH2_H5.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/3bwpH2_H5.png') }}" class="center" />	</a>
-        <figcaption>
-          <h3>Misc 3</h3>
-          <p>Interacting helical regions of Group II Intron PDB_ID:3bwp.</p>     
-        </figcaption>
-      </figure>
-    </section>
-	
+    <figure>
+      <a href="{{ url_for('static', filename='images/gnra24.png') }}">
+        <img height=120 src="{{ url_for('static', filename='images/gnra24.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>Misc 2</h3>
+        <p>GNRA tetraloop from 23S rRNA, PDB_ID:1ffk.</p>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <a href="{{ url_for('static', filename='images/3bwpH2_H5.png') }}">
+        <img height=200 src="{{ url_for('static', filename='images/3bwpH2_H5.png') }}" class="center" /> </a>
+      <figcaption>
+        <h3>Misc 3</h3>
+        <p>Interacting helical regions of Group II Intron PDB_ID:3bwp.</p>
+      </figcaption>
+    </figure>
+  </section>
+
 </section>
-
-<!--
-<hr /> 
-<h1>Movies</h1> 
-<hr/>
-
-<video width="360" controls autobuffer> 
-<source src="rotateloop.mp4" > 
-</video> 
--->
 
 {% endblock content %}
