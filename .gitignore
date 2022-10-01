@@ -11,3 +11,5 @@ bin/
 include/
 lib/
 .idea/
+pyvenv.cfg
+lib64*
