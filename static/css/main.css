@@ -2,6 +2,7 @@
 Styles for Mauricio Esguerra's Homepage
 Author: Mauricio Esguerra Neira (PhD)
 Date:   May 17, 2019
+Update: Saturday, October 1, 2022
 */
 
 
@@ -29,18 +30,11 @@ img.center {
     margin-left: auto;
     margin-right: auto;
     max-height: 480px;
-    /*    height: 480;   */
-    /*    width: auto\9; */
-    /*    height: 480px; */
-    /*    width:  480px; */
 }
 
 aside{
     float: left;
     width: 100px;
-    /*    margin: 0 0 0px 0px; */
-    /*    color: rgb(191,191,191); */
-    /*    color: rgb(000,000,000); */
 }
 
 aside li {
@@ -119,15 +113,15 @@ a:hover {
     color: #f6eef4;
 }
 
-/*-------------
-        ADDITIONAL STYLES FOR PORTFOLIO
----------------*/
 
+/*---------------------------------------------
+        ADDITIONAL STYLES FOR PORTFOLIO
+-----------------------------------------------*/
 #imagegallery section figure {
     position:relative;
     float:left;
     margin:5px;
-    width:200px;
+    /* width:200px; */
     height:200px;
     border:1px solid #333;
     overflow:hidden;
@@ -159,7 +153,6 @@ a:hover {
     color:#fff;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 #imagegallery section figcaption h3 {
     margin: 1px 1px 1px 1px;
     text-shadow: #000 0px 2px 0px;
@@ -184,7 +177,6 @@ a:hover {
     opacity:0;
     z-index: 9;
 }
-
 #imagegallery :target {
     opacity:1;
     z-index: 10;
@@ -192,7 +184,6 @@ a:hover {
 #gallery1, #gallery2, #gallery3, #gallery4, #gallery5 {
     position: absolute;
 }
-
 #imagegallery nav {
     width: 100%;
 }
