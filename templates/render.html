@@ -1,22 +1,38 @@
 {% extends "layout.html" %}
 {% block content %}
 
+
+
+<nav>
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="location.href='#gallery1'"> RNA</button>
+    <button class="btn" onclick="location.href='#gallery2'"> DNA</button>
+    <button class="btn" onclick="location.href='#gallery3'"> DNA Triplex</button>
+    <button class="btn" onclick="location.href='#gallery4'"> Movies</button>
+    <button class="btn" onclick="location.href='#gallery5'"> Others</button>
+  </div>
+</nav>
+
+<div class="container">
+    
+  <div class="img-container">
+     <img src="https://source.unsplash.com/600x450/?fitness" alt="Fitness" />
+     <img src="https://source.unsplash.com/600x450/?bikini" alt="jQueryScript.Net" />
+     <img src="https://source.unsplash.com/600x450/?girl" alt="Girls" />
+     <img src="https://source.unsplash.com/600x450/?fashion" alt="Fashion" />
+  </div>
+
+
 <section id="imagegallery">
 
-  <nav>
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="location.href='#gallery1'"> RNA</button>
-      <button class="btn" onclick="location.href='#gallery2'"> DNA</button>
-      <button class="btn" onclick="location.href='#gallery3'"> DNA Triplex</button>
-      <button class="btn" onclick="location.href='#gallery4'"> Movies</button>
-      <button class="btn" onclick="location.href='#gallery5'"> Others</button>
-    </div>
-  </nav>
 
-  <section id="gallery1">
-    <p>Hover over images for a description.</p>
+  <!-- <section id="gallery1"> -->
+
+    <!-- <p>Hover over images for a description.</p>
+    <div class="container">
+    <div class="img-container">
     <figure>
-      <img src="{{url_for('static', filename='images/tRNA.png') }}" onclick="myFunction(this);" style="width:100%"
+      <img src="{{url_for('static', filename='images/tRNA.png') }}"  style="width:100%"
         class="center" />
       <figcaption>
         <h3>L-W</h3>
@@ -24,7 +40,7 @@
       </figcaption>
     </figure>
     <figure>
-      <img src="{{url_for('static', filename='images/tRNA2.png') }}" onclick="myFunction(this);" style="width:100%"
+      <img src="{{url_for('static', filename='images/tRNA2.png') }}"  style="width:100%"
         class="center" />
       <figcaption>
         <h3>tRNA</h3>
@@ -32,19 +48,22 @@
       </figcaption>
     </figure>
     <figure>
-      <img src="{{url_for('static', filename='images/1qu3.png') }}" onclick="myFunction(this);" style="width:100%"
+      <img src="{{url_for('static', filename='images/1qu3.png') }}"  style="width:100%"
         class="center" />
       <figcaption>
         <h3>APBS</h3>
         <p>Electrostatic potential surface of tRNA computed using APBS.</p>
       </figcaption>
     </figure>
+  </div>
+  </div> -->
 
-    <span onclick="this.parentElement.style.display='none'"></span>
-    <img id="expandedImg">
-    <div id="imgtext"></div>
+  <!-- <section id="gallery1"> -->
 
-  </section>
+ <!-- </div> -->
+
+
+  <!-- </section> -->
 
 
 
@@ -207,7 +226,7 @@
 
 </section>
 
-<script>
+<!-- <script>
   function myFunction(imgs) {
     var expandImg = document.getElementById("expandedImg");
     var imgText = document.getElementById("imgtext");
@@ -215,6 +234,6 @@
     imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
   }
-</script>
+</script> -->
 
 {% endblock content %}
