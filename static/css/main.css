@@ -122,23 +122,24 @@ a:hover {
 /*-------------
         ADDITIONAL STYLES FOR PORTFOLIO
 ---------------*/
+
 #imagegallery section figure {
-/*    position:relative; */
+    position:relative;
     float:left;
-    margin:0px;
-    width:200px;
-    height:200px;
+    margin:10px;
+    width:198px;
+    height:198px;
     border:1px solid #333;
     overflow:hidden;
     background: #fff;
-    padding: 0px;
+    padding: 1px;
 }
 #imagegallery section figure figcaption {
     position:absolute;
     bottom:0;
     left:0;
     opacity: .55;
-    margin-bottom:0px;
+    margin-bottom:-120px;
     -webkit-transition: margin-bottom;
     -webkit-transition-duration: 400ms;
     -webkit-transition-timing-function: ease-out;
@@ -149,24 +150,24 @@ a:hover {
     -o-transition-duration: 400ms;
 }
 #imagegallery section figure:hover figcaption {
-    margin-bottom:6px;
+    margin-bottom:0px;
 }
 #imagegallery section figcaption {
     width:200px;
-    height:115px;
+    height:100px;
     background:#111;
     color:#fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #imagegallery section figcaption h3 {
-    margin: 15px 15px 6px 15px;
+    margin: 1px 1px 1px 1px;
     text-shadow: #000 0px 2px 0px;
 }
 #imagegallery section figcaption p {
-    margin: 0 15px;
+    margin: 0 1px;
     color: #ddd;
-    line-height: 24px;
+    line-height: 18px;
     font-size: 14px;
     text-shadow: #000 0px 2px 0px;
 }
