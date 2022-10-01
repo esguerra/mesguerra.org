@@ -16,31 +16,34 @@
   <section id="gallery1">
     <p>Hover over images for a description.</p>
     <figure>
-      <a href="{{url_for('static', filename='images/tRNA.png') }}">
-        <img height=200 src="{{url_for('static', filename='images/tRNA.png') }}" class="center"/> </a>
+      <img src="{{url_for('static', filename='images/tRNA.png') }}" onclick="myFunction(this);" style="width:100%"
+        class="center" />
       <figcaption>
         <h3>L-W</h3>
         <p>tRNA secondary structure using Leontis-Westhof annotation styles.</p>
       </figcaption>
     </figure>
-
     <figure>
-      <a href="{{url_for('static', filename='images/tRNA2.png') }}">
-        <img height=200 src="{{url_for('static', filename='images/tRNA2.png') }}" class="center"/> </a>
+      <img src="{{url_for('static', filename='images/tRNA2.png') }}" onclick="myFunction(this);" style="width:100%"
+        class="center" />
       <figcaption>
         <h3>tRNA</h3>
         <p>tRNA 3D structure displayed using the Calladine-Drew block representation.</p>
       </figcaption>
     </figure>
-
     <figure>
-      <a href="{{url_for('static', filename='images/1qu3.png') }}">
-        <img height=200 src="{{url_for('static', filename='images/1qu3.png') }}" class="center"/> </a>
+      <img src="{{url_for('static', filename='images/1qu3.png') }}" onclick="myFunction(this);" style="width:100%"
+        class="center" />
       <figcaption>
         <h3>APBS</h3>
         <p>Electrostatic potential surface of tRNA computed using APBS.</p>
       </figcaption>
     </figure>
+
+    <span onclick="this.parentElement.style.display='none'"></span>
+    <img id="expandedImg">
+    <div id="imgtext"></div>
+
   </section>
 
 
@@ -50,7 +53,7 @@
 
     <figure>
       <a href="{{ url_for('static', filename='images/ADNA6.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/ADNA6.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/ADNA6.png') }}" class="center" /> </a>
       <figcaption>
         <h3>ADNA</h3>
         <p>A-DNA looked from the top. Notice the large "hole" in
@@ -60,7 +63,7 @@
 
     <figure>
       <a href="{{ url_for('static', filename='images/ADNA8.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/ADNA8.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/ADNA8.png') }}" class="center" /> </a>
       <figcaption>
         <h3>ADNA</h3>
         <p>A-DNA with it major groove facing the viewer.</p>
@@ -69,7 +72,7 @@
 
     <figure>
       <a href="{{ url_for('static', filename='images/ADNA9.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/ADNA9.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/ADNA9.png') }}" class="center" /> </a>
       <figcaption>
         <h3>ADNA</h3>
         <p>A-DNA with its minor groove facing the viewer.</p>
@@ -78,7 +81,7 @@
 
     <figure>
       <a href="{{ url_for('static', filename='images/dnaconformations.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/dnaconformations.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/dnaconformations.png') }}" class="center" /> </a>
       <figcaption>
         <h3>DNA Confs.</h3>
         <p>Main DNA conformations from Arnott fiber models.</p>
@@ -93,7 +96,7 @@
 
     <figure>
       <a href="{{ url_for('static', filename='images/bislna_nohoog.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/bislna_nohoog.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/bislna_nohoog.png') }}" class="center" /> </a>
       <figcaption>
         <h3>DNA Triple Helix</h3>
         <p>Part of a triple helical bisLNA construct not showing its Hoogsteen chain</p>
@@ -102,7 +105,7 @@
 
     <figure>
       <a href="{{ url_for('static', filename='images/bislna.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/bislna.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/bislna.png') }}" class="center" /> </a>
       <figcaption>
         <h3>DNA Triple Helix</h3>
         <p>Full triple helical bisLNA construct with Hoogsteen chain.</p>
@@ -111,7 +114,7 @@
 
     <figure>
       <a href="{{ url_for('static', filename='images/bislna_full.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/bislna_full.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/bislna_full.png') }}" class="center" /> </a>
       <figcaption>
         <h3>DNA Triple Helix</h3>
         <p>Whole bisLNA construct where the so-called TFO is depicted in blue</p>
@@ -142,9 +145,7 @@
         <video height=200 controls autobuffer style="display:block;
         margin:0px auto 10px;
         text-align:center;
-        width: 360;" 
-        src="{{url_for('static', filename='movies/triplexalone.ogv') }}"
-        >
+        width: 360;" src="{{url_for('static', filename='movies/triplexalone.ogv') }}">
       </a>
       <figcaption>
         <h3>DNA Triplex</h3>
@@ -159,8 +160,7 @@
         <video height=200 controls autobuffer style="display:block;
         margin:0px auto 10px;
          text-align:center;
-         width: 360;" 
-         src="{{ url_for('static', filename='movies/triplexalone_above.ogv') }}">
+         width: 360;" src="{{ url_for('static', filename='movies/triplexalone_above.ogv') }}">
       </a>
       <figcaption>
         <h3>DNA Triplex</h3>
@@ -172,13 +172,12 @@
   </section>
 
 
-
   <section id="gallery5">
     <p>Hover over images for a description.</p>
 
     <figure>
       <a href="{{ url_for('static', filename='images/mosaic.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/mosaic.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/mosaic.png') }}" class="center" /> </a>
       <figcaption>
         <h3>Misc 1</h3>
         <p>Canonical Watson-Crick DNA and RNA base-pairs in Calladine-Drew Representation.</p>
@@ -187,7 +186,7 @@
 
     <figure>
       <a href="{{ url_for('static', filename='images/gnra24.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/gnra24.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/gnra24.png') }}" class="center" /> </a>
       <figcaption>
         <h3>Misc 2</h3>
         <p>GNRA tetraloop from 23S rRNA, PDB_ID:1ffk.</p>
@@ -196,7 +195,7 @@
 
     <figure>
       <a href="{{ url_for('static', filename='images/3bwpH2_H5.png') }}">
-        <img height=200 src="{{ url_for('static', filename='images/3bwpH2_H5.png') }}" class="center"/> </a>
+        <img height=200 src="{{ url_for('static', filename='images/3bwpH2_H5.png') }}" class="center" /> </a>
       <figcaption>
         <h3>Misc 3</h3>
         <p>Interacting helical regions of Group II Intron PDB_ID:3bwp.</p>
@@ -204,6 +203,18 @@
     </figure>
   </section>
 
+
+
 </section>
+
+<script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+</script>
 
 {% endblock content %}
