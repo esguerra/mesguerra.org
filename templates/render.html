@@ -1,19 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
 
-
 <section id="imagegallery">
+  
+  <nav>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="location.href='#gallery1'"> RNA</button>
+      <button class="btn" onclick="location.href='#gallery2'"> DNA</button>
+      <button class="btn" onclick="location.href='#gallery3'"> DNA Triplex</button>
+    </div>
+  </nav>
+  <hr/>
 
-    <nav>
-      <ul>
+      <!-- <ul>
         <li><a href="#gallery1">RNA</a></li>
         <li><a href="#gallery2">DNA</a></li>
         <li><a href="#gallery3">DNA Triplex</a></li>
         <li><a href="#gallery4">Movies</a></li>
         <li><a href="#gallery5">Others</a></li>
-      </ul>
-    </nav>
-    <hr/>
+      </ul> -->
+    
+    
 
     <section id="gallery1">
       <h2>RNA Gallery</h2>
