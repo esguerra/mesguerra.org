@@ -147,7 +147,7 @@ a:hover {
     margin-bottom:0px;
 }
 #imagegallery section figcaption {
-    width:200px;
+/*    width:200px; */
     height:100px;
     background:#111;
     color:#fff;
