@@ -3,16 +3,7 @@
 
 
 
-<nav>
-  <div id="myBtnContainer">
-    <button class="btn active" onclick="location.href='#gallery1'"> RNA</button>
-    <button class="btn" onclick="location.href='#gallery2'"> DNA</button>
-    <button class="btn" onclick="location.href='#gallery3'"> DNA Triplex</button>
-    <button class="btn" onclick="location.href='#gallery4'"> Movies</button>
-    <button class="btn" onclick="location.href='#gallery5'"> Others</button>
-  </div>
-</nav>
-
+<!-- 
 <div class="container">
     
   <div class="img-container">
@@ -22,15 +13,26 @@
      <img src="https://source.unsplash.com/600x450/?fashion" alt="Fashion" />
   </div>
 
+</div> -->
+
+
+<nav>
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="location.href='#gallery1'"> RNA</button>
+    <button class="btn" onclick="location.href='#gallery2'"> DNA</button>
+    <button class="btn" onclick="location.href='#gallery3'"> DNA Triplex</button>
+    <button class="btn" onclick="location.href='#gallery4'"> Movies</button>
+    <button class="btn" onclick="location.href='#gallery5'"> Others</button>
+  </div>
+</nav> 
+
+
 
 <section id="imagegallery">
 
+  <section id="gallery1">
 
-  <!-- <section id="gallery1"> -->
-
-    <!-- <p>Hover over images for a description.</p>
-    <div class="container">
-    <div class="img-container">
+  <p>Hover over images for a description.</p>
     <figure>
       <img src="{{url_for('static', filename='images/tRNA.png') }}"  style="width:100%"
         class="center" />
@@ -55,15 +57,8 @@
         <p>Electrostatic potential surface of tRNA computed using APBS.</p>
       </figcaption>
     </figure>
-  </div>
-  </div> -->
 
-  <!-- <section id="gallery1"> -->
-
- <!-- </div> -->
-
-
-  <!-- </section> -->
+</section>
 
 
 
@@ -224,7 +219,7 @@
 
 
 
-</section>
+</section> 
 
 <!-- <script>
   function myFunction(imgs) {
