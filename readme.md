@@ -65,3 +65,11 @@ requirements.txt, so, in the end it boiled down to precisely this:
     pip3 install -r requirements.txt --user
 
 Needless to say that this was an unpleasant time sink.
+
+
+## Getting the dev environment up with conda ##
+
+    conda create --prefix /Users/esguerra/develop/mesguerra.org python=3.10
+    conda activate /Users/esguerra/develop/mesguerra.org
+    pip install -r requirements.txt
+    FLASK_DEBUG=1 FLASK_APP=settings.py flask run
