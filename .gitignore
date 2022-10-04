@@ -13,3 +13,7 @@ lib/
 .idea/
 pyvenv.cfg
 lib64*
+conda-meta/
+man/
+share/
+ssl/
