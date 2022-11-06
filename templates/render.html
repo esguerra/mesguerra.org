@@ -4,7 +4,7 @@
 
 <nav>
   <div id="myBtnContainer">
-    <button class="btn active" onclick="location.href='#gallery1'"> RNA</button>
+    <button class="btn" onclick="location.href='#gallery1'"> RNA</button>
     <button class="btn" onclick="location.href='#gallery2'"> DNA</button>
     <button class="btn" onclick="location.href='#gallery3'"> DNA Triplex</button>
     <button class="btn" onclick="location.href='#gallery4'"> Movies</button>
@@ -12,31 +12,36 @@
   </div>
 </nav> 
 
-<div class="container">
-    
-  <div class="img-container">
-     <img src="https://source.unsplash.com/600x450/?fitness" alt="Fitness" />
-     <img src="https://source.unsplash.com/600x450/?bikini" alt="jQueryScript.Net" />
-     <img src="https://source.unsplash.com/600x450/?girl" alt="Girls" />
-     <img src="https://source.unsplash.com/600x450/?fashion" alt="Fashion" />
-  </div>
-
-</div>
-
 
 <section id="imagegallery">
 
   <section id="gallery1">
 
   <p>Hover over images for a description.</p>
+
     <figure>
-      <img src="{{url_for('static', filename='images/tRNA.png') }}"  style="width:100%"
-        class="center" />
+      <a data-toggle="modal" data-target="#myModal">
+        <img id="myImg" src="{{url_for('static', filename='images/tRNA.png') }}" style="width:100%" class="center" />
+      </a>
       <figcaption>
         <h3>L-W</h3>
         <p>tRNA secondary structure using Leontis-Westhof annotation styles.</p>
       </figcaption>
+    
+      <div id="myModal" class="modal" tabindex="-1" role="dialog" data-backdrop="">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img id="myImg" src="{{url_for('static', filename='images/tRNA.png') }}" style="width:100%" class="center" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>    
     </figure>
+
     <figure>
       <img src="{{url_for('static', filename='images/tRNA2.png') }}"  style="width:100%"
         class="center" />
@@ -216,15 +221,5 @@
 
 
 </section> 
-
-<!-- <script>
-  function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-  }
-</script> -->
 
 {% endblock content %}
