@@ -4,7 +4,6 @@ import os
 from flask import Flask, render_template, url_for, send_file, render_template_string
 from flaskext.markdown import Markdown
 
-
 app = Flask(__name__)
 
 def make_tree(path):

@@ -17,3 +17,11 @@ conda-meta/
 man/
 share/
 ssl/
+venv/
+.env/
+.envs/
+.venv/
+.ipynb_checkpoints/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
