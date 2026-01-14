@@ -1,4 +1,5 @@
-# My homepage in flask
+# My homepage in flask #
+
 Flask is a so-called web application framework.
 In turn flask uses WSGI (The Python Web Server Gateway Interface) to serve 
 webpages. WSGI is a python effort to have a web-serving standard, similar to 
@@ -10,7 +11,9 @@ so, for now I'm just gonna go with good old bootstrap.
 
 To run in developer mode I have to do:
 
-    FLASK_DEBUG=1 FLASK_APP=settings.py flask run
+```bash
+FLASK_DEBUG=1 FLASK_APP=settings.py flask run
+```
 
 Inspired by Cody Shafer at:
 
@@ -69,7 +72,17 @@ Needless to say that this was an unpleasant time sink.
 
 ## Getting the dev environment up with conda ##
 
-    conda create --prefix /Users/esguerra/develop/mesguerra.org python=3.10
-    conda activate /Users/esguerra/develop/mesguerra.org
-    pip install -r requirements.txt
-    FLASK_DEBUG=1 FLASK_APP=settings.py flask run
+```bash
+conda create --prefix /Users/esguerra/develop/mesguerra.org python=3.10
+conda activate /Users/esguerra/develop/mesguerra.org
+pip install -r requirements.txt
+FLASK_DEBUG=1 FLASK_APP=settings.py flask run
+```
+
+## Alternative using uv ##
+
+```zsh
+uv venv
+source .venv/bin/activate
+uv pip install flask flask-markdown gunicorn
+```
