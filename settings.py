@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Settings to flaskify my homepage.
 import os
-from flask import Flask, render_template, url_for, send_file, render_template_string
+from flask import Flask, render_template, url_for, send_file, render_template_string, abort
 from flaskext.markdown import Markdown
 
 app = Flask(__name__)
@@ -53,10 +53,54 @@ def dirtree1():
     path = os.path.abspath(u'static/documents')
     return render_template('documents.html', tree=make_tree(path), title='Documents')
 
-@app.route("/scripts")
-def dirtree2():
-    path = os.path.abspath(u'static/scripts')
-    return render_template('scripts.html', tree=make_tree(path), title='Scripts')
+def find_subtree(tree, relpath):
+    if relpath in (None, "", "."):
+        return tree
+    for child in tree.get('children', []):
+        if child.get('path') == relpath:
+            return child
+        if child.get('children'):
+            found = find_subtree(child, relpath)
+            if found is not None:
+                return found
+    return None
+
+
+def build_breadcrumbs(relpath):
+    if not relpath:
+        return []
+    parts = relpath.split(os.sep)
+    crumbs = []
+    current = ''
+    for part in parts:
+        current = part if not current else os.path.join(current, part)
+        crumbs.append({'name': part, 'path': current})
+    return crumbs
+
+
+@app.route('/scripts', defaults={'subpath': ''})
+@app.route('/scripts/<path:subpath>')
+def scripts(subpath=''):
+    root = os.path.abspath(u'static/scripts')
+    tree = make_tree(root)
+    subtree = find_subtree(tree, subpath)
+    if subtree is None:
+        abort(404)
+
+    directories = [item for item in subtree.get('children', []) if item.get('children')]
+    files = [item for item in subtree.get('children', []) if not item.get('children')]
+    directories.sort(key=lambda item: item['name'].lower())
+    files.sort(key=lambda item: item['name'].lower())
+
+    breadcrumbs = build_breadcrumbs(subpath)
+    return render_template(
+        'scripts.html',
+        tree=subtree,
+        directories=directories,
+        files=files,
+        breadcrumbs=breadcrumbs,
+        title='Scripts'
+    )
 
 @app.route("/~esguerra")
 def dirtree3():

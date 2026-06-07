@@ -1,22 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
 <title>{{ tree.name }}</title>
-<h1>Index of /{{ tree.name }}/</h1>
+<h1>Index of /{{ tree.path or '/' }}/</h1>
 
-{% macro render_tree(items) %}
+{% if breadcrumbs %}
+  <p>
+    <a href="{{ url_for('scripts') }}">/</a>
+    {%- for crumb in breadcrumbs %}
+      / <a href="{{ url_for('scripts', subpath=crumb.path) }}">{{ crumb.name }}</a>
+    {%- endfor %}
+  </p>
+{% endif %}
+
 <ul>
-  {%- for item in items %}
-    <li>
-      {%- if item.children %}
-        <strong>{{ item.name }}/</strong>
-        {{ render_tree(item.children) }}
-      {%- else %}
-        <a href="{{ url_for('static', filename='scripts/' ~ item.path) }}">{{ item.name }}</a>
-      {%- endif %}
-    </li>
+  {%- for item in directories %}
+    <li><strong><a href="{{ url_for('scripts', subpath=item.path) }}">{{ item.name }}/</a></strong></li>
+  {%- endfor %}
+  {%- for item in files %}
+    <li><a href="{{ url_for('static', filename='scripts/' ~ item.path) }}">{{ item.name }}</a></li>
   {%- endfor %}
 </ul>
-{% endmacro %}
-
-{{ render_tree(tree.children) }}
 {% endblock content %}
