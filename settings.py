@@ -6,18 +6,20 @@ from flaskext.markdown import Markdown
 
 app = Flask(__name__)
 
-def make_tree(path):
-    tree = dict(name=os.path.basename(path), children=[])
-    try: lst = os.listdir(path)
+def make_tree(path, relpath=""):
+    tree = dict(name=os.path.basename(path), path=relpath, children=[])
+    try:
+        lst = sorted(os.listdir(path))
     except OSError:
-        pass #ignore errors
+        pass  # ignore errors
     else:
         for name in lst:
             fn = os.path.join(path, name)
+            child_relpath = os.path.join(relpath, name) if relpath else name
             if os.path.isdir(fn):
-                tree['children'].append(make_tree(fn))
+                tree['children'].append(make_tree(fn, child_relpath))
             else:
-                tree['children'].append(dict(name=name))
+                tree['children'].append(dict(name=name, path=child_relpath))
     return tree
 
 
